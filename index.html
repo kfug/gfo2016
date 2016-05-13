@@ -5,7 +5,7 @@
     <title>Grand Frontend Osaka 2016｜関西フロントエンドUG</title>
     <meta name="description" content="今年も開催！大阪夏、フロントエンドの最先端を目指すWebの祭典、Grand Frontend Osaka 2016！">
     <link rel="canonical" href=".">
-    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+    <link href='https://fonts.googleapis.com/css?family=Orbitron:400' rel='stylesheet' type='text/css'>    <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <meta property="og:title" content="Grand Frontend Osaka 2016｜関西フロントエンドUG"/>
     <meta property="og:image" content="http://kfug.jp/gfo2016/img/ogp.png"/>
     <meta name="twitter:card" content="summary_large_image">
@@ -21,9 +21,11 @@
         #hero-logo{display: inline-block; width: 50%;}
         #hero-particle{display: inline-block;position: absolute;top: 47px;right: 77px;width: 55%;}
 
-        #title-container{background-color:#2656A3;}
-        #title-logo{max-width: 1024px;margin: 0 auto;}
-
+        #title-container{background-color:#2656A3; color:white; height: 240px;}
+        #hr-block{display: flex; height: 16px; width: 100%;flex-wrap: wrap;justify-content: center}
+        p {font-family: 'Orbitron', sans-serif; font-size: 28px;}
+        #date {text-align: center; box-sizing:border-box; padding-top: 70px; margin: 0; height: 112px;}
+        #place {text-align: center; box-sizing:border-box; padding-top: 20px; margin: 0; height: 112px;}
         #actions-container{max-width: 1024px;padding: 2em; background: url(img/bg_particle01.png) no-repeat;background-position: center;margin:0 auto;}
         #actions-links{display: flex;width: 100%;flex-wrap: wrap;justify-content: center}
         #actions-sponsor{display: block;margin:1em 3em;width: 40%;min-width: 200px;}
@@ -69,9 +71,12 @@
     <amp-img layout=responsive id="hero-particle" src="img/hero_particle.png" width=657 height=584 />
 </section>
 <section id="title-container">
-    <h2 id="title-logo">
-        <amp-img layout=responsive id="" src="img/sec01_date.png" width=1024 height=240 alt="2016.SUMMER 開幕" />
-    </h2>
+    <p id="date">2016.8.27-28</p>
+    <div id="hr-block">
+        <amp-img id="hr" src="img/hr.png" width=636 height=16 alt="" />
+    </div>
+    <p id="place">Osaka Inovation Hub</p>
+
 </section>
 <section id="actions-container">
     <nav id="actions-links">
