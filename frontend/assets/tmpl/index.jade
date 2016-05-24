@@ -1,3 +1,66 @@
-html
+doctype html
+html(lang="ja")
+  head
+    meta(charset="utf-8")
+    style(src="css/style.css")
+    title Grand Frontend Osaka 2016｜関西フロントエンドUG
+    meta(name="description", content="今年も開催！大阪夏、フロントエンドの最先端を目指すWebの祭典、Grand Frontend Osaka 2016！")
+    link(rel="canonical", href=".")
+    meta(name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1")
+    link(href='https://fonts.googleapis.com/css?family=Orbitron:400', rel='stylesheet', type='text/css')
+    link(rel="stylesheet", href="./assets/css/style.css")
+    meta(property="og:title", content="Grand Frontend Osaka 2016｜関西フロントエンドUG")
+    meta(property="og:image", content="http://kfug.jp/gfo2016/img/ogp.png")
+    meta(name="twitter:card", content="summary_large_image")
+    meta(name="twitter:site", content="@frontkansai")
+    meta(name="twitter:creator", content="@frontkansai")
+    meta(name="twitter:title", content="Grand Frontend Osaka 2016｜関西フロントエンドUG")
+    meta(name="twitter:description", content="今年も開催！大阪夏、フロントエンドの最先端を目指すWebの祭典、Grand Frontend Osaka 2016！")
+    meta(name="twitter:image", content="http://kfug.jp/gfo2016/img/ogp.png")
+
   body
-    p hogehoge
+    .container
+      section#hero-container
+        img(src="")
+        h1.hero-logo
+          | GRAND FRONTEND OSAKA
+          br
+          | 2016
+        p フロントエンドの最先端イベント
+
+      section#info-container
+        p.date
+          | 2016  /  8  /  27
+          span sat.
+          | 28
+          span sun.
+
+      section#action-container
+        a.sponsor-btn(href="http://goo.gl/forms/8Lk3RJChyu")
+          span SPONSOR
+          | スポンサー募集
+        a.staff-btn(href="http://goo.gl/forms/Os9lWuK3ZC" )
+          span SPEAKER
+          | 登壇者 募集
+
+      section#description-container
+        h2 GRAND FRONTEND OSAKA 2016
+        p
+          | Grand Frontend Osaka 2016は、関西フロントエンドUGの主催するIT系のコミュニティのイベントです。技術的な流れの早いフロントエンドの現場で、「最先端」をテーマにした尖ったスタイルのイベントをコンセプトに置いています。
+          | 同団体で今年3月に開催したFRONTEND CONFERENCE 2016がフロントエンドの「今」を語るイベントだったのに対し、本イベントでは、フロントエンド界隈の「これから先」を見据えるイベントです。
+
+  include ./_news
+
+  #event-container
+    include ./_hackathon
+
+    include ./_session
+
+  include ./_access
+
+  include ./_sponsor
+
+  include ./_staff
+
+footer
+  include ./_footer
