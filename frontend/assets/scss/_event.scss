@@ -1,7 +1,7 @@
 #event-container {
     #hackathon-container {
         margin: 0 auto;
-        padding: 2em 0;
+        padding: 2em 0 3em;
         background: $clr-day1;
         h4.day-category {
             margin: .5em 0;
@@ -33,7 +33,7 @@
             width: 100%;
             color: #fff;
             background: url("./../../img/event-hackathon@x2.png") bottom right no-repeat;
-            background-size: 350px;
+            background-size: contain;
 
             h5 {
                 display: inline-block;
@@ -110,7 +110,7 @@
     }//#hackathon-container
     #session-container {
             margin: 0 auto;
-            padding: 2em 0;
+            padding: 2em 0 3em;
             background: $clr-day2;
             h4.day-category {
                 margin: .5em 0;
@@ -142,7 +142,7 @@
                 width: 100%;
                 color: #fff;
                 background: url("./../../img/event-sesstion@x2.png") bottom right no-repeat;
-                background-size: 350px;
+                background-size: contain;
 
                 h5 {
                     display: inline-block;

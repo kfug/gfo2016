@@ -49,6 +49,7 @@ html,body {
     }
 }//#hero-container
 
+
 #info-container {
     position: relative;
     padding: 1em 0;
@@ -81,6 +82,7 @@ html,body {
         }
     }
 }//#info-container
+
 
 #action-container {
     margin: 1.5em 0 ;
@@ -139,6 +141,7 @@ html,body {
     }
 } //#description-container
 
+
 #news-container {
     padding: 1em 0 2em;
     background: $clr-news;
@@ -149,3 +152,78 @@ html,body {
         @include en-ttl(1.2em);
     }
 }//#news-container
+
+#access-container {
+    padding: 1em 0 2em;
+    text-align: center;
+    .title {
+        @include en-ttl(1.2em);
+        line-height: 2em;
+        color: $clr-main;
+
+    }
+    .address-block {
+        text-align: left;
+        .btn-gmap {
+            display: inline-block;
+            padding: .3em .6em;
+            border: 1px solid $clr-main;
+
+            a {
+                &::before {
+                    margin-right: .4em;
+                    display: inline-block;
+                    content: "\f041";
+                    font-family: FontAwesome;
+                }
+            }
+        }
+    }
+}//#access-container
+#sponsor-container {
+    padding: 1em 0 3em;
+    text-align: center;
+    background: $clr-main;
+    color: #fff;
+
+    .title {
+        @include en-ttl(1.2em);
+    }
+    p {
+        margin: 2em 0;
+        span {
+            font-weight: bold;
+        }
+    }
+    .btn {
+        margin: .5em auto .5em;
+        padding: 2px 2px 8px;
+        display: inline-block;
+        min-width: 250px;
+        background: $clr-base;
+    }
+    a.sponsor-btn {
+        @include ac-btn($btn-01,$btn-01-s);
+        color: #fff;
+        text-align: center;
+        span {
+            display: inline-block;
+            width: 100%;
+            @include ac-btn-en($clr-base);
+            &::after {
+                @include ac-btn-line();
+            }
+        }
+    }
+}//#sponsor-container
+#staff-container {
+    padding: 1em 0 2em;
+    text-align: center;
+    .title {
+        @include en-ttl(1.2em);
+        line-height: 2em;
+        color: $clr-main;
+
+    }
+
+}
