@@ -6,7 +6,7 @@ html(lang="ja")
     title Grand Frontend Osaka 2016｜関西フロントエンドUG
     meta(name="description", content="今年も開催！大阪夏、フロントエンドの最先端を目指すWebの祭典、Grand Frontend Osaka 2016！")
     link(rel="canonical", href=".")
-    meta(name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1")
+    meta(name="viewport", content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no")
     link(href='https://fonts.googleapis.com/css?family=Orbitron:400', rel='stylesheet', type='text/css')
     link(rel="stylesheet", href="./assets/css/style.css")
     meta(property="og:title", content="Grand Frontend Osaka 2016｜関西フロントエンドUG")
@@ -19,48 +19,57 @@ html(lang="ja")
     meta(name="twitter:image", content="http://kfug.jp/gfo2016/img/ogp.png")
 
   body
-    .container
-      section#hero-container
-        img(src="")
-        h1.hero-logo
+
+    section#hero-container
+      .container
+        #logo-block
+          img#logo(src="./img/gfo_logo.png" width="80px" height="84px")
+        h1.title
           | GRAND FRONTEND OSAKA
           br
           | 2016
-        p フロントエンドの最先端イベント
+        p.subtitle フロントエンドの最先端イベント
 
-      section#info-container
+    section#info-container
+      .container
         p.date
           | 2016  /  8  /  27
-          span sat.
-          | 28
-          span sun.
+          span  sat.
+          |     28
+          span  sun.
 
-      section#action-container
-        a.sponsor-btn(href="http://goo.gl/forms/8Lk3RJChyu")
-          span SPONSOR
-          | スポンサー募集
-        a.staff-btn(href="http://goo.gl/forms/Os9lWuK3ZC" )
-          span SPEAKER
-          | 登壇者 募集
+    section#action-container
+      .container
+        .btn
+          a.sponsor-btn(href="http://goo.gl/forms/8Lk3RJChyu")
+            span SPONSOR
+            br
+            | スポンサー募集
+        .btn
+          a.speaker-btn(href="http://goo.gl/forms/Os9lWuK3ZC" )
+            span SPEAKER
+            | 登壇者 募集
 
-      section#description-container
-        h2 GRAND FRONTEND OSAKA 2016
-        p
+    section#description-container
+      .container
+        h2.title GRAND FRONTEND OSAKA
+          br
+          | 2016
+        p.description
           | Grand Frontend Osaka 2016は、関西フロントエンドUGの主催するIT系のコミュニティのイベントです。技術的な流れの早いフロントエンドの現場で、「最先端」をテーマにした尖ったスタイルのイベントをコンセプトに置いています。
           | 同団体で今年3月に開催したFRONTEND CONFERENCE 2016がフロントエンドの「今」を語るイベントだったのに対し、本イベントでは、フロントエンド界隈の「これから先」を見据えるイベントです。
 
-  include ./_news
+    include ./_news
 
-  #event-container
-    include ./_hackathon
+    #event-container
+      include ./_hackathon
+      include ./_session
 
-    include ./_session
+    include ./_access
 
-  include ./_access
+    include ./_sponsor
 
-  include ./_sponsor
-
-  include ./_staff
+   include ./_staff
 
 footer
   include ./_footer

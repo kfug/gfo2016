@@ -1,6 +1,151 @@
 @import "value";
-html {
-    background: $clr-main;
-    #event-container
+@import "mixin";
+@import "event";
+
+html,body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: $clr-base;
+    color: $clr-main;
+    font-size: 16px;
+    font-family: "Helvetica Neue", Helvetica,  'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', メイリオ, Meiryo, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
+
+    .container {
+        padding: 0 1.5em;
+        margin: 0 auto;
+    }
+
+    a {
+        text-decoration: none;
+        color: $clr-main;
+
+    }
 
 }
+
+
+
+#hero-container {
+    padding-bottom: 3em;
+    background: url("./../../img/hero@2x.png") bottom right no-repeat;
+    background-size: 680px;
+    #logo-block {
+        @include clearfix;
+        #logo {
+            float: right;
+            margin: 1em 0 -2.5em;
+        }
+    }
+    .title {
+        @include en-ttl(1.8em);
+        line-height: 1.3em;
+        color: $clr-main;
+    }
+
+    .subtitle {
+        font-weight: bold;
+        color: $clr-main;
+    }
+}//#hero-container
+
+#info-container {
+    position: relative;
+    padding: 1em 0;
+    text-align: center;
+    background: $clr-main;
+
+
+    //★背景斜め
+    //&::before {
+    //    content: "";
+    //    position: absolute;
+    //    top: 0;
+    //    left: 0;
+    //    width: 120%;
+    //    height: 80%;
+    //    margin: 3% -10% 0;
+    //    transform-origin: left center;
+    //    transform: rotate(3deg);
+    //    //z-index: -1;
+    //    background: red;
+    //
+    //}
+
+    p.date {
+        @include en-ttl(1.2em);
+        color: white;
+
+        span {
+            font-size: 0.7em;
+        }
+    }
+}//#info-container
+
+#action-container {
+    margin: 1.5em 0 ;
+    text-align: center;
+    .btn {
+        margin: .5em auto .5em;
+        display: inline-block;
+        min-width: 250px;
+    }
+    a.sponsor-btn {
+        @include ac-btn($btn-01,$btn-01-s);
+        color: #fff;
+        text-align: center;
+        span {
+            display: inline-block;
+            width: 100%;
+            @include ac-btn-en($clr-base);
+            &::after {
+                @include ac-btn-line();
+            }
+        }
+    }
+    a.speaker-btn {
+        @include ac-btn($btn-01,$btn-01-s);
+        color: #fff;
+        text-align: center;
+        span {
+            display: inline-block;
+            width: 100%;
+            @include ac-btn-en($clr-base);
+            &::after {
+                @include ac-btn-line();
+            }
+        }
+    }
+}//#action-container
+
+#description-container {
+    margin: 3em 0;
+    padding: 3em 0;
+    text-align: center;
+    background: rgba(255,255,255,.6);
+    .container {
+        background: url("./../../img/info-bg@2x.png") center no-repeat;
+        background-size: cover;
+    }
+
+    .title {
+        @include en-ttl(1.2em);
+        line-height: 2em;
+        color: $clr-main;
+    }
+    .description {
+        line-height: 1.8em;
+        color: $clr-main;
+    }
+} //#description-container
+
+#news-container {
+    padding: 1em 0 2em;
+    background: $clr-news;
+    text-align: center;
+    color: #fff;
+
+    .title {
+        @include en-ttl(1.2em);
+    }
+}//#news-container

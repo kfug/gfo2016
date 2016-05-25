@@ -3,3 +3,40 @@
   font-family: Orbitron;
   font-weight: bold;
 }
+
+@mixin clearfix {
+  &:after {
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+  }
+}
+
+ @mixin ac-btn($color,$color-shadow) {
+   display: block;
+   padding: .2em 0 .6em;
+   max-width: 250px;
+   text-align: center;
+   font-size: 1em;
+   font-weight: bold;
+   background: $color;
+   box-sizing: border-box;
+   box-shadow: 0 6px 0 $color-shadow;
+ }
+@mixin ac-btn-en($color) {
+  font-size: .7em;
+  font-family: Orbitron;
+  color: $color;
+
+}
+@mixin ac-btn-line($color:light) {
+  content:" ";
+  display: block;
+  background: url("./../../img/btn-line_#{$color}@x2.png") no-repeat;
+  min-width: 150px;
+  height: 15px;
+  background-size: 75%;
+  background-position: center;
+}
