@@ -37,8 +37,10 @@
         .booth-list {
             width: 100%;
             color: #fff;
-            background: url("./../../img/event-hackathon@x2.png") bottom right no-repeat;
-            background-size: contain;
+            .container {
+                background: url("./../../img/event-hackathon@x2.png") bottom right no-repeat;
+                background-size: contain;
+            }
 
             h5 {
                 display: inline-block;
@@ -54,12 +56,14 @@
                 width: 70%;
                 border-bottom: 1px solid #fff;
                 &::after {
-                    content: "●";
-                    font-size: 20px;
+                    content: " ";
+                    width: 10px;
+                    height: 10px;
                     position: absolute;
-                    top: -12px;
+                    top: -5px;
                     right: -5px;
-                    color: #fff;
+                    background: #fff;
+                    border-radius: 40px;
 
                 }
             }
@@ -150,14 +154,18 @@
             .session-list {
                 width: 100%;
                 color: #fff;
-                background: url("./../../img/event-sesstion@x2.png") bottom right no-repeat;
-                background-size: contain;
+                .container{
+                    background: url("./../../img/event-sesstion@x2.png") bottom right no-repeat;
+                    background-size: contain;
+                }
+
 
                 h5 {
                     display: inline-block;
                     font-size: 1em;
                     margin-bottom: -10px;
                     vertical-align : text-bottom;
+
                 }
                 span.line {
                     margin-left: 1em;
@@ -166,13 +174,14 @@
                     width: 60%;
                     border-bottom: 1px solid #fff;
                     &::after {
-                        content: "●";
-                        font-size: 20px;
+                        content: " ";
+                        width: 10px;
+                        height: 10px;
                         position: absolute;
-                        top: -12px;
+                        top: -5px;
                         right: -5px;
-                        color: #fff;
-
+                        background: #fff;
+                        border-radius: 40px;
                     }
                 }
                 ul {
