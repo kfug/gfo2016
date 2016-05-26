@@ -1,6 +1,7 @@
 @import "value";
 @import "mixin";
 @import "event";
+@import "footer";
 
 html,body {
     width: 100%;
@@ -151,6 +152,21 @@ html,body {
     .title {
         @include en-ttl(1.2em);
     }
+    p {
+        span.date {
+            margin-right: 1em;
+        }
+        span.badge {
+            margin-top: -2px;
+            margin-left: .5em;
+            padding: .2em .5em;
+            font-size: .7em;
+            color: $clr-main;
+            background: $clr-base;
+            border-radius: 2px;
+        }
+
+    }
 }//#news-container
 
 #access-container {
@@ -178,10 +194,50 @@ html,body {
                 }
             }
         }
+        dl.address {
+            dt {
+                margin-top: 1em;
+                font-weight: bold;
+                a {
+                    font-size: .8em;
+                    margin-left: .4em;
+                }
+            }
+            dd {
+                margin: 0;
+                margin-top: .8em;
+                padding: 0;
+                font-size: .8em;
+
+                span {
+                    font-weight: bold;
+                }
+            }
+        }
+        dl.train {
+            margin-top: 2em;
+            dt {
+                margin-bottom: .5em;
+                font-size: 1em;
+                a {
+                    margin-left: .4em;
+                }
+            }
+            dd {
+                margin: 0;
+                margin-left: 1em;
+                padding: .1em;
+                font-size: .8em;
+
+                span {
+                    font-weight: bold;
+                }
+            }
+        }
     }
 }//#access-container
 #sponsor-container {
-    padding: 1em 0 3em;
+    padding: 2em 0 4em;
     text-align: center;
     background: $clr-main;
     color: #fff;
@@ -190,6 +246,7 @@ html,body {
         @include en-ttl(1.2em);
     }
     p {
+        color: $clr-base;
         margin: 2em 0;
         span {
             font-weight: bold;
@@ -217,7 +274,7 @@ html,body {
     }
 }//#sponsor-container
 #staff-container {
-    padding: 1em 0 2em;
+    padding: 2em 0 4em;
     text-align: center;
     .title {
         @include en-ttl(1.2em);
@@ -225,5 +282,37 @@ html,body {
         color: $clr-main;
 
     }
+    ul {
+        padding: 0;
+        li {
+            margin: .5em 1em;
+            display: inline-block;
+            list-style: none;
 
-}
+            .staff {
+                .img-prof-block {
+                    position: relative;
+                    overflow: hidden;
+                    margin: 0;
+                    transform: rotate(45deg);
+                    width: 70px;
+                    height: 70px;
+                    .img-prof {
+                        width: 70px;
+                        height: 70px;
+                        position: absolute;
+                        transform: rotate(-45deg);
+                        background: url("./../../img/unknown@2x.png") center no-repeat;
+                        background-size: contain;
+                    }
+                }
+                span.name {
+                    font-size: .8em;
+
+                }
+            }
+        }
+
+    }
+
+}//#staff-container

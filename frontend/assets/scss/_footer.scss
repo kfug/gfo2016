@@ -1,0 +1,65 @@
+@import "value";
+@import "mixin";
+@import "event";
+
+#sns-container {
+  text-align: center;
+  .btn {
+    margin: .5em auto 2em;
+    display: inline-block;
+    min-width: 150px;
+  }
+  a.sns-tw-btn {
+    @include sns-btn($btn-tw,$btn-tw-s);
+    &::before {
+      margin-right: .3em;
+      display: inline-block;
+      content: "\f099";
+      font-size: 1.4em;
+      font-family: FontAwesome;
+      vertical-align: bottom;
+    }
+  }
+  a.sns-fb-btn {
+    @include sns-btn($btn-fb,$btn-fb-s);
+    &::before {
+      margin-right: .3em;
+      display: inline-block;
+      content: "\f09a";
+      font-size: 1.4em;
+      font-family: FontAwesome;
+      vertical-align: bottom;
+    }
+  }
+
+
+}
+
+#pagetop-block {
+  padding: .6em;
+  text-align: center;
+  background: $clr-main;
+  a {
+    @include en-ttl(1em);
+    color: #fff;
+    span {
+      margin: 0 .5em;
+      color: $clr-base;
+      font-size: 1.2em;
+    }
+  }
+}//#pagetop-block
+
+#footer-container {
+  padding: 2em 0 3em;
+  background: $clr-footer;
+  #kfug-logo-block {
+    text-align: center;
+  }
+  #contact-block {
+    color: #888;
+    a {
+      color: $clr-maker;
+    }
+  }
+}//#footer
