@@ -31,7 +31,23 @@
       vertical-align: bottom;
     }
   }
-
+  @include media {
+    padding: 0  0 2em;
+    .btn {
+      min-width: 230px;
+    }
+    a.sns-tw-btn {
+      margin-right: 1em;
+      &::before {
+        margin-right: 1em;
+      }
+    }
+    a.sns-fb-btn {
+      &::before {
+        margin-right: 1em;
+      }
+    }
+  }
 
 }
 
@@ -48,6 +64,16 @@
       font-size: 1.2em;
     }
   }
+  @include media {
+    a {
+      font-size: 1em;
+      span {
+        margin: 0 .5em;
+        color: $clr-base;
+        font-size: .8em;
+      }
+    }
+  }
 }//#pagetop-block
 
 #footer-container {
@@ -61,5 +87,13 @@
     a {
       color: $clr-maker;
     }
+  }
+  @include media {
+    @include clearfix;
+    #kfug-logo-block {
+      float: left;
+      width: 30%;
+    }
+
   }
 }//#footer

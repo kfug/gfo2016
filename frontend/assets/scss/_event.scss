@@ -33,6 +33,9 @@
                 margin-top: 1.3em;
                 @include en-ttl(1.4em);
             }
+            .container {
+                transform: skew(0deg, 0deg);
+            }
         }
         .booth-list {
             width: 100%;
@@ -116,6 +119,28 @@
                 }
             }
         }
+        @include media {
+            padding: 3em 0 7em;
+            .discription {
+                margin: 0;
+                padding: 0;
+                background: transparent;
+                .container {
+                    padding: .3em 1em 2em 2em;
+                    max-width: $container-pc;
+                    background: $clr-base;
+                    box-sizing: border-box;
+                    box-shadow: -600px 0 0 0 $clr-base;
+                }
+            }
+            .action-Block {
+                a.readmore-btn {
+                    margin-right: 1.5em;
+
+                }
+            }
+
+        }
     }//#hackathon-container
     #session-container {
             margin: 0 auto;
@@ -149,6 +174,9 @@
                     margin: 0;
                     margin-top: 1.3em;
                     @include en-ttl(1.4em);
+                }
+                .container {
+                    transform: skew(0deg, 0deg);
                 }
             }
             .session-list {
@@ -233,6 +261,27 @@
                     }
                 }
             }
+        @include media {
+            padding: 3em 0 7em;
+            .discription {
+                margin: 0;
+                padding: 0;
+                background: transparent;
+                .container {
+                    padding: .3em 1em 2em 2em;
+                    max-width: $container-pc;
+                    background: $clr-base;
+                    box-sizing: border-box;
+                    box-shadow: -600px 0 0 0 $clr-base;
+                }
+            }
+            .action-Block {
+                a.readmore-btn {
+                    margin-right: 1.5em;
+
+                }
+            }
+        }
         }//#session-container
 
 }//#event-container

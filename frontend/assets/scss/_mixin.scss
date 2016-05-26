@@ -1,7 +1,16 @@
+@mixin media {
+  @media screen and (min-width: $breakpoint-pc) {
+    @content;
+  }
+}
+
 @mixin en-ttl($size: 2em) {
   font-size: $size;
   font-family: Orbitron;
   font-weight: bold;
+  @include media {
+    font-size: 1.5em;
+  }
 }
 
 @mixin clearfix {
@@ -25,11 +34,20 @@
    background: $color;
    box-sizing: border-box;
    box-shadow: 0 6px 0 $color-shadow;
+   @include media {
+     padding: 1em 0 .6em;
+     min-width: 350px;
+     max-width: 350px;
+     font-weight: 100;
+   }
  }
 @mixin ac-btn-en($color) {
   font-size: .7em;
   font-family: Orbitron;
   color: $color;
+  @include media {
+    font-size: 1em;
+  }
 
 }
 @mixin ac-btn-line($color:light) {
@@ -53,3 +71,4 @@
   box-sizing: border-box;
   box-shadow: 0 3px 0 $color-shadow;
 }
+
