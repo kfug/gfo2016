@@ -1,8 +1,12 @@
 #event-container {
+    transform: skew(0deg, 4deg);
     #hackathon-container {
         margin: 0 auto;
         padding: 2em 0 3em;
         background: $clr-day1;
+        .container {
+            transform: skew(0deg, -4deg);
+        }
         h4.day-category {
             margin: .5em 0;
             border-bottom: 2px solid #3b526a;
@@ -20,6 +24,7 @@
 
         }
         .discription {
+            transform: skew(0deg, -4deg);
             margin-right: 1.5em;
             padding: .3em 1em 2em 2em;
             background: $clr-base;
@@ -112,6 +117,9 @@
             margin: 0 auto;
             padding: 2em 0 3em;
             background: $clr-day2;
+            .container {
+                transform: skew(0deg, -4deg);
+            }
             h4.day-category {
                 margin: .5em 0;
                 border-bottom: 2px solid #3b526a;
@@ -129,6 +137,7 @@
 
             }
             .discription {
+                transform: skew(0deg, -4deg);
                 margin-right: 1.5em;
                 padding: .3em 1em 2em 2em;
                 background: $clr-base;

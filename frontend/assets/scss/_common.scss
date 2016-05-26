@@ -28,7 +28,7 @@ html,body {
 
 
 #hero-container {
-    padding-bottom: 3em;
+    padding-bottom: 5em;
     background: url("./../../img/hero@2x.png") bottom right no-repeat;
     background-size: 680px;
     #logo-block {
@@ -52,27 +52,16 @@ html,body {
 
 
 #info-container {
+    margin-top: -1.5em;
     position: relative;
-    padding: 1em 0;
+    padding: 2em 0;
     text-align: center;
     background: $clr-main;
+    transform: skew(0deg, 4deg);
 
-
-    //★背景斜め
-    //&::before {
-    //    content: "";
-    //    position: absolute;
-    //    top: 0;
-    //    left: 0;
-    //    width: 120%;
-    //    height: 80%;
-    //    margin: 3% -10% 0;
-    //    transform-origin: left center;
-    //    transform: rotate(3deg);
-    //    //z-index: -1;
-    //    background: red;
-    //
-    //}
+    .container {
+        transform: skew(0deg, -4deg);
+    }
 
     p.date {
         @include en-ttl(1.2em);
@@ -122,11 +111,13 @@ html,body {
 }//#action-container
 
 #description-container {
+    transform: skew(0deg, 4deg);
     margin: 3em 0;
     padding: 3em 0;
     text-align: center;
     background: rgba(255,255,255,.6);
     .container {
+        transform: skew(0deg, -4deg);
         background: url("./../../img/info-bg@2x.png") center no-repeat;
         background-size: cover;
     }
@@ -144,10 +135,14 @@ html,body {
 
 
 #news-container {
+    transform: skew(0deg, 4deg);
     padding: 1em 0 2em;
     background: $clr-news;
     text-align: center;
     color: #fff;
+    .container {
+        transform: skew(0deg, -4deg);
+    }
 
     .title {
         @include en-ttl(1.2em);
@@ -237,11 +232,14 @@ html,body {
     }
 }//#access-container
 #sponsor-container {
+    transform: skew(0deg, 4deg);
     padding: 2em 0 4em;
     text-align: center;
     background: $clr-main;
     color: #fff;
-
+    .container {
+        transform: skew(0deg, -4deg);
+    }
     .title {
         @include en-ttl(1.2em);
     }
