@@ -45,8 +45,7 @@
 @mixin ac-btn-hover($color-shadow) {
     background: $color-shadow;
     box-shadow: 0 3px 0 $color-shadow;
-    -webkit-transform: translateY(3px);
-    transform: translateY(3px);
+    transform: translateY(2px);
 }
 
 @mixin ac-btn-en($color) {

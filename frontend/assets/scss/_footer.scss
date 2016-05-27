@@ -11,6 +11,7 @@
     cursor: pointer;
   }
   .sns-tw-btn {
+    margin-right: 1em;
     @include sns-btn($btn-tw,$btn-tw-s);
     &::before {
       margin-right: .3em;
@@ -116,4 +117,25 @@
     }
 
   }
-}//#footer
+}//#footer-container
+
+#credit-container {
+  background: #11274a;
+  .container {
+    text-align: center;
+
+    p {
+      color: $clr-main;
+      font-size: .9em;
+      display: inline-block;
+      a {
+        color: $btn-01;
+        margin-left: .8em;
+        &:hover {
+          color: $btn-01-s;
+        }
+      }
+    }
+
+  }
+}

@@ -104,9 +104,6 @@
                         @include ac-btn-line(dark);
                     }
                 }
-                &:hover {
-                    @include  ac-btn-hover($btn-02-s);
-                }
             }
             a.timetable-btn {
                 @include ac-btn($btn-03,$btn-03-s);
@@ -232,6 +229,41 @@
                             border-left-color: $clr-maker;
                         }
                     }
+
+                }
+                .btn-block {
+                    display: block;
+                    width: 100%;
+                    text-align: center;
+                }
+                .btn {
+                    margin: .5em auto .5em;
+                    padding: 2px 2px 8px;
+                    display: inline-block;
+                    min-width: 250px;
+                    background: $clr-base;
+                    &:hover {
+                        background: $clr-day2;
+                    }
+                }
+                a.speaker-btn {
+                    @include ac-btn($btn-01,$btn-01-s);
+                    color: #fff;
+                    text-align: center;
+                    span {
+                        display: inline-block;
+                        width: 100%;
+                        @include ac-btn-en($clr-base);
+                        &::after {
+                            @include ac-btn-line();
+                        }
+                    }
+                    &:hover {
+                        @include  ac-btn-hover($btn-01-s);
+                    }
+                }
+                @include media {
+                    padding: 3em 0 7em;
                 }
             }
             .action-Block {
