@@ -190,14 +190,11 @@
                     background: url("./../../img/event-sesstion@x2.png") bottom right no-repeat;
                     background-size: contain;
                 }
-
-
                 h5 {
                     display: inline-block;
                     font-size: 1em;
                     margin-bottom: -10px;
                     vertical-align : text-bottom;
-
                 }
                 span.line {
                     margin-left: 1em;
@@ -229,12 +226,19 @@
                             border-left-color: $clr-maker;
                         }
                     }
-
                 }
                 .btn-block {
                     display: block;
                     width: 100%;
                     text-align: center;
+                    p {
+                        span {
+                            font-weight: bold;
+                            font-size: 1.4em;
+                        }
+                        color: $clr-base;
+                        margin-bottom: 2em;
+                    }
                 }
                 .btn {
                     margin: .5em auto .5em;
@@ -263,7 +267,7 @@
                     }
                 }
                 @include media {
-                    padding: 3em 0 7em;
+                    padding: 3em 0 5em;
                 }
             }
             .action-Block {

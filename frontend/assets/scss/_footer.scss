@@ -12,6 +12,9 @@
   }
   .sns-tw-btn {
     margin-right: 1em;
+    a {
+      color: #fff;
+    }
     @include sns-btn($btn-tw,$btn-tw-s);
     &::before {
       margin-right: .3em;
@@ -24,12 +27,12 @@
     &:hover {
       @include  ac-btn-hover($btn-tw-s);
     }
-    .twitter-share-button {
-      display: none;
-    }
   }
   .sns-fb-btn {
     @include sns-btn($btn-fb,$btn-fb-s);
+    a {
+      color: #fff;
+    }
     &::before {
       margin-right: .3em;
       display: inline-block;
