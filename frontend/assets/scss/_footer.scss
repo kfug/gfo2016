@@ -12,17 +12,20 @@
   }
   .sns-tw-btn {
     margin-right: 1em;
-    a {
-      color: #fff;
-    }
     @include sns-btn($btn-tw,$btn-tw-s);
-    &::before {
-      margin-right: .3em;
-      display: inline-block;
-      content: "\f099";
-      font-size: 1.4em;
-      font-family: FontAwesome;
-      vertical-align: bottom;
+    a {
+      display: block;
+      color: #fff;
+      padding: .7em 0 .7em;
+      &::before {
+        margin-right: .3em;
+        display: inline-block;
+        content: "\f099";
+        font-size: 1.4em;
+        font-family: FontAwesome;
+        vertical-align: bottom;
+      }
+
     }
     &:hover {
       @include  ac-btn-hover($btn-tw-s);
@@ -31,15 +34,17 @@
   .sns-fb-btn {
     @include sns-btn($btn-fb,$btn-fb-s);
     a {
+      display: block;
       color: #fff;
-    }
-    &::before {
-      margin-right: .3em;
-      display: inline-block;
-      content: "\f09a";
-      font-size: 1.4em;
-      font-family: FontAwesome;
-      vertical-align: bottom;
+      padding: .7em 0 .7em;
+      &::before {
+        margin-right: .3em;
+        display: inline-block;
+        content: "\f09a";
+        font-size: 1.4em;
+        font-family: FontAwesome;
+        vertical-align: bottom;
+      }
     }
     &:hover {
       @include  ac-btn-hover($btn-fb-s);
