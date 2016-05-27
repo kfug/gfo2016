@@ -1,0 +1,1735 @@
+@charset "UTF-8";
+/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
+/**
+ * 1. Change the default font family in all browsers (opinionated).
+ * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ * 1. Add the correct display in Edge, IE, and Firefox.
+ * 2. Add the correct display in IE.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+menu,
+nav,
+section,
+summary {
+  /* 1 */
+  display: block; }
+
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block; }
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+ */
+progress {
+  vertical-align: baseline; }
+
+/**
+ * Add the correct display in IE 10-.
+ * 1. Add the correct display in IE.
+ */
+template,
+[hidden] {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * 1. Remove the gray background on active links in IE 10.
+ * 2. Remove gaps in links underline in iOS 8+ and Safari 8+.
+ */
+a {
+  background-color: transparent;
+  /* 1 */
+  -webkit-text-decoration-skip: objects;
+  /* 2 */ }
+
+/**
+ * Remove the outline on focused links when they are also active or hovered
+ * in all browsers (opinionated).
+ */
+a:active,
+a:hover {
+  outline-width: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * 1. Remove the bottom border in Firefox 39-.
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */ }
+
+/**
+ * Prevent the duplicate application of `bolder` by the next rule in Safari 6.
+ */
+b,
+strong {
+  font-weight: inherit; }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * Add the correct font style in Android 4.3-.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Add the correct background and color in IE 9-.
+ */
+mark {
+  background-color: #ff0;
+  color: #000; }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` elements from affecting the line height in
+ * all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10-.
+ */
+img {
+  border-style: none; }
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct margin in IE 8.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * 1. Add the correct box sizing in Firefox.
+ * 2. Show the overflow in Edge and IE.
+ */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change font properties to `inherit` in all browsers (opinionated).
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Restore the font weight unset by the previous rule.
+ */
+optgroup {
+  font-weight: bold; }
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible; }
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none; }
+
+/**
+ * 1. Prevent a WebKit bug where (2) destroys native `audio` and `video`
+ *    controls in Android 4.
+ * 2. Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+html [type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */ }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Change the border, margin, and padding in all browsers (opinionated).
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct the text wrapping in Edge and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ * 3. Remove the padding so developers are not caught out when they zero out
+ *    `fieldset` elements in all browsers.
+ */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */ }
+
+/**
+ * Remove the default vertical scrollbar in IE.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * 1. Add the correct box sizing in IE 10-.
+ * 2. Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Chrome.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding and cancel buttons in Chrome and Safari on OS X.
+ */
+[type="search"]::-webkit-search-cancel-button,
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Correct the text style of placeholders in Chrome, Edge, and Safari.
+ */
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+#event-container {
+  transform: skew(0deg, 4deg); }
+  #event-container #hackathon-container {
+    margin: 0 auto;
+    padding: 2em 0 3em;
+    background: #00abca; }
+    #event-container #hackathon-container .container {
+      transform: skew(0deg, -4deg); }
+    #event-container #hackathon-container h4.day-category {
+      margin: .5em 0;
+      border-bottom: 2px solid #3b526a; }
+      #event-container #hackathon-container h4.day-category .subtitle {
+        display: inline-block; }
+        #event-container #hackathon-container h4.day-category .subtitle img {
+          vertical-align: middle;
+          margin-right: 1.5em; }
+        #event-container #hackathon-container h4.day-category .subtitle span {
+          font-size: 1.2em;
+          color: #fff; }
+    #event-container #hackathon-container .discription {
+      transform: skew(0deg, -4deg);
+      margin-right: 1.5em;
+      padding: .3em 1em 2em 2em;
+      background: #fff114; }
+      #event-container #hackathon-container .discription h4.event-title {
+        margin: 0;
+        margin-top: 1.3em;
+        font-size: 1.4em;
+        font-family: Orbitron;
+        font-weight: bold; }
+        @media screen and (min-width: 800px) {
+          #event-container #hackathon-container .discription h4.event-title {
+            font-size: 1.5em; } }
+      #event-container #hackathon-container .discription .container {
+        transform: skew(0deg, 0deg); }
+    #event-container #hackathon-container .booth-list {
+      width: 100%;
+      color: #fff; }
+      #event-container #hackathon-container .booth-list .container {
+        background: url("./../../img/event-hackathon@x2.png") bottom right no-repeat;
+        background-size: contain; }
+      #event-container #hackathon-container .booth-list h5 {
+        display: inline-block;
+        font-size: 1em;
+        margin-bottom: -10px;
+        vertical-align: text-bottom;
+        background: #00abca; }
+      #event-container #hackathon-container .booth-list span.line {
+        margin-left: 1em;
+        position: relative;
+        display: inline-block;
+        width: 70%;
+        border-bottom: 1px solid #fff; }
+        #event-container #hackathon-container .booth-list span.line::after {
+          content: " ";
+          width: 10px;
+          height: 10px;
+          position: absolute;
+          top: -5px;
+          right: -5px;
+          background: #fff;
+          border-radius: 40px; }
+      #event-container #hackathon-container .booth-list ul {
+        padding: 1em; }
+        #event-container #hackathon-container .booth-list ul li {
+          margin-bottom: 1em;
+          list-style: none; }
+          #event-container #hackathon-container .booth-list ul li::before {
+            margin-right: .2em;
+            content: "";
+            display: inline-block;
+            border: 7px solid transparent;
+            border-left-color: #83e1ff; }
+    #event-container #hackathon-container .action-Block {
+      text-align: center; }
+      #event-container #hackathon-container .action-Block .btn {
+        margin: .5em auto 1em;
+        display: inline-block;
+        min-width: 250px; }
+      #event-container #hackathon-container .action-Block a.readmore-btn {
+        display: block;
+        padding: .2em 0 .6em;
+        max-width: 250px;
+        text-align: center;
+        font-size: 1em;
+        font-weight: bold;
+        background: #fff114;
+        box-sizing: border-box;
+        box-shadow: 0 6px 0 #aeb430;
+        color: #2656a3;
+        text-align: center; }
+        @media screen and (min-width: 800px) {
+          #event-container #hackathon-container .action-Block a.readmore-btn {
+            padding: 1em 0 .6em;
+            min-width: 350px;
+            max-width: 350px;
+            font-weight: 100; } }
+        #event-container #hackathon-container .action-Block a.readmore-btn span {
+          display: inline-block;
+          width: 100%;
+          font-size: .7em;
+          font-family: Orbitron;
+          color: #2091c7; }
+          @media screen and (min-width: 800px) {
+            #event-container #hackathon-container .action-Block a.readmore-btn span {
+              font-size: 1em; } }
+          #event-container #hackathon-container .action-Block a.readmore-btn span::after {
+            content: " ";
+            display: block;
+            background: url("./../../img/btn-line_dark@x2.png") no-repeat;
+            min-width: 150px;
+            height: 15px;
+            background-size: 75%;
+            background-position: center; }
+      #event-container #hackathon-container .action-Block a.timetable-btn {
+        display: block;
+        padding: .2em 0 .6em;
+        max-width: 250px;
+        text-align: center;
+        font-size: 1em;
+        font-weight: bold;
+        background: #174f88;
+        box-sizing: border-box;
+        box-shadow: 0 6px 0 #1b376f;
+        color: #fff;
+        text-align: center; }
+        @media screen and (min-width: 800px) {
+          #event-container #hackathon-container .action-Block a.timetable-btn {
+            padding: 1em 0 .6em;
+            min-width: 350px;
+            max-width: 350px;
+            font-weight: 100; } }
+        #event-container #hackathon-container .action-Block a.timetable-btn span {
+          display: inline-block;
+          width: 100%;
+          font-size: .7em;
+          font-family: Orbitron;
+          color: #fff114; }
+          @media screen and (min-width: 800px) {
+            #event-container #hackathon-container .action-Block a.timetable-btn span {
+              font-size: 1em; } }
+          #event-container #hackathon-container .action-Block a.timetable-btn span::after {
+            content: " ";
+            display: block;
+            background: url("./../../img/btn-line_light@x2.png") no-repeat;
+            min-width: 150px;
+            height: 15px;
+            background-size: 75%;
+            background-position: center; }
+        #event-container #hackathon-container .action-Block a.timetable-btn:hover {
+          background: #1b376f;
+          box-shadow: 0 3px 0 #1b376f;
+          transform: translateY(2px); }
+    @media screen and (min-width: 800px) {
+      #event-container #hackathon-container {
+        padding: 3em 0 7em; }
+        #event-container #hackathon-container .discription {
+          margin: 0;
+          padding: 0;
+          background: transparent; }
+          #event-container #hackathon-container .discription .container {
+            padding: .3em 1em 2em 2em;
+            max-width: 750px;
+            background: #fff114;
+            box-sizing: border-box;
+            box-shadow: -600px 0 0 0 #fff114; }
+        #event-container #hackathon-container .action-Block a.readmore-btn {
+          margin-right: 1.5em; } }
+  #event-container #session-container {
+    margin: 0 auto;
+    padding: 2em 0 3em;
+    background: #078ac8; }
+    #event-container #session-container .container {
+      transform: skew(0deg, -4deg); }
+    #event-container #session-container h4.day-category {
+      margin: .5em 0;
+      border-bottom: 2px solid #3b526a; }
+      #event-container #session-container h4.day-category .subtitle {
+        display: inline-block; }
+        #event-container #session-container h4.day-category .subtitle img {
+          vertical-align: middle;
+          margin-right: 1.5em; }
+        #event-container #session-container h4.day-category .subtitle span {
+          font-size: 1.2em;
+          color: #fff; }
+    #event-container #session-container .discription {
+      transform: skew(0deg, -4deg);
+      margin-right: 1.5em;
+      padding: .3em 1em 2em 2em;
+      background: #fff114; }
+      #event-container #session-container .discription h4.event-title {
+        margin: 0;
+        margin-top: 1.3em;
+        font-size: 1.4em;
+        font-family: Orbitron;
+        font-weight: bold; }
+        @media screen and (min-width: 800px) {
+          #event-container #session-container .discription h4.event-title {
+            font-size: 1.5em; } }
+      #event-container #session-container .discription .container {
+        transform: skew(0deg, 0deg); }
+    #event-container #session-container .session-list {
+      width: 100%;
+      color: #fff; }
+      #event-container #session-container .session-list .container {
+        background: url("./../../img/event-sesstion@x2.png") bottom right no-repeat;
+        background-size: contain; }
+      #event-container #session-container .session-list h5 {
+        display: inline-block;
+        font-size: 1em;
+        margin-bottom: -10px;
+        vertical-align: text-bottom; }
+      #event-container #session-container .session-list span.line {
+        margin-left: 1em;
+        position: relative;
+        display: inline-block;
+        width: 60%;
+        border-bottom: 1px solid #fff; }
+        #event-container #session-container .session-list span.line::after {
+          content: " ";
+          width: 10px;
+          height: 10px;
+          position: absolute;
+          top: -5px;
+          right: -5px;
+          background: #fff;
+          border-radius: 40px; }
+      #event-container #session-container .session-list ul {
+        padding: 1em; }
+        #event-container #session-container .session-list ul li {
+          margin-bottom: 1em;
+          list-style: none; }
+          #event-container #session-container .session-list ul li::before {
+            margin-right: .2em;
+            content: "";
+            display: inline-block;
+            border: 7px solid transparent;
+            border-left-color: #83e1ff; }
+      #event-container #session-container .session-list .btn-block {
+        display: block;
+        width: 100%;
+        text-align: center; }
+        #event-container #session-container .session-list .btn-block p {
+          color: #fff114;
+          margin-bottom: 2em; }
+          #event-container #session-container .session-list .btn-block p span {
+            font-weight: bold;
+            font-size: 1.4em; }
+      #event-container #session-container .session-list .btn {
+        margin: .5em auto .5em;
+        padding: 2px 2px 8px;
+        display: inline-block;
+        min-width: 250px;
+        background: #fff114; }
+        #event-container #session-container .session-list .btn:hover {
+          background: #078ac8; }
+      #event-container #session-container .session-list a.speaker-btn {
+        display: block;
+        padding: .2em 0 .6em;
+        max-width: 250px;
+        text-align: center;
+        font-size: 1em;
+        font-weight: bold;
+        background: #2091c7;
+        box-sizing: border-box;
+        box-shadow: 0 6px 0 #1d75a4;
+        color: #fff;
+        text-align: center; }
+        @media screen and (min-width: 800px) {
+          #event-container #session-container .session-list a.speaker-btn {
+            padding: 1em 0 .6em;
+            min-width: 350px;
+            max-width: 350px;
+            font-weight: 100; } }
+        #event-container #session-container .session-list a.speaker-btn span {
+          display: inline-block;
+          width: 100%;
+          font-size: .7em;
+          font-family: Orbitron;
+          color: #fff114; }
+          @media screen and (min-width: 800px) {
+            #event-container #session-container .session-list a.speaker-btn span {
+              font-size: 1em; } }
+          #event-container #session-container .session-list a.speaker-btn span::after {
+            content: " ";
+            display: block;
+            background: url("./../../img/btn-line_light@x2.png") no-repeat;
+            min-width: 150px;
+            height: 15px;
+            background-size: 75%;
+            background-position: center; }
+        #event-container #session-container .session-list a.speaker-btn:hover {
+          background: #1d75a4;
+          box-shadow: 0 3px 0 #1d75a4;
+          transform: translateY(2px); }
+      @media screen and (min-width: 800px) {
+        #event-container #session-container .session-list {
+          padding: 3em 0 5em; } }
+    #event-container #session-container .action-Block {
+      text-align: center; }
+      #event-container #session-container .action-Block .btn {
+        margin: .5em auto 1em;
+        display: inline-block;
+        min-width: 250px; }
+      #event-container #session-container .action-Block a.readmore-btn {
+        display: block;
+        padding: .2em 0 .6em;
+        max-width: 250px;
+        text-align: center;
+        font-size: 1em;
+        font-weight: bold;
+        background: #fff114;
+        box-sizing: border-box;
+        box-shadow: 0 6px 0 #aeb430;
+        color: #2656a3;
+        text-align: center; }
+        @media screen and (min-width: 800px) {
+          #event-container #session-container .action-Block a.readmore-btn {
+            padding: 1em 0 .6em;
+            min-width: 350px;
+            max-width: 350px;
+            font-weight: 100; } }
+        #event-container #session-container .action-Block a.readmore-btn span {
+          display: inline-block;
+          width: 100%;
+          font-size: .7em;
+          font-family: Orbitron;
+          color: #2091c7; }
+          @media screen and (min-width: 800px) {
+            #event-container #session-container .action-Block a.readmore-btn span {
+              font-size: 1em; } }
+          #event-container #session-container .action-Block a.readmore-btn span::after {
+            content: " ";
+            display: block;
+            background: url("./../../img/btn-line_dark@x2.png") no-repeat;
+            min-width: 150px;
+            height: 15px;
+            background-size: 75%;
+            background-position: center; }
+        #event-container #session-container .action-Block a.readmore-btn:hover {
+          background: #aeb430;
+          box-shadow: 0 3px 0 #aeb430;
+          transform: translateY(2px); }
+      #event-container #session-container .action-Block a.timetable-btn {
+        display: block;
+        padding: .2em 0 .6em;
+        max-width: 250px;
+        text-align: center;
+        font-size: 1em;
+        font-weight: bold;
+        background: #174f88;
+        box-sizing: border-box;
+        box-shadow: 0 6px 0 #1b376f;
+        color: #fff;
+        text-align: center; }
+        @media screen and (min-width: 800px) {
+          #event-container #session-container .action-Block a.timetable-btn {
+            padding: 1em 0 .6em;
+            min-width: 350px;
+            max-width: 350px;
+            font-weight: 100; } }
+        #event-container #session-container .action-Block a.timetable-btn span {
+          display: inline-block;
+          width: 100%;
+          font-size: .7em;
+          font-family: Orbitron;
+          color: #fff114; }
+          @media screen and (min-width: 800px) {
+            #event-container #session-container .action-Block a.timetable-btn span {
+              font-size: 1em; } }
+          #event-container #session-container .action-Block a.timetable-btn span::after {
+            content: " ";
+            display: block;
+            background: url("./../../img/btn-line_light@x2.png") no-repeat;
+            min-width: 150px;
+            height: 15px;
+            background-size: 75%;
+            background-position: center; }
+        #event-container #session-container .action-Block a.timetable-btn:hover {
+          background: #1b376f;
+          box-shadow: 0 3px 0 #1b376f;
+          transform: translateY(2px); }
+    @media screen and (min-width: 800px) {
+      #event-container #session-container {
+        padding: 3em 0 7em; }
+        #event-container #session-container .discription {
+          margin: 0;
+          padding: 0;
+          background: transparent; }
+          #event-container #session-container .discription .container {
+            padding: .3em 1em 2em 2em;
+            max-width: 750px;
+            background: #fff114;
+            box-sizing: border-box;
+            box-shadow: -600px 0 0 0 #fff114; }
+        #event-container #session-container .action-Block a.readmore-btn {
+          margin-right: 1.5em; } }
+
+#event-container {
+  transform: skew(0deg, 4deg); }
+  #event-container #hackathon-container {
+    margin: 0 auto;
+    padding: 2em 0 3em;
+    background: #00abca; }
+    #event-container #hackathon-container .container {
+      transform: skew(0deg, -4deg); }
+    #event-container #hackathon-container h4.day-category {
+      margin: .5em 0;
+      border-bottom: 2px solid #3b526a; }
+      #event-container #hackathon-container h4.day-category .subtitle {
+        display: inline-block; }
+        #event-container #hackathon-container h4.day-category .subtitle img {
+          vertical-align: middle;
+          margin-right: 1.5em; }
+        #event-container #hackathon-container h4.day-category .subtitle span {
+          font-size: 1.2em;
+          color: #fff; }
+    #event-container #hackathon-container .discription {
+      transform: skew(0deg, -4deg);
+      margin-right: 1.5em;
+      padding: .3em 1em 2em 2em;
+      background: #fff114; }
+      #event-container #hackathon-container .discription h4.event-title {
+        margin: 0;
+        margin-top: 1.3em;
+        font-size: 1.4em;
+        font-family: Orbitron;
+        font-weight: bold; }
+        @media screen and (min-width: 800px) {
+          #event-container #hackathon-container .discription h4.event-title {
+            font-size: 1.5em; } }
+      #event-container #hackathon-container .discription .container {
+        transform: skew(0deg, 0deg); }
+    #event-container #hackathon-container .booth-list {
+      width: 100%;
+      color: #fff; }
+      #event-container #hackathon-container .booth-list .container {
+        background: url("./../../img/event-hackathon@x2.png") bottom right no-repeat;
+        background-size: contain; }
+      #event-container #hackathon-container .booth-list h5 {
+        display: inline-block;
+        font-size: 1em;
+        margin-bottom: -10px;
+        vertical-align: text-bottom;
+        background: #00abca; }
+      #event-container #hackathon-container .booth-list span.line {
+        margin-left: 1em;
+        position: relative;
+        display: inline-block;
+        width: 70%;
+        border-bottom: 1px solid #fff; }
+        #event-container #hackathon-container .booth-list span.line::after {
+          content: " ";
+          width: 10px;
+          height: 10px;
+          position: absolute;
+          top: -5px;
+          right: -5px;
+          background: #fff;
+          border-radius: 40px; }
+      #event-container #hackathon-container .booth-list ul {
+        padding: 1em; }
+        #event-container #hackathon-container .booth-list ul li {
+          margin-bottom: 1em;
+          list-style: none; }
+          #event-container #hackathon-container .booth-list ul li::before {
+            margin-right: .2em;
+            content: "";
+            display: inline-block;
+            border: 7px solid transparent;
+            border-left-color: #83e1ff; }
+    #event-container #hackathon-container .action-Block {
+      text-align: center; }
+      #event-container #hackathon-container .action-Block .btn {
+        margin: .5em auto 1em;
+        display: inline-block;
+        min-width: 250px; }
+      #event-container #hackathon-container .action-Block a.readmore-btn {
+        display: block;
+        padding: .2em 0 .6em;
+        max-width: 250px;
+        text-align: center;
+        font-size: 1em;
+        font-weight: bold;
+        background: #fff114;
+        box-sizing: border-box;
+        box-shadow: 0 6px 0 #aeb430;
+        color: #2656a3;
+        text-align: center; }
+        @media screen and (min-width: 800px) {
+          #event-container #hackathon-container .action-Block a.readmore-btn {
+            padding: 1em 0 .6em;
+            min-width: 350px;
+            max-width: 350px;
+            font-weight: 100; } }
+        #event-container #hackathon-container .action-Block a.readmore-btn span {
+          display: inline-block;
+          width: 100%;
+          font-size: .7em;
+          font-family: Orbitron;
+          color: #2091c7; }
+          @media screen and (min-width: 800px) {
+            #event-container #hackathon-container .action-Block a.readmore-btn span {
+              font-size: 1em; } }
+          #event-container #hackathon-container .action-Block a.readmore-btn span::after {
+            content: " ";
+            display: block;
+            background: url("./../../img/btn-line_dark@x2.png") no-repeat;
+            min-width: 150px;
+            height: 15px;
+            background-size: 75%;
+            background-position: center; }
+      #event-container #hackathon-container .action-Block a.timetable-btn {
+        display: block;
+        padding: .2em 0 .6em;
+        max-width: 250px;
+        text-align: center;
+        font-size: 1em;
+        font-weight: bold;
+        background: #174f88;
+        box-sizing: border-box;
+        box-shadow: 0 6px 0 #1b376f;
+        color: #fff;
+        text-align: center; }
+        @media screen and (min-width: 800px) {
+          #event-container #hackathon-container .action-Block a.timetable-btn {
+            padding: 1em 0 .6em;
+            min-width: 350px;
+            max-width: 350px;
+            font-weight: 100; } }
+        #event-container #hackathon-container .action-Block a.timetable-btn span {
+          display: inline-block;
+          width: 100%;
+          font-size: .7em;
+          font-family: Orbitron;
+          color: #fff114; }
+          @media screen and (min-width: 800px) {
+            #event-container #hackathon-container .action-Block a.timetable-btn span {
+              font-size: 1em; } }
+          #event-container #hackathon-container .action-Block a.timetable-btn span::after {
+            content: " ";
+            display: block;
+            background: url("./../../img/btn-line_light@x2.png") no-repeat;
+            min-width: 150px;
+            height: 15px;
+            background-size: 75%;
+            background-position: center; }
+        #event-container #hackathon-container .action-Block a.timetable-btn:hover {
+          background: #1b376f;
+          box-shadow: 0 3px 0 #1b376f;
+          transform: translateY(2px); }
+    @media screen and (min-width: 800px) {
+      #event-container #hackathon-container {
+        padding: 3em 0 7em; }
+        #event-container #hackathon-container .discription {
+          margin: 0;
+          padding: 0;
+          background: transparent; }
+          #event-container #hackathon-container .discription .container {
+            padding: .3em 1em 2em 2em;
+            max-width: 750px;
+            background: #fff114;
+            box-sizing: border-box;
+            box-shadow: -600px 0 0 0 #fff114; }
+        #event-container #hackathon-container .action-Block a.readmore-btn {
+          margin-right: 1.5em; } }
+  #event-container #session-container {
+    margin: 0 auto;
+    padding: 2em 0 3em;
+    background: #078ac8; }
+    #event-container #session-container .container {
+      transform: skew(0deg, -4deg); }
+    #event-container #session-container h4.day-category {
+      margin: .5em 0;
+      border-bottom: 2px solid #3b526a; }
+      #event-container #session-container h4.day-category .subtitle {
+        display: inline-block; }
+        #event-container #session-container h4.day-category .subtitle img {
+          vertical-align: middle;
+          margin-right: 1.5em; }
+        #event-container #session-container h4.day-category .subtitle span {
+          font-size: 1.2em;
+          color: #fff; }
+    #event-container #session-container .discription {
+      transform: skew(0deg, -4deg);
+      margin-right: 1.5em;
+      padding: .3em 1em 2em 2em;
+      background: #fff114; }
+      #event-container #session-container .discription h4.event-title {
+        margin: 0;
+        margin-top: 1.3em;
+        font-size: 1.4em;
+        font-family: Orbitron;
+        font-weight: bold; }
+        @media screen and (min-width: 800px) {
+          #event-container #session-container .discription h4.event-title {
+            font-size: 1.5em; } }
+      #event-container #session-container .discription .container {
+        transform: skew(0deg, 0deg); }
+    #event-container #session-container .session-list {
+      width: 100%;
+      color: #fff; }
+      #event-container #session-container .session-list .container {
+        background: url("./../../img/event-sesstion@x2.png") bottom right no-repeat;
+        background-size: contain; }
+      #event-container #session-container .session-list h5 {
+        display: inline-block;
+        font-size: 1em;
+        margin-bottom: -10px;
+        vertical-align: text-bottom; }
+      #event-container #session-container .session-list span.line {
+        margin-left: 1em;
+        position: relative;
+        display: inline-block;
+        width: 60%;
+        border-bottom: 1px solid #fff; }
+        #event-container #session-container .session-list span.line::after {
+          content: " ";
+          width: 10px;
+          height: 10px;
+          position: absolute;
+          top: -5px;
+          right: -5px;
+          background: #fff;
+          border-radius: 40px; }
+      #event-container #session-container .session-list ul {
+        padding: 1em; }
+        #event-container #session-container .session-list ul li {
+          margin-bottom: 1em;
+          list-style: none; }
+          #event-container #session-container .session-list ul li::before {
+            margin-right: .2em;
+            content: "";
+            display: inline-block;
+            border: 7px solid transparent;
+            border-left-color: #83e1ff; }
+      #event-container #session-container .session-list .btn-block {
+        display: block;
+        width: 100%;
+        text-align: center; }
+        #event-container #session-container .session-list .btn-block p {
+          color: #fff114;
+          margin-bottom: 2em; }
+          #event-container #session-container .session-list .btn-block p span {
+            font-weight: bold;
+            font-size: 1.4em; }
+      #event-container #session-container .session-list .btn {
+        margin: .5em auto .5em;
+        padding: 2px 2px 8px;
+        display: inline-block;
+        min-width: 250px;
+        background: #fff114; }
+        #event-container #session-container .session-list .btn:hover {
+          background: #078ac8; }
+      #event-container #session-container .session-list a.speaker-btn {
+        display: block;
+        padding: .2em 0 .6em;
+        max-width: 250px;
+        text-align: center;
+        font-size: 1em;
+        font-weight: bold;
+        background: #2091c7;
+        box-sizing: border-box;
+        box-shadow: 0 6px 0 #1d75a4;
+        color: #fff;
+        text-align: center; }
+        @media screen and (min-width: 800px) {
+          #event-container #session-container .session-list a.speaker-btn {
+            padding: 1em 0 .6em;
+            min-width: 350px;
+            max-width: 350px;
+            font-weight: 100; } }
+        #event-container #session-container .session-list a.speaker-btn span {
+          display: inline-block;
+          width: 100%;
+          font-size: .7em;
+          font-family: Orbitron;
+          color: #fff114; }
+          @media screen and (min-width: 800px) {
+            #event-container #session-container .session-list a.speaker-btn span {
+              font-size: 1em; } }
+          #event-container #session-container .session-list a.speaker-btn span::after {
+            content: " ";
+            display: block;
+            background: url("./../../img/btn-line_light@x2.png") no-repeat;
+            min-width: 150px;
+            height: 15px;
+            background-size: 75%;
+            background-position: center; }
+        #event-container #session-container .session-list a.speaker-btn:hover {
+          background: #1d75a4;
+          box-shadow: 0 3px 0 #1d75a4;
+          transform: translateY(2px); }
+      @media screen and (min-width: 800px) {
+        #event-container #session-container .session-list {
+          padding: 3em 0 5em; } }
+    #event-container #session-container .action-Block {
+      text-align: center; }
+      #event-container #session-container .action-Block .btn {
+        margin: .5em auto 1em;
+        display: inline-block;
+        min-width: 250px; }
+      #event-container #session-container .action-Block a.readmore-btn {
+        display: block;
+        padding: .2em 0 .6em;
+        max-width: 250px;
+        text-align: center;
+        font-size: 1em;
+        font-weight: bold;
+        background: #fff114;
+        box-sizing: border-box;
+        box-shadow: 0 6px 0 #aeb430;
+        color: #2656a3;
+        text-align: center; }
+        @media screen and (min-width: 800px) {
+          #event-container #session-container .action-Block a.readmore-btn {
+            padding: 1em 0 .6em;
+            min-width: 350px;
+            max-width: 350px;
+            font-weight: 100; } }
+        #event-container #session-container .action-Block a.readmore-btn span {
+          display: inline-block;
+          width: 100%;
+          font-size: .7em;
+          font-family: Orbitron;
+          color: #2091c7; }
+          @media screen and (min-width: 800px) {
+            #event-container #session-container .action-Block a.readmore-btn span {
+              font-size: 1em; } }
+          #event-container #session-container .action-Block a.readmore-btn span::after {
+            content: " ";
+            display: block;
+            background: url("./../../img/btn-line_dark@x2.png") no-repeat;
+            min-width: 150px;
+            height: 15px;
+            background-size: 75%;
+            background-position: center; }
+        #event-container #session-container .action-Block a.readmore-btn:hover {
+          background: #aeb430;
+          box-shadow: 0 3px 0 #aeb430;
+          transform: translateY(2px); }
+      #event-container #session-container .action-Block a.timetable-btn {
+        display: block;
+        padding: .2em 0 .6em;
+        max-width: 250px;
+        text-align: center;
+        font-size: 1em;
+        font-weight: bold;
+        background: #174f88;
+        box-sizing: border-box;
+        box-shadow: 0 6px 0 #1b376f;
+        color: #fff;
+        text-align: center; }
+        @media screen and (min-width: 800px) {
+          #event-container #session-container .action-Block a.timetable-btn {
+            padding: 1em 0 .6em;
+            min-width: 350px;
+            max-width: 350px;
+            font-weight: 100; } }
+        #event-container #session-container .action-Block a.timetable-btn span {
+          display: inline-block;
+          width: 100%;
+          font-size: .7em;
+          font-family: Orbitron;
+          color: #fff114; }
+          @media screen and (min-width: 800px) {
+            #event-container #session-container .action-Block a.timetable-btn span {
+              font-size: 1em; } }
+          #event-container #session-container .action-Block a.timetable-btn span::after {
+            content: " ";
+            display: block;
+            background: url("./../../img/btn-line_light@x2.png") no-repeat;
+            min-width: 150px;
+            height: 15px;
+            background-size: 75%;
+            background-position: center; }
+        #event-container #session-container .action-Block a.timetable-btn:hover {
+          background: #1b376f;
+          box-shadow: 0 3px 0 #1b376f;
+          transform: translateY(2px); }
+    @media screen and (min-width: 800px) {
+      #event-container #session-container {
+        padding: 3em 0 7em; }
+        #event-container #session-container .discription {
+          margin: 0;
+          padding: 0;
+          background: transparent; }
+          #event-container #session-container .discription .container {
+            padding: .3em 1em 2em 2em;
+            max-width: 750px;
+            background: #fff114;
+            box-sizing: border-box;
+            box-shadow: -600px 0 0 0 #fff114; }
+        #event-container #session-container .action-Block a.readmore-btn {
+          margin-right: 1.5em; } }
+
+#sns-container {
+  text-align: center; }
+  #sns-container .btn {
+    margin: .5em auto 2em;
+    display: inline-block;
+    min-width: 150px;
+    cursor: pointer; }
+  #sns-container .sns-tw-btn {
+    margin-right: 1em;
+    color: #fff;
+    display: block;
+    max-width: 250px;
+    text-align: center;
+    font-size: .9em;
+    background: #50abf1;
+    box-sizing: border-box;
+    box-shadow: 0 3px 0 #4393d1; }
+    #sns-container .sns-tw-btn a {
+      display: block;
+      color: #fff;
+      padding: .7em 0 .7em; }
+      #sns-container .sns-tw-btn a::before {
+        margin-right: .3em;
+        display: inline-block;
+        content: "\f099";
+        font-size: 1.4em;
+        font-family: FontAwesome;
+        vertical-align: bottom; }
+    #sns-container .sns-tw-btn:hover {
+      background: #4393d1;
+      box-shadow: 0 3px 0 #4393d1;
+      transform: translateY(2px); }
+  #sns-container .sns-fb-btn {
+    color: #fff;
+    display: block;
+    max-width: 250px;
+    text-align: center;
+    font-size: .9em;
+    background: #30559c;
+    box-sizing: border-box;
+    box-shadow: 0 3px 0 #1c3c79; }
+    #sns-container .sns-fb-btn a {
+      display: block;
+      color: #fff;
+      padding: .7em 0 .7em; }
+      #sns-container .sns-fb-btn a::before {
+        margin-right: .3em;
+        display: inline-block;
+        content: "\f09a";
+        font-size: 1.4em;
+        font-family: FontAwesome;
+        vertical-align: bottom; }
+    #sns-container .sns-fb-btn:hover {
+      background: #1c3c79;
+      box-shadow: 0 3px 0 #1c3c79;
+      transform: translateY(2px); }
+  @media screen and (min-width: 800px) {
+    #sns-container {
+      padding: 0  0 2em; }
+      #sns-container .btn {
+        min-width: 230px; }
+      #sns-container a.sns-tw-btn {
+        margin-right: 1em; }
+        #sns-container a.sns-tw-btn::before {
+          margin-right: 1em; }
+      #sns-container a.sns-fb-btn::before {
+        margin-right: 1em; } }
+
+#pagetop-block {
+  padding: .6em;
+  text-align: center;
+  background: #2656a3; }
+  #pagetop-block a {
+    font-size: 1em;
+    font-family: Orbitron;
+    font-weight: bold;
+    color: #fff; }
+    @media screen and (min-width: 800px) {
+      #pagetop-block a {
+        font-size: 1.5em; } }
+    #pagetop-block a span {
+      margin: 0 .5em;
+      color: #fff114;
+      font-size: 1.2em; }
+    #pagetop-block a:hover {
+      color: #fff114; }
+      #pagetop-block a:hover span {
+        color: #83e1ff; }
+  @media screen and (min-width: 800px) {
+    #pagetop-block a {
+      font-size: 1em; }
+      #pagetop-block a span {
+        margin: 0 .5em;
+        color: #fff114;
+        font-size: .8em; } }
+
+#footer-container {
+  padding: 2em 0 3em;
+  background: #142e57; }
+  #footer-container #kfug-logo-block {
+    text-align: center; }
+  #footer-container #contact-block {
+    color: #888; }
+    #footer-container #contact-block a {
+      color: #83e1ff; }
+      #footer-container #contact-block a:hover {
+        color: #2656a3; }
+  @media screen and (min-width: 800px) {
+    #footer-container:after {
+      content: ".";
+      display: block;
+      clear: both;
+      height: 0;
+      visibility: hidden; }
+    #footer-container #kfug-logo-block {
+      float: left;
+      width: 30%; } }
+
+#credit-container {
+  background: #11274a; }
+  #credit-container .container {
+    text-align: center; }
+    #credit-container .container p {
+      color: #2656a3;
+      font-size: .9em;
+      display: inline-block; }
+      #credit-container .container p a {
+        color: #2091c7;
+        margin-left: .8em; }
+        #credit-container .container p a:hover {
+          color: #1d75a4; }
+
+html, body {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  background: #fff114;
+  color: #2656a3;
+  font-size: 16px;
+  font-family: "Helvetica Neue", Helvetica,  'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'モトヤフォント', 'Noto Sans CJK','メイリオ',' Meiryo', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif; }
+  html .container, body .container {
+    padding: 0 1.5em;
+    margin: 0 auto; }
+  html a, body a {
+    text-decoration: none;
+    color: #2656a3; }
+  @media screen and (min-width: 800px) {
+    html, body {
+      font-size: 18px; }
+      html .container, body .container {
+        max-width: 750px; } }
+
+p.pending {
+  font-family: Orbitron;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-align: center;
+  margin: 2em 0; }
+
+#hero-container {
+  padding-bottom: 5em;
+  background: url("./../../img/hero@2x.png") bottom right no-repeat;
+  background-size: 680px; }
+  #hero-container #logo-block:after {
+    content: ".";
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden; }
+  #hero-container #logo-block .logo-sp {
+    float: right;
+    margin: 1em 0 -2.5em; }
+  #hero-container #logo-block .logo-pc {
+    display: none; }
+  #hero-container .title {
+    font-size: 1.8em;
+    font-family: Orbitron;
+    font-weight: bold;
+    line-height: 1.3em;
+    color: #2656a3; }
+    @media screen and (min-width: 800px) {
+      #hero-container .title {
+        font-size: 1.5em; } }
+  #hero-container .subtitle {
+    font-weight: bold;
+    color: #2656a3; }
+  @media screen and (min-width: 800px) {
+    #hero-container {
+      height: 450px;
+      background-size: contain;
+      background-position: bottom; }
+      #hero-container .container {
+        text-align: center; }
+      #hero-container #logo-block:after {
+        content: ".";
+        display: block;
+        clear: both;
+        height: 0;
+        visibility: hidden; }
+      #hero-container #logo-block .logo-sp {
+        display: none; }
+      #hero-container #logo-block .logo-pc {
+        float: left;
+        display: inline-block;
+        margin: 1em 0 .3em; }
+      #hero-container .title {
+        font-size: 2.3em;
+        font-family: Orbitron;
+        font-weight: bold;
+        letter-spacing: 3px;
+        line-height: 1.5em;
+        color: #2656a3; } }
+
+#info-container {
+  margin-top: -1.5em;
+  position: relative;
+  padding: 2em 0;
+  text-align: center;
+  background: #2656a3;
+  transform: skew(0deg, 4deg); }
+  #info-container .container {
+    transform: skew(0deg, -4deg); }
+  #info-container p.date {
+    font-size: 1.2em;
+    font-family: Orbitron;
+    font-weight: bold;
+    color: white; }
+    @media screen and (min-width: 800px) {
+      #info-container p.date {
+        font-size: 1.5em; } }
+    #info-container p.date span {
+      font-size: 0.7em; }
+  @media screen and (min-width: 800px) {
+    #info-container {
+      margin-top: -2.5em; }
+      #info-container p.date {
+        font-size: 2em;
+        font-family: Orbitron;
+        font-weight: bold;
+        color: white; } }
+    @media screen and (min-width: 800px) and (min-width: 800px) {
+      #info-container p.date {
+        font-size: 1.5em; } }
+  @media screen and (min-width: 800px) {
+        #info-container p.date span {
+          font-size: 0.7em; } }
+
+#action-container {
+  margin: 1.5em 0;
+  text-align: center; }
+  #action-container .btn {
+    margin: .5em auto .5em;
+    display: inline-block;
+    min-width: 250px; }
+  #action-container a.sponsor-btn {
+    display: block;
+    padding: .2em 0 .6em;
+    max-width: 250px;
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    background: #2091c7;
+    box-sizing: border-box;
+    box-shadow: 0 6px 0 #1d75a4;
+    color: #fff;
+    text-align: center; }
+    @media screen and (min-width: 800px) {
+      #action-container a.sponsor-btn {
+        padding: 1em 0 .6em;
+        min-width: 350px;
+        max-width: 350px;
+        font-weight: 100; } }
+    #action-container a.sponsor-btn span {
+      display: inline-block;
+      width: 100%;
+      font-size: .7em;
+      font-family: Orbitron;
+      color: #fff114; }
+      @media screen and (min-width: 800px) {
+        #action-container a.sponsor-btn span {
+          font-size: 1em; } }
+      #action-container a.sponsor-btn span::after {
+        content: " ";
+        display: block;
+        background: url("./../../img/btn-line_light@x2.png") no-repeat;
+        min-width: 150px;
+        height: 15px;
+        background-size: 75%;
+        background-position: center; }
+    #action-container a.sponsor-btn:hover {
+      background: #1d75a4;
+      box-shadow: 0 3px 0 #1d75a4;
+      transform: translateY(2px); }
+  #action-container a.speaker-btn {
+    display: block;
+    padding: .2em 0 .6em;
+    max-width: 250px;
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    background: #2091c7;
+    box-sizing: border-box;
+    box-shadow: 0 6px 0 #1d75a4;
+    color: #fff;
+    text-align: center; }
+    @media screen and (min-width: 800px) {
+      #action-container a.speaker-btn {
+        padding: 1em 0 .6em;
+        min-width: 350px;
+        max-width: 350px;
+        font-weight: 100; } }
+    #action-container a.speaker-btn span {
+      display: inline-block;
+      width: 100%;
+      font-size: .7em;
+      font-family: Orbitron;
+      color: #fff114; }
+      @media screen and (min-width: 800px) {
+        #action-container a.speaker-btn span {
+          font-size: 1em; } }
+      #action-container a.speaker-btn span::after {
+        content: " ";
+        display: block;
+        background: url("./../../img/btn-line_light@x2.png") no-repeat;
+        min-width: 150px;
+        height: 15px;
+        background-size: 75%;
+        background-position: center; }
+    #action-container a.speaker-btn:hover {
+      background: #1d75a4;
+      box-shadow: 0 3px 0 #1d75a4;
+      transform: translateY(2px); }
+  @media screen and (min-width: 800px) {
+    #action-container {
+      margin: 3em 0 4em; }
+      #action-container a.sponsor-btn {
+        margin-right: 1.5em; } }
+
+#description-container {
+  transform: skew(0deg, 4deg);
+  margin: 3em 0;
+  padding: 3em 0;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.6); }
+  #description-container .container {
+    transform: skew(0deg, -4deg);
+    background: url("./../../img/info-bg@2x.png") center no-repeat;
+    background-size: cover; }
+  #description-container .title {
+    font-size: 1.2em;
+    font-family: Orbitron;
+    font-weight: bold;
+    line-height: 2em;
+    color: #2656a3; }
+    @media screen and (min-width: 800px) {
+      #description-container .title {
+        font-size: 1.5em; } }
+  #description-container .description {
+    line-height: 1.8em;
+    color: #2656a3; }
+
+#news-container {
+  transform: skew(0deg, 4deg);
+  padding: 1em 0 2em;
+  background: #174f88;
+  text-align: center;
+  color: #fff; }
+  #news-container .container {
+    transform: skew(0deg, -4deg); }
+  #news-container .title {
+    font-size: 1.2em;
+    font-family: Orbitron;
+    font-weight: bold; }
+    @media screen and (min-width: 800px) {
+      #news-container .title {
+        font-size: 1.5em; } }
+  #news-container p span.date {
+    margin-right: 1em; }
+  #news-container p span.badge {
+    margin-top: -2px;
+    margin-left: .5em;
+    padding: .2em .5em;
+    font-size: .7em;
+    color: #2656a3;
+    background: #fff114;
+    border-radius: 2px; }
+  @media screen and (min-width: 800px) {
+    #news-container {
+      padding: 3em 0 4em; } }
+
+#access-container {
+  padding: 1em 0 2em;
+  text-align: center; }
+  #access-container .title {
+    font-size: 1.2em;
+    font-family: Orbitron;
+    font-weight: bold;
+    line-height: 2em;
+    color: #2656a3; }
+    @media screen and (min-width: 800px) {
+      #access-container .title {
+        font-size: 1.5em; } }
+  #access-container #map-block {
+    margin-bottom: .5em;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    border: 10px solid #fff;
+    height: 0;
+    overflow: hidden; }
+    #access-container #map-block iframe, #access-container #map-block object, #access-container #map-block embed {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+  #access-container .address-block {
+    text-align: left; }
+    #access-container .address-block .btn-gmap {
+      display: inline-block;
+      border: 1px solid #2656a3; }
+      #access-container .address-block .btn-gmap a {
+        display: block;
+        padding: .3em .6em;
+        width: 100%; }
+        #access-container .address-block .btn-gmap a::before {
+          margin-right: .4em;
+          display: inline-block;
+          content: "\f041";
+          font-family: FontAwesome; }
+    #access-container .address-block dl.address dt {
+      margin-top: 1em;
+      font-weight: bold; }
+      #access-container .address-block dl.address dt a {
+        font-size: .8em;
+        margin-left: .4em; }
+    #access-container .address-block dl.address dd {
+      margin: 0;
+      margin-top: .8em;
+      padding: 0;
+      font-size: .8em; }
+      #access-container .address-block dl.address dd span {
+        font-weight: bold; }
+    #access-container .address-block dl.train {
+      margin-top: 2em; }
+      #access-container .address-block dl.train dt {
+        margin-bottom: .5em;
+        font-size: 1em; }
+        #access-container .address-block dl.train dt a {
+          margin-left: .4em; }
+      #access-container .address-block dl.train dd {
+        margin: 0;
+        margin-left: 1em;
+        padding: .1em;
+        font-size: .8em; }
+        #access-container .address-block dl.train dd span {
+          font-weight: bold; }
+  @media screen and (min-width: 800px) {
+    #access-container {
+      padding: 2em 0 7em; } }
+
+#sponsor-container {
+  transform: skew(0deg, 4deg);
+  padding: 2em 0 4em;
+  text-align: center;
+  background: #2656a3;
+  color: #fff; }
+  #sponsor-container .container {
+    transform: skew(0deg, -4deg); }
+  #sponsor-container .title {
+    font-size: 1.2em;
+    font-family: Orbitron;
+    font-weight: bold; }
+    @media screen and (min-width: 800px) {
+      #sponsor-container .title {
+        font-size: 1.5em; } }
+  #sponsor-container p {
+    color: #fff114;
+    margin: 2em 0; }
+    #sponsor-container p span {
+      font-size: 1.4em;
+      font-weight: bold; }
+  #sponsor-container .btn {
+    margin: .5em auto .5em;
+    padding: 2px 2px 8px;
+    display: inline-block;
+    min-width: 250px;
+    background: #fff114; }
+    #sponsor-container .btn:hover {
+      background: #2656a3; }
+  #sponsor-container a.sponsor-btn {
+    display: block;
+    padding: .2em 0 .6em;
+    max-width: 250px;
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    background: #2091c7;
+    box-sizing: border-box;
+    box-shadow: 0 6px 0 #1d75a4;
+    color: #fff;
+    text-align: center; }
+    @media screen and (min-width: 800px) {
+      #sponsor-container a.sponsor-btn {
+        padding: 1em 0 .6em;
+        min-width: 350px;
+        max-width: 350px;
+        font-weight: 100; } }
+    #sponsor-container a.sponsor-btn span {
+      display: inline-block;
+      width: 100%;
+      font-size: .7em;
+      font-family: Orbitron;
+      color: #fff114; }
+      @media screen and (min-width: 800px) {
+        #sponsor-container a.sponsor-btn span {
+          font-size: 1em; } }
+      #sponsor-container a.sponsor-btn span::after {
+        content: " ";
+        display: block;
+        background: url("./../../img/btn-line_light@x2.png") no-repeat;
+        min-width: 150px;
+        height: 15px;
+        background-size: 75%;
+        background-position: center; }
+    #sponsor-container a.sponsor-btn:hover {
+      background: #1d75a4;
+      box-shadow: 0 3px 0 #1d75a4;
+      transform: translateY(2px); }
+  @media screen and (min-width: 800px) {
+    #sponsor-container {
+      padding: 3em 0 7em; } }
+
+#staff-container {
+  padding: 2em 0 4em;
+  text-align: center; }
+  #staff-container .title {
+    font-size: 1.2em;
+    font-family: Orbitron;
+    font-weight: bold;
+    line-height: 2em;
+    color: #2656a3; }
+    @media screen and (min-width: 800px) {
+      #staff-container .title {
+        font-size: 1.5em; } }
+  #staff-container ul {
+    padding: 0; }
+    #staff-container ul li {
+      margin: .5em 1em;
+      display: inline-block;
+      list-style: none; }
+      #staff-container ul li .staff .img-prof-block {
+        position: relative;
+        overflow: hidden;
+        margin: 0;
+        transform: rotate(45deg);
+        width: 70px;
+        height: 70px; }
+        #staff-container ul li .staff .img-prof-block .img-prof {
+          width: 70px;
+          height: 70px;
+          position: absolute;
+          transform: rotate(-45deg);
+          background: url("./../../img/unknown@2x.png") center no-repeat;
+          background-size: contain; }
+      #staff-container ul li .staff span.name {
+        display: inline-block;
+        margin-top: .3em;
+        font-size: .8em; }
+  @media screen and (min-width: 800px) {
+    #staff-container {
+      padding: 2em 0 5em; } }
