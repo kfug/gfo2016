@@ -8,8 +8,9 @@
     margin: .5em auto 2em;
     display: inline-block;
     min-width: 150px;
+    cursor: pointer;
   }
-  a.sns-tw-btn {
+  .sns-tw-btn {
     @include sns-btn($btn-tw,$btn-tw-s);
     &::before {
       margin-right: .3em;
@@ -22,8 +23,11 @@
     &:hover {
       @include  ac-btn-hover($btn-tw-s);
     }
+    .twitter-share-button {
+      display: none;
+    }
   }
-  a.sns-fb-btn {
+  .sns-fb-btn {
     @include sns-btn($btn-fb,$btn-fb-s);
     &::before {
       margin-right: .3em;
