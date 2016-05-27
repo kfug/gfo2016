@@ -1,0 +1,2 @@
+!function(t){function o(n){if(r[n])return r[n].exports;var e=r[n]={exports:{},id:n,loaded:!1};return t[n].call(e.exports,e,e.exports,o),e.loaded=!0,e.exports}var r={};return o.m=t,o.c=r,o.p="",o(0)}([function(t,o){"use strict";$(function(){$("#pagetop-block").click(function(){$("body, html").animate({scrollTop:0},500)})})}]);
+//# sourceMappingURL=common.bundle.js.map
