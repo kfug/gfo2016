@@ -41,6 +41,14 @@
      font-weight: 100;
    }
  }
+
+@mixin ac-btn-hover($color-shadow) {
+    background: $color-shadow;
+    box-shadow: 0 3px 0 $color-shadow;
+    -webkit-transform: translateY(3px);
+    transform: translateY(3px);
+}
+
 @mixin ac-btn-en($color) {
   font-size: .7em;
   font-family: Orbitron;

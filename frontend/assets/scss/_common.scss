@@ -143,6 +143,9 @@ html,body {
                 @include ac-btn-line;
             }
         }
+        &:hover {
+            @include  ac-btn-hover($btn-01-s);
+        }
     }
     a.speaker-btn {
         @include ac-btn($btn-01,$btn-01-s);
@@ -155,6 +158,9 @@ html,body {
             &::after {
                 @include ac-btn-line();
             }
+        }
+        &:hover {
+            @include  ac-btn-hover($btn-01-s);
         }
     }
     @include media {
@@ -230,6 +236,21 @@ html,body {
         line-height: 2em;
         color: $clr-main;
 
+    }
+    #map-block {
+        margin-bottom: .5em;
+        position: relative;
+        padding-bottom: 56.25%;
+        padding-top: 30px;
+        height: 0;
+        overflow: hidden;
+        iframe, object, embed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
     }
     .address-block {
         text-align: left;
@@ -317,6 +338,9 @@ html,body {
         display: inline-block;
         min-width: 250px;
         background: $clr-base;
+        &:hover {
+            background: $clr-main;
+        }
     }
     a.sponsor-btn {
         @include ac-btn($btn-01,$btn-01-s);
@@ -329,6 +353,9 @@ html,body {
             &::after {
                 @include ac-btn-line();
             }
+        }
+        &:hover {
+            @include  ac-btn-hover($btn-01-s);
         }
     }
     @include media {

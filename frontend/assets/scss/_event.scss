@@ -104,6 +104,9 @@
                         @include ac-btn-line(dark);
                     }
                 }
+                &:hover {
+                    @include  ac-btn-hover($btn-02-s);
+                }
             }
             a.timetable-btn {
                 @include ac-btn($btn-03,$btn-03-s);
@@ -117,6 +120,10 @@
                         @include ac-btn-line();
                     }
                 }
+                &:hover {
+                    @include  ac-btn-hover($btn-03-s);
+                }
+
             }
         }
         @include media {
@@ -246,6 +253,9 @@
                             @include ac-btn-line(dark);
                         }
                     }
+                    &:hover {
+                        @include  ac-btn-hover($btn-02-s);
+                    }
                 }
                 a.timetable-btn {
                     @include ac-btn($btn-03,$btn-03-s);
@@ -258,6 +268,9 @@
                         &::after {
                             @include ac-btn-line();
                         }
+                    }
+                    &:hover {
+                        @include  ac-btn-hover($btn-03-s);
                     }
                 }
             }

@@ -19,6 +19,9 @@
       font-family: FontAwesome;
       vertical-align: bottom;
     }
+    &:hover {
+      @include  ac-btn-hover($btn-tw-s);
+    }
   }
   a.sns-fb-btn {
     @include sns-btn($btn-fb,$btn-fb-s);
@@ -29,6 +32,9 @@
       font-size: 1.4em;
       font-family: FontAwesome;
       vertical-align: bottom;
+    }
+    &:hover {
+      @include  ac-btn-hover($btn-fb-s);
     }
   }
   @include media {
@@ -63,6 +69,13 @@
       color: $clr-base;
       font-size: 1.2em;
     }
+    &:hover {
+      color: $clr-base;
+      span {
+        color: $clr-maker;
+      }
+
+    }
   }
   @include media {
     a {
@@ -86,6 +99,9 @@
     color: #888;
     a {
       color: $clr-maker;
+      &:hover {
+        color: $clr-main;
+      }
     }
   }
   @include media {
