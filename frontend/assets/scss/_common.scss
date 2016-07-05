@@ -374,6 +374,24 @@ p.pending{
     @include media {
         padding: 3em 0 7em;
     }
+    .gold {
+        li {
+            display: inline-block;
+            a{
+                display: block;
+                margin: 10px;
+                padding: 10px;
+                width: 250px;
+                height: 100px;
+                background: #fff;
+                img {
+                    height: 100%;
+                }
+            }
+        }
+
+    }
+
 }//#sponsor-container
 #staff-container {
     padding: 2em 0 4em;

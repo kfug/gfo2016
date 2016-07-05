@@ -444,7 +444,7 @@ textarea {
         margin: .5em auto 1em;
         display: inline-block;
         min-width: 250px; }
-      #event-container #hackathon-container .action-Block a.readmore-btn {
+      #event-container #hackathon-container .action-Block a.entry-btn {
         display: block;
         padding: .2em 0 .6em;
         max-width: 250px;
@@ -457,21 +457,21 @@ textarea {
         color: #2656a3;
         text-align: center; }
         @media screen and (min-width: 800px) {
-          #event-container #hackathon-container .action-Block a.readmore-btn {
+          #event-container #hackathon-container .action-Block a.entry-btn {
             padding: 1em 0 .6em;
             min-width: 350px;
             max-width: 350px;
             font-weight: 100; } }
-        #event-container #hackathon-container .action-Block a.readmore-btn span {
+        #event-container #hackathon-container .action-Block a.entry-btn span {
           display: inline-block;
           width: 100%;
           font-size: .7em;
           font-family: Orbitron;
           color: #2091c7; }
           @media screen and (min-width: 800px) {
-            #event-container #hackathon-container .action-Block a.readmore-btn span {
+            #event-container #hackathon-container .action-Block a.entry-btn span {
               font-size: 1em; } }
-          #event-container #hackathon-container .action-Block a.readmore-btn span::after {
+          #event-container #hackathon-container .action-Block a.entry-btn span::after {
             content: " ";
             display: block;
             background: url("./../../img/btn-line_dark@x2.png") no-repeat;
@@ -479,7 +479,11 @@ textarea {
             height: 15px;
             background-size: 75%;
             background-position: center; }
-      #event-container #hackathon-container .action-Block a.timetable-btn {
+        #event-container #hackathon-container .action-Block a.entry-btn:hover {
+          background: #aeb430;
+          box-shadow: 0 3px 0 #aeb430;
+          transform: translateY(2px); }
+      #event-container #hackathon-container .action-Block a.readmore-btn {
         display: block;
         padding: .2em 0 .6em;
         max-width: 250px;
@@ -492,21 +496,21 @@ textarea {
         color: #fff;
         text-align: center; }
         @media screen and (min-width: 800px) {
-          #event-container #hackathon-container .action-Block a.timetable-btn {
+          #event-container #hackathon-container .action-Block a.readmore-btn {
             padding: 1em 0 .6em;
             min-width: 350px;
             max-width: 350px;
             font-weight: 100; } }
-        #event-container #hackathon-container .action-Block a.timetable-btn span {
+        #event-container #hackathon-container .action-Block a.readmore-btn span {
           display: inline-block;
           width: 100%;
           font-size: .7em;
           font-family: Orbitron;
           color: #fff114; }
           @media screen and (min-width: 800px) {
-            #event-container #hackathon-container .action-Block a.timetable-btn span {
+            #event-container #hackathon-container .action-Block a.readmore-btn span {
               font-size: 1em; } }
-          #event-container #hackathon-container .action-Block a.timetable-btn span::after {
+          #event-container #hackathon-container .action-Block a.readmore-btn span::after {
             content: " ";
             display: block;
             background: url("./../../img/btn-line_light@x2.png") no-repeat;
@@ -514,7 +518,7 @@ textarea {
             height: 15px;
             background-size: 75%;
             background-position: center; }
-        #event-container #hackathon-container .action-Block a.timetable-btn:hover {
+        #event-container #hackathon-container .action-Block a.readmore-btn:hover {
           background: #1b376f;
           box-shadow: 0 3px 0 #1b376f;
           transform: translateY(2px); }
@@ -669,7 +673,7 @@ textarea {
         margin: .5em auto 1em;
         display: inline-block;
         min-width: 250px; }
-      #event-container #session-container .action-Block a.readmore-btn {
+      #event-container #session-container .action-Block a.entry-btn {
         display: block;
         padding: .2em 0 .6em;
         max-width: 250px;
@@ -682,21 +686,21 @@ textarea {
         color: #2656a3;
         text-align: center; }
         @media screen and (min-width: 800px) {
-          #event-container #session-container .action-Block a.readmore-btn {
+          #event-container #session-container .action-Block a.entry-btn {
             padding: 1em 0 .6em;
             min-width: 350px;
             max-width: 350px;
             font-weight: 100; } }
-        #event-container #session-container .action-Block a.readmore-btn span {
+        #event-container #session-container .action-Block a.entry-btn span {
           display: inline-block;
           width: 100%;
           font-size: .7em;
           font-family: Orbitron;
           color: #2091c7; }
           @media screen and (min-width: 800px) {
-            #event-container #session-container .action-Block a.readmore-btn span {
+            #event-container #session-container .action-Block a.entry-btn span {
               font-size: 1em; } }
-          #event-container #session-container .action-Block a.readmore-btn span::after {
+          #event-container #session-container .action-Block a.entry-btn span::after {
             content: " ";
             display: block;
             background: url("./../../img/btn-line_dark@x2.png") no-repeat;
@@ -704,11 +708,11 @@ textarea {
             height: 15px;
             background-size: 75%;
             background-position: center; }
-        #event-container #session-container .action-Block a.readmore-btn:hover {
+        #event-container #session-container .action-Block a.entry-btn:hover {
           background: #aeb430;
           box-shadow: 0 3px 0 #aeb430;
           transform: translateY(2px); }
-      #event-container #session-container .action-Block a.timetable-btn {
+      #event-container #session-container .action-Block a.readmore-btn {
         display: block;
         padding: .2em 0 .6em;
         max-width: 250px;
@@ -721,21 +725,21 @@ textarea {
         color: #fff;
         text-align: center; }
         @media screen and (min-width: 800px) {
-          #event-container #session-container .action-Block a.timetable-btn {
+          #event-container #session-container .action-Block a.readmore-btn {
             padding: 1em 0 .6em;
             min-width: 350px;
             max-width: 350px;
             font-weight: 100; } }
-        #event-container #session-container .action-Block a.timetable-btn span {
+        #event-container #session-container .action-Block a.readmore-btn span {
           display: inline-block;
           width: 100%;
           font-size: .7em;
           font-family: Orbitron;
           color: #fff114; }
           @media screen and (min-width: 800px) {
-            #event-container #session-container .action-Block a.timetable-btn span {
+            #event-container #session-container .action-Block a.readmore-btn span {
               font-size: 1em; } }
-          #event-container #session-container .action-Block a.timetable-btn span::after {
+          #event-container #session-container .action-Block a.readmore-btn span::after {
             content: " ";
             display: block;
             background: url("./../../img/btn-line_light@x2.png") no-repeat;
@@ -743,7 +747,7 @@ textarea {
             height: 15px;
             background-size: 75%;
             background-position: center; }
-        #event-container #session-container .action-Block a.timetable-btn:hover {
+        #event-container #session-container .action-Block a.readmore-btn:hover {
           background: #1b376f;
           box-shadow: 0 3px 0 #1b376f;
           transform: translateY(2px); }
@@ -842,7 +846,7 @@ textarea {
         margin: .5em auto 1em;
         display: inline-block;
         min-width: 250px; }
-      #event-container #hackathon-container .action-Block a.readmore-btn {
+      #event-container #hackathon-container .action-Block a.entry-btn {
         display: block;
         padding: .2em 0 .6em;
         max-width: 250px;
@@ -855,21 +859,21 @@ textarea {
         color: #2656a3;
         text-align: center; }
         @media screen and (min-width: 800px) {
-          #event-container #hackathon-container .action-Block a.readmore-btn {
+          #event-container #hackathon-container .action-Block a.entry-btn {
             padding: 1em 0 .6em;
             min-width: 350px;
             max-width: 350px;
             font-weight: 100; } }
-        #event-container #hackathon-container .action-Block a.readmore-btn span {
+        #event-container #hackathon-container .action-Block a.entry-btn span {
           display: inline-block;
           width: 100%;
           font-size: .7em;
           font-family: Orbitron;
           color: #2091c7; }
           @media screen and (min-width: 800px) {
-            #event-container #hackathon-container .action-Block a.readmore-btn span {
+            #event-container #hackathon-container .action-Block a.entry-btn span {
               font-size: 1em; } }
-          #event-container #hackathon-container .action-Block a.readmore-btn span::after {
+          #event-container #hackathon-container .action-Block a.entry-btn span::after {
             content: " ";
             display: block;
             background: url("./../../img/btn-line_dark@x2.png") no-repeat;
@@ -877,7 +881,11 @@ textarea {
             height: 15px;
             background-size: 75%;
             background-position: center; }
-      #event-container #hackathon-container .action-Block a.timetable-btn {
+        #event-container #hackathon-container .action-Block a.entry-btn:hover {
+          background: #aeb430;
+          box-shadow: 0 3px 0 #aeb430;
+          transform: translateY(2px); }
+      #event-container #hackathon-container .action-Block a.readmore-btn {
         display: block;
         padding: .2em 0 .6em;
         max-width: 250px;
@@ -890,21 +898,21 @@ textarea {
         color: #fff;
         text-align: center; }
         @media screen and (min-width: 800px) {
-          #event-container #hackathon-container .action-Block a.timetable-btn {
+          #event-container #hackathon-container .action-Block a.readmore-btn {
             padding: 1em 0 .6em;
             min-width: 350px;
             max-width: 350px;
             font-weight: 100; } }
-        #event-container #hackathon-container .action-Block a.timetable-btn span {
+        #event-container #hackathon-container .action-Block a.readmore-btn span {
           display: inline-block;
           width: 100%;
           font-size: .7em;
           font-family: Orbitron;
           color: #fff114; }
           @media screen and (min-width: 800px) {
-            #event-container #hackathon-container .action-Block a.timetable-btn span {
+            #event-container #hackathon-container .action-Block a.readmore-btn span {
               font-size: 1em; } }
-          #event-container #hackathon-container .action-Block a.timetable-btn span::after {
+          #event-container #hackathon-container .action-Block a.readmore-btn span::after {
             content: " ";
             display: block;
             background: url("./../../img/btn-line_light@x2.png") no-repeat;
@@ -912,7 +920,7 @@ textarea {
             height: 15px;
             background-size: 75%;
             background-position: center; }
-        #event-container #hackathon-container .action-Block a.timetable-btn:hover {
+        #event-container #hackathon-container .action-Block a.readmore-btn:hover {
           background: #1b376f;
           box-shadow: 0 3px 0 #1b376f;
           transform: translateY(2px); }
@@ -1067,7 +1075,7 @@ textarea {
         margin: .5em auto 1em;
         display: inline-block;
         min-width: 250px; }
-      #event-container #session-container .action-Block a.readmore-btn {
+      #event-container #session-container .action-Block a.entry-btn {
         display: block;
         padding: .2em 0 .6em;
         max-width: 250px;
@@ -1080,21 +1088,21 @@ textarea {
         color: #2656a3;
         text-align: center; }
         @media screen and (min-width: 800px) {
-          #event-container #session-container .action-Block a.readmore-btn {
+          #event-container #session-container .action-Block a.entry-btn {
             padding: 1em 0 .6em;
             min-width: 350px;
             max-width: 350px;
             font-weight: 100; } }
-        #event-container #session-container .action-Block a.readmore-btn span {
+        #event-container #session-container .action-Block a.entry-btn span {
           display: inline-block;
           width: 100%;
           font-size: .7em;
           font-family: Orbitron;
           color: #2091c7; }
           @media screen and (min-width: 800px) {
-            #event-container #session-container .action-Block a.readmore-btn span {
+            #event-container #session-container .action-Block a.entry-btn span {
               font-size: 1em; } }
-          #event-container #session-container .action-Block a.readmore-btn span::after {
+          #event-container #session-container .action-Block a.entry-btn span::after {
             content: " ";
             display: block;
             background: url("./../../img/btn-line_dark@x2.png") no-repeat;
@@ -1102,11 +1110,11 @@ textarea {
             height: 15px;
             background-size: 75%;
             background-position: center; }
-        #event-container #session-container .action-Block a.readmore-btn:hover {
+        #event-container #session-container .action-Block a.entry-btn:hover {
           background: #aeb430;
           box-shadow: 0 3px 0 #aeb430;
           transform: translateY(2px); }
-      #event-container #session-container .action-Block a.timetable-btn {
+      #event-container #session-container .action-Block a.readmore-btn {
         display: block;
         padding: .2em 0 .6em;
         max-width: 250px;
@@ -1119,21 +1127,21 @@ textarea {
         color: #fff;
         text-align: center; }
         @media screen and (min-width: 800px) {
-          #event-container #session-container .action-Block a.timetable-btn {
+          #event-container #session-container .action-Block a.readmore-btn {
             padding: 1em 0 .6em;
             min-width: 350px;
             max-width: 350px;
             font-weight: 100; } }
-        #event-container #session-container .action-Block a.timetable-btn span {
+        #event-container #session-container .action-Block a.readmore-btn span {
           display: inline-block;
           width: 100%;
           font-size: .7em;
           font-family: Orbitron;
           color: #fff114; }
           @media screen and (min-width: 800px) {
-            #event-container #session-container .action-Block a.timetable-btn span {
+            #event-container #session-container .action-Block a.readmore-btn span {
               font-size: 1em; } }
-          #event-container #session-container .action-Block a.timetable-btn span::after {
+          #event-container #session-container .action-Block a.readmore-btn span::after {
             content: " ";
             display: block;
             background: url("./../../img/btn-line_light@x2.png") no-repeat;
@@ -1141,7 +1149,7 @@ textarea {
             height: 15px;
             background-size: 75%;
             background-position: center; }
-        #event-container #session-container .action-Block a.timetable-btn:hover {
+        #event-container #session-container .action-Block a.readmore-btn:hover {
           background: #1b376f;
           box-shadow: 0 3px 0 #1b376f;
           transform: translateY(2px); }
@@ -1693,6 +1701,17 @@ p.pending {
   @media screen and (min-width: 800px) {
     #sponsor-container {
       padding: 3em 0 7em; } }
+  #sponsor-container .gold li {
+    display: inline-block; }
+    #sponsor-container .gold li a {
+      display: block;
+      margin: 10px;
+      padding: 10px;
+      width: 250px;
+      height: 100px;
+      background: #fff; }
+      #sponsor-container .gold li a img {
+        height: 100%; }
 
 #staff-container {
   padding: 2em 0 4em;

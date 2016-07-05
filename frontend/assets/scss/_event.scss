@@ -92,7 +92,7 @@
                 display: inline-block;
                 min-width: 250px;
             }
-            a.readmore-btn {
+            a.entry-btn {
                 @include ac-btn($btn-02,$btn-02-s);
                 color: $clr-main;
                 text-align: center;
@@ -104,8 +104,12 @@
                         @include ac-btn-line(dark);
                     }
                 }
+                &:hover {
+                    @include  ac-btn-hover($btn-02-s);
+                }
+
             }
-            a.timetable-btn {
+            a.readmore-btn {
                 @include ac-btn($btn-03,$btn-03-s);
                 color: #fff;
                 text-align: center;
@@ -277,7 +281,7 @@
                     display: inline-block;
                     min-width: 250px;
                 }
-                a.readmore-btn {
+                a.entry-btn {
                     @include ac-btn($btn-02,$btn-02-s);
                     color: $clr-main;
                     text-align: center;
@@ -292,8 +296,9 @@
                     &:hover {
                         @include  ac-btn-hover($btn-02-s);
                     }
+
                 }
-                a.timetable-btn {
+                a.readmore-btn {
                     @include ac-btn($btn-03,$btn-03-s);
                     color: #fff;
                     text-align: center;
