@@ -1320,6 +1320,12 @@ html, body {
       font-size: 18px; }
       html .container, body .container {
         max-width: 750px; } }
+  html ul, body ul {
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 1em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-start: 0px; }
 
 p.pending {
   font-family: Orbitron;
@@ -1704,14 +1710,17 @@ p.pending {
   #sponsor-container .gold li {
     display: inline-block; }
     #sponsor-container .gold li a {
-      display: block;
+      display: table-cell;
       margin: 10px;
       padding: 10px;
       width: 250px;
       height: 100px;
-      background: #fff; }
+      background: #fff;
+      vertical-align: middle;
+      text-align: center; }
       #sponsor-container .gold li a img {
-        height: 100%; }
+        max-width: 250px;
+        max-height: 100px; }
 
 #staff-container {
   padding: 2em 0 4em;
