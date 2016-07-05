@@ -23,7 +23,7 @@
     <meta name="twitter:description" content="今年も開催！大阪夏、フロントエンドの最先端を目指すWebの祭典、Grand Frontend Osaka 2016！">
     <meta name="twitter:image" content="http://kfug.jp/gfo2016/img/ogp.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-    <script src="/lib/wow.min.js"></script>
+    <script src="./lib/wow.min.js"></script>
     <script type="text/javascript" src="./assets/js/common.bundle.js"></script>
   </head>
   <body>
@@ -48,17 +48,18 @@
     <section id="description-container">
       <div class="container">
         <h2 class="title">GRAND FRONTEND OSAKA<br>2016</h2>
-        <p class="description">Grand Frontend Osaka 2016は、関西フロントエンドUGの主催するIT系のコミュニティのイベントです。技術的な流れの早いフロントエンドの現場で、「最先端」をテーマにした尖ったスタイルのイベントをコンセプトに置いています。<br>同団体で今年3月に開催したFRONTEND CONFERENCE 2016がフロントエンドの「今」を語るイベントだったのに対し、本イベントは、フロントエンド界隈の「これから先」を見据えるイベントです。</p>
+        <p class="description">「フロントエンドの最先端」をテーマに2DAYS開催される Grand Frontend Osaka 2016。技術的な流れの早いフロントエンドの現場に、「最先端」をテーマにした攻めのスタイルで、この夏一番の熱さを提供します!!<br>1日目のハッカソン企画 「Try Tech Kansai」 と 2日目のセミナーイベントとで、これからのフロントエンドの世界を「作り」「知る」事が出来るココにしか無いスタイルのイベントとなっています！</p>
       </div>
     </section>
-    <article id="news-container" class="wow slideInUp">
+    <article id="news-container" class="wow fadeIn">
       <div class="container">
         <h4 class="title">NEWS</h4>
-        <p><span class="date">2016 / 5 / 27</span>  イベント概要公開<span class="badge">NEW</span></p>
+        <p><span class="date">2016 / 7 / 05</span>  イベント企画 ブース一覧等公開<span class="badge">NEW</span></p>
+        <p><span class="date">2016 / 5 / 27</span>  イベント概要公開</p>
       </div>
     </article>
     <div id="event-container">
-      <section id="hackathon-container" class="wow slideInUp">
+      <section id="hackathon-container" class="wow slideIn">
         <div class="container">
           <h4 class="day-category">
             <div class="subtitle"><img src="./img/day1@2x.png" width="60px" height="60px" alt="DAY1"><span>ハッカソン</span></div>
@@ -75,23 +76,24 @@
             <h5>ブース一覧</h5><span class="line"></span>
             <ul>
               <li>Angular 2でSPAを作ろう</li>
-              <li>Angular 2でSPAを作ろう</li>
-              <li>Angular 2でSPAを作ろう</li>
-              <li>Angular 2でSPAを作ろう</li>
-              <li>Angular 2でSPAを作ろう</li>
-              <li>Angular 2でSPAを作ろう</li>
+              <li>フロントエンド技術でデータビジュアライゼーション</li>
+              <li>Node.js + WP-APIでつくるウェブアプリケーション</li>
+              <li>kintone</li>
             </ul>
-            <!--p.pending WAIT FOR UPDATE ...-->
+            <p class="pending">AND MORE ...</p>
           </div>
         </div>
         <div class="container">
           <div class="action-Block">
             <div class="btn"><a href="http://kfug.connpass.com/event/34970" target="_blank" class="entry-btn"><span>ENTRY</span>参加申し込み</a></div>
-            <div class="btn"><a href="" class="readmore-btn"><span>READ MORE</span>詳細を見る</a></div>
+            <!--.btn-->
+            <!--    a.readmore-btn(href="" )-->
+            <!--        span READ MORE-->
+            <!--        | 詳細を見る-->
           </div>
         </div>
       </section>
-      <section id="session-container" class="wow slideInUp">
+      <section id="session-container" class="wow fadeIn">
         <div class="container">
           <h4 class="day-category">
             <div class="subtitle"><img src="./img/day2@2x.png" width="60px" height="60px" alt="DAY2"><span>セッション</span></div>
@@ -118,8 +120,14 @@
         </div>
         <div class="container">
           <div class="action-Block">
-            <div class="btn"><a href="http://kfug.connpass.com/event/35228" target="_blank" class="entry-btn"><span>ENTRY</span>参加申し込み</a></div>
-            <div class="btn"><a href="" class="readmore-btn"><span>READ MORE</span>詳細を見る</a></div>
+            <!--.btn-->
+            <!--    a.entry-btn(href="http://kfug.connpass.com/event/35228" target="_blank")-->
+            <!--        span ENTRY-->
+            <!--        | 参加申し込み-->
+            <!--.btn-->
+            <!--    a.readmore-btn(href="" )-->
+            <!--        span READ MORE-->
+            <!--        | 詳細を見る-->
           </div>
         </div>
       </section>
@@ -143,17 +151,25 @@
         </div>
       </div>
     </article>
-    <section id="sponsor-container" class="wow slideInUp">
+    <section id="sponsor-container" class="wow fadeIn">
       <div class="container">
         <h4 class="title">SPONSOR</h4>
         <p><span>現在スポンサーを募集中です！</span><br>下記のボタンよりお申し込みをお待ちしております</p>
         <div class="btn"><a href="http://goo.gl/forms/15cG8PT1VoKq7tcv1" target="_blank" class="sponsor-btn"><span>SPONSOR</span>スポンサー募集</a></div><br>
-        <ul class="gold">
-          <li><a href="#"><img src="./img/logo-A.png"></a></li>
-          <li><a href="#"><img src="./img/logo-B.png"></a></li>
-          <li><a href="#"><img src="./img/logo-C.png"></a></li>
-          <li><a href="#"><img src="./img/logo-D.png"></a></li>
-        </ul>
+        <!--ul.gold-->
+        <!--    li-->
+        <!--        a(href="#")-->
+        <!--            img(src="./img/logo-A.png")-->
+        <!--    li-->
+        <!--        a(href="#")-->
+        <!--            img(src="./img/logo-B.png")-->
+        <!--    li-->
+        <!--        a(href="#")-->
+        <!--            img(src="./img/logo-C.png")-->
+        <!--    li-->
+        <!--        a(href="#")-->
+        <!--            img(src="./img/logo-D.png")-->
+        
         <h4 class="title">SUPPORTED BY
           <div style="margin:1em 2em"><a href="https://2016.kansai.wordcamp.org/" target="_blank"><img style="width:100%" src="./img/wordcamp.png" alt="WordCamp Kansai 2016" /></a></div>
         </h4>
@@ -167,57 +183,57 @@
         <li>
           <div class="staff">
             <div class="img-prof-block">
-              <div class="img-prof"></div>
-            </div><span class="name">夏みかん</span>
+              <div style="background-image:url('./assets/images/staff/staff01.jpg')" class="img-prof"></div>
+            </div><a href="https://twitter.com/se_kamo" target="_blank"><span class="name">若井信一郎</span></a>
+          </div>
+        </li>
+        <li>
+          <div class="staff">
+            <div class="img-prof-block">
+              <div style="background-image:url('./assets/images/staff/staff03.jpg')" class="img-prof"></div>
+            </div><a href="https://twitter.com/taniyanpgd" target="_blank"><span class="name">中谷和貴</span></a>
+          </div>
+        </li>
+        <li>
+          <div class="staff">
+            <div class="img-prof-block">
+              <div style="background-image:url('./assets/images/staff/staff05.jpg')" class="img-prof"></div>
+            </div><a href="https://twitter.com/web_asutarisuku" target="_blank"><span class="name">Kurino Keiichi</span></a>
           </div>
         </li>
         <li>
           <div class="staff">
             <div class="img-prof-block">
               <div class="img-prof"></div>
-            </div><span class="name">夏みかん</span>
+            </div><a><span class="name">Kaie Okayama</span></a>
           </div>
         </li>
         <li>
           <div class="staff">
             <div class="img-prof-block">
-              <div class="img-prof"></div>
-            </div><span class="name">夏みかん</span>
+              <div style="background-image:url('./assets/images/staff/staff02.jpg')" class="img-prof"></div>
+            </div><a href="http://chatbox-inc.com/page/member/shono/" target="_blank"><span class="name">庄埜詩織</span></a>
           </div>
         </li>
         <li>
           <div class="staff">
             <div class="img-prof-block">
-              <div class="img-prof"></div>
-            </div><span class="name">夏みかん</span>
+              <div style="background-image:url('./assets/images/staff/staff04.jpg')" class="img-prof"></div>
+            </div><a href="http://chatbox-inc.com/page/member/shono/" target="_blank"><span class="name">Yasui Risa</span></a>
           </div>
         </li>
         <li>
           <div class="staff">
             <div class="img-prof-block">
-              <div class="img-prof"></div>
-            </div><span class="name">夏みかん</span>
+              <div style="background-image:url('./assets/images/staff/staff08.jpg')" class="img-prof"></div>
+            </div><a href="https://twitter.com/44x1carbon" target="_blank"><span class="name">山崎好洋</span></a>
           </div>
         </li>
         <li>
           <div class="staff">
             <div class="img-prof-block">
-              <div class="img-prof"></div>
-            </div><span class="name">夏みかん</span>
-          </div>
-        </li>
-        <li>
-          <div class="staff">
-            <div class="img-prof-block">
-              <div class="img-prof"></div>
-            </div><span class="name">夏みかん</span>
-          </div>
-        </li>
-        <li>
-          <div class="staff">
-            <div class="img-prof-block">
-              <div class="img-prof"></div>
-            </div><span class="name">夏みかん</span>
+              <div style="background-image:url('./assets/images/staff/staff07.jpg')" class="img-prof"></div>
+            </div><a href="http://chatbox-inc.com/page/member/shono/" target="_blank"><span class="name">後藤知宏</span></a>
           </div>
         </li>
       </ul>
@@ -225,7 +241,7 @@
   </section>
 </html>
 <footer>
-  <div id="sns-container" class="wow slideInUp">
+  <div id="sns-container" class="wow fadeIn">
     <div class="btn">
       <div class="sns-tw-btn"><a href="https://twitter.com/share?url=http://kfug.jp/gfo2016/&amp;text=Grand Frontend Osaka 2016｜関西フロントエンドUG " target="_blank">ツイートする</a></div>
     </div>

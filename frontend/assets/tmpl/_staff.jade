@@ -2,44 +2,15 @@ section#staff-container.wow.slideInUp
     .container
         h4.title STAFF
         ul
-            li
-                .staff
-                    .img-prof-block
-                        .img-prof
-                    span.name 夏みかん
-            li
-                .staff
-                    .img-prof-block
-                        .img-prof
-                    span.name 夏みかん
-
-            li
-                .staff
-                    .img-prof-block
-                        .img-prof
-                    span.name 夏みかん
-            li
-                .staff
-                    .img-prof-block
-                        .img-prof
-                    span.name 夏みかん
-            li
-                .staff
-                    .img-prof-block
-                        .img-prof
-                    span.name 夏みかん
-            li
-                .staff
-                    .img-prof-block
-                        .img-prof
-                    span.name 夏みかん
-            li
-                .staff
-                    .img-prof-block
-                        .img-prof
-                    span.name 夏みかん
-            li
-                .staff
-                    .img-prof-block
-                        .img-prof
-                    span.name 夏みかん
+            each staff in staffs
+                li
+                    .staff
+                        .img-prof-block
+                            if staff.image !== "default"
+                                .img-prof(style="background-image:url('./assets/images/staff/#{staff.code}.jpg')")
+                            else
+                                .img-prof
+                        if staff.link
+                            a(href=staff.link target="_blank"): span.name=staff.name
+                        else
+                            a: span.name=staff.name
