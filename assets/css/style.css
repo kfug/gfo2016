@@ -1701,6 +1701,17 @@ p.pending {
   @media screen and (min-width: 800px) {
     #sponsor-container {
       padding: 3em 0 7em; } }
+  #sponsor-container .gold li {
+    display: inline-block; }
+    #sponsor-container .gold li a {
+      display: block;
+      margin: 10px;
+      padding: 10px;
+      width: 250px;
+      height: 100px;
+      background: #fff; }
+      #sponsor-container .gold li a img {
+        height: 100%; }
 
 #staff-container {
   padding: 2em 0 4em;
