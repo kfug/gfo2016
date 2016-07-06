@@ -766,6 +766,274 @@ textarea {
             box-shadow: -600px 0 0 0 #fff114; }
         #event-container #session-container .action-Block a.readmore-btn {
           margin-right: 1.5em; } }
+  #event-container #session-detail-container {
+    margin: 0 auto;
+    padding: 5em 0 3em;
+    background: #078ac8; }
+    #event-container #session-detail-container .container {
+      transform: skew(0deg, -4deg); }
+    #event-container #session-detail-container h4.day-category {
+      margin: .5em 0;
+      border-bottom: 2px solid #3b526a; }
+      #event-container #session-detail-container h4.day-category .subtitle {
+        display: inline-block; }
+        #event-container #session-detail-container h4.day-category .subtitle img {
+          vertical-align: middle;
+          margin-right: 1.5em; }
+        #event-container #session-detail-container h4.day-category .subtitle span {
+          font-size: 1.2em;
+          color: #fff; }
+    #event-container #session-detail-container .discription {
+      transform: skew(0deg, -4deg);
+      margin-right: 1.5em;
+      padding: .3em 1em 2em 2em;
+      color: #fff; }
+      #event-container #session-detail-container .discription h4.event-title {
+        margin: 0;
+        margin-top: 1.3em;
+        font-size: 1.4em;
+        font-family: Orbitron;
+        font-weight: bold; }
+        @media screen and (min-width: 800px) {
+          #event-container #session-detail-container .discription h4.event-title {
+            font-size: 1.5em; } }
+      #event-container #session-detail-container .discription .container {
+        transform: skew(0deg, 0deg);
+        background: url("./../../img/event-sesstion@x2.png") center no-repeat;
+        background-size: contain;
+        background-position-y: 2em; }
+    #event-container #session-detail-container .session-list {
+      width: 100%;
+      color: #2656a3; }
+      #event-container #session-detail-container .session-list .list-item {
+        margin-bottom: 3em;
+        position: relative;
+        background: url("./../../img/info-bg@2x.png") center no-repeat;
+        background-size: contain;
+        background-position: center; }
+      #event-container #session-detail-container .session-list .list-container {
+        padding: 1.5em 2em 3em;
+        background: rgba(255, 255, 255, 0.8); }
+      #event-container #session-detail-container .session-list .time-area {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 100px 100px 0 0px;
+        border-color: #fff114 transparent transparent transparent; }
+      #event-container #session-detail-container .session-list .time {
+        font-size: 1em; }
+      #event-container #session-detail-container .session-list span {
+        display: inline-block;
+        position: absolute;
+        top: -80px;
+        left: 10px;
+        font-size: 2em;
+        font-family: Orbitron;
+        font-weight: bold;
+        font-size: 1em; }
+        @media screen and (min-width: 800px) {
+          #event-container #session-detail-container .session-list span {
+            font-size: 1.5em; } }
+      #event-container #session-detail-container .session-list .sesstion-title {
+        margin: 1em;
+        font-size: 1.5em; }
+      #event-container #session-detail-container .session-list .sesstion-description {
+        margin: 0 1em 2em; }
+      #event-container #session-detail-container .session-list .prof-block {
+        position: relative; }
+        #event-container #session-detail-container .session-list .prof-block .bg {
+          width: 100%;
+          height: 130px;
+          position: absolute;
+          top: 30px;
+          background: #fff114;
+          opacity: .5; }
+      #event-container #session-detail-container .session-list .img-prof-block {
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+        margin: 0;
+        margin-left: 1em;
+        transform: rotate(45deg);
+        width: 130px;
+        height: 130px; }
+        #event-container #session-detail-container .session-list .img-prof-block .img-prof {
+          width: 130px;
+          height: 130px;
+          position: absolute;
+          transform: rotate(-45deg);
+          background: url("./../../img/unknown@2x.png") center no-repeat;
+          background-size: contain; }
+      #event-container #session-detail-container .session-list .prof-detail-block {
+        position: absolute;
+        margin-left: 1em;
+        margin-bottom: 2em;
+        display: inline-block; }
+        #event-container #session-detail-container .session-list .prof-detail-block dt {
+          font-size: 1.2em; }
+        #event-container #session-detail-container .session-list .prof-detail-block dd {
+          margin: .11em .1em;
+          font-size: 1.5em;
+          display: inline-block; }
+      #event-container #session-detail-container .session-list .btn-block {
+        display: block;
+        width: 100%;
+        text-align: center; }
+        #event-container #session-detail-container .session-list .btn-block p {
+          color: #fff114;
+          margin-bottom: 2em; }
+          #event-container #session-detail-container .session-list .btn-block p span {
+            font-weight: bold;
+            font-size: 1.4em; }
+      #event-container #session-detail-container .session-list .btn {
+        margin: .5em auto .5em;
+        display: inline-block;
+        min-width: 250px;
+        background: #fff114; }
+        #event-container #session-detail-container .session-list .btn:hover {
+          background: #078ac8; }
+      #event-container #session-detail-container .session-list a.speaker-btn {
+        display: block;
+        padding: .2em 0 .6em;
+        max-width: 250px;
+        text-align: center;
+        font-size: 1em;
+        font-weight: bold;
+        background: #2091c7;
+        box-sizing: border-box;
+        box-shadow: 0 6px 0 #1d75a4;
+        color: #fff;
+        text-align: center; }
+        @media screen and (min-width: 800px) {
+          #event-container #session-detail-container .session-list a.speaker-btn {
+            padding: 1em 0 .6em;
+            min-width: 350px;
+            max-width: 350px;
+            font-weight: 100; } }
+        #event-container #session-detail-container .session-list a.speaker-btn span {
+          display: inline-block;
+          width: 100%;
+          font-size: .7em;
+          font-family: Orbitron;
+          color: #fff114; }
+          @media screen and (min-width: 800px) {
+            #event-container #session-detail-container .session-list a.speaker-btn span {
+              font-size: 1em; } }
+          #event-container #session-detail-container .session-list a.speaker-btn span::after {
+            content: " ";
+            display: block;
+            background: url("./../../img/btn-line_light@x2.png") no-repeat;
+            min-width: 150px;
+            height: 15px;
+            background-size: 75%;
+            background-position: center; }
+        #event-container #session-detail-container .session-list a.speaker-btn:hover {
+          background: #1d75a4;
+          box-shadow: 0 3px 0 #1d75a4;
+          transform: translateY(2px); }
+    #event-container #session-detail-container .action-Block {
+      text-align: center; }
+      #event-container #session-detail-container .action-Block .btn {
+        margin: 2em auto 1em;
+        display: inline-block;
+        min-width: 250px; }
+      #event-container #session-detail-container .action-Block a.entry-btn {
+        display: block;
+        padding: .2em 0 .6em;
+        max-width: 250px;
+        text-align: center;
+        font-size: 1em;
+        font-weight: bold;
+        background: #fff114;
+        box-sizing: border-box;
+        box-shadow: 0 6px 0 #aeb430;
+        color: #2656a3;
+        text-align: center; }
+        @media screen and (min-width: 800px) {
+          #event-container #session-detail-container .action-Block a.entry-btn {
+            padding: 1em 0 .6em;
+            min-width: 350px;
+            max-width: 350px;
+            font-weight: 100; } }
+        #event-container #session-detail-container .action-Block a.entry-btn span {
+          display: inline-block;
+          width: 100%;
+          font-size: .7em;
+          font-family: Orbitron;
+          color: #2091c7; }
+          @media screen and (min-width: 800px) {
+            #event-container #session-detail-container .action-Block a.entry-btn span {
+              font-size: 1em; } }
+          #event-container #session-detail-container .action-Block a.entry-btn span::after {
+            content: " ";
+            display: block;
+            background: url("./../../img/btn-line_dark@x2.png") no-repeat;
+            min-width: 150px;
+            height: 15px;
+            background-size: 75%;
+            background-position: center; }
+        #event-container #session-detail-container .action-Block a.entry-btn:hover {
+          background: #aeb430;
+          box-shadow: 0 3px 0 #aeb430;
+          transform: translateY(2px); }
+      #event-container #session-detail-container .action-Block a.readmore-btn {
+        display: block;
+        padding: .2em 0 .6em;
+        max-width: 250px;
+        text-align: center;
+        font-size: 1em;
+        font-weight: bold;
+        background: #174f88;
+        box-sizing: border-box;
+        box-shadow: 0 6px 0 #1b376f;
+        color: #fff;
+        text-align: center; }
+        @media screen and (min-width: 800px) {
+          #event-container #session-detail-container .action-Block a.readmore-btn {
+            padding: 1em 0 .6em;
+            min-width: 350px;
+            max-width: 350px;
+            font-weight: 100; } }
+        #event-container #session-detail-container .action-Block a.readmore-btn span {
+          display: inline-block;
+          width: 100%;
+          font-size: .7em;
+          font-family: Orbitron;
+          color: #fff114; }
+          @media screen and (min-width: 800px) {
+            #event-container #session-detail-container .action-Block a.readmore-btn span {
+              font-size: 1em; } }
+          #event-container #session-detail-container .action-Block a.readmore-btn span::after {
+            content: " ";
+            display: block;
+            background: url("./../../img/btn-line_light@x2.png") no-repeat;
+            min-width: 150px;
+            height: 15px;
+            background-size: 75%;
+            background-position: center; }
+        #event-container #session-detail-container .action-Block a.readmore-btn:hover {
+          background: #1b376f;
+          box-shadow: 0 3px 0 #1b376f;
+          transform: translateY(2px); }
+    @media screen and (min-width: 800px) {
+      #event-container #session-detail-container {
+        padding: 4.5em 0 7em; }
+        #event-container #session-detail-container .discription {
+          margin: 0;
+          padding: 0;
+          background: transparent;
+          color: #fff; }
+          #event-container #session-detail-container .discription .container {
+            padding: .3em 1em 2em 2em;
+            max-width: 750px;
+            box-sizing: border-box; }
+          #event-container #session-detail-container .discription p {
+            line-height: 1.9em; }
+        #event-container #session-detail-container .action-Block a.readmore-btn {
+          margin-right: 1.5em; } }
 
 #event-container {
   transform: skew(0deg, 4deg); }
@@ -1168,8 +1436,277 @@ textarea {
             box-shadow: -600px 0 0 0 #fff114; }
         #event-container #session-container .action-Block a.readmore-btn {
           margin-right: 1.5em; } }
+  #event-container #session-detail-container {
+    margin: 0 auto;
+    padding: 5em 0 3em;
+    background: #078ac8; }
+    #event-container #session-detail-container .container {
+      transform: skew(0deg, -4deg); }
+    #event-container #session-detail-container h4.day-category {
+      margin: .5em 0;
+      border-bottom: 2px solid #3b526a; }
+      #event-container #session-detail-container h4.day-category .subtitle {
+        display: inline-block; }
+        #event-container #session-detail-container h4.day-category .subtitle img {
+          vertical-align: middle;
+          margin-right: 1.5em; }
+        #event-container #session-detail-container h4.day-category .subtitle span {
+          font-size: 1.2em;
+          color: #fff; }
+    #event-container #session-detail-container .discription {
+      transform: skew(0deg, -4deg);
+      margin-right: 1.5em;
+      padding: .3em 1em 2em 2em;
+      color: #fff; }
+      #event-container #session-detail-container .discription h4.event-title {
+        margin: 0;
+        margin-top: 1.3em;
+        font-size: 1.4em;
+        font-family: Orbitron;
+        font-weight: bold; }
+        @media screen and (min-width: 800px) {
+          #event-container #session-detail-container .discription h4.event-title {
+            font-size: 1.5em; } }
+      #event-container #session-detail-container .discription .container {
+        transform: skew(0deg, 0deg);
+        background: url("./../../img/event-sesstion@x2.png") center no-repeat;
+        background-size: contain;
+        background-position-y: 2em; }
+    #event-container #session-detail-container .session-list {
+      width: 100%;
+      color: #2656a3; }
+      #event-container #session-detail-container .session-list .list-item {
+        margin-bottom: 3em;
+        position: relative;
+        background: url("./../../img/info-bg@2x.png") center no-repeat;
+        background-size: contain;
+        background-position: center; }
+      #event-container #session-detail-container .session-list .list-container {
+        padding: 1.5em 2em 3em;
+        background: rgba(255, 255, 255, 0.8); }
+      #event-container #session-detail-container .session-list .time-area {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 100px 100px 0 0px;
+        border-color: #fff114 transparent transparent transparent; }
+      #event-container #session-detail-container .session-list .time {
+        font-size: 1em; }
+      #event-container #session-detail-container .session-list span {
+        display: inline-block;
+        position: absolute;
+        top: -80px;
+        left: 10px;
+        font-size: 2em;
+        font-family: Orbitron;
+        font-weight: bold;
+        font-size: 1em; }
+        @media screen and (min-width: 800px) {
+          #event-container #session-detail-container .session-list span {
+            font-size: 1.5em; } }
+      #event-container #session-detail-container .session-list .sesstion-title {
+        margin: 1em;
+        font-size: 1.5em; }
+      #event-container #session-detail-container .session-list .sesstion-description {
+        margin: 0 1em 2em; }
+      #event-container #session-detail-container .session-list .prof-block {
+        position: relative; }
+        #event-container #session-detail-container .session-list .prof-block .bg {
+          width: 100%;
+          height: 130px;
+          position: absolute;
+          top: 30px;
+          background: #fff114;
+          opacity: .5; }
+      #event-container #session-detail-container .session-list .img-prof-block {
+        display: inline-block;
+        position: relative;
+        overflow: hidden;
+        margin: 0;
+        margin-left: 1em;
+        transform: rotate(45deg);
+        width: 130px;
+        height: 130px; }
+        #event-container #session-detail-container .session-list .img-prof-block .img-prof {
+          width: 130px;
+          height: 130px;
+          position: absolute;
+          transform: rotate(-45deg);
+          background: url("./../../img/unknown@2x.png") center no-repeat;
+          background-size: contain; }
+      #event-container #session-detail-container .session-list .prof-detail-block {
+        position: absolute;
+        margin-left: 1em;
+        margin-bottom: 2em;
+        display: inline-block; }
+        #event-container #session-detail-container .session-list .prof-detail-block dt {
+          font-size: 1.2em; }
+        #event-container #session-detail-container .session-list .prof-detail-block dd {
+          margin: .11em .1em;
+          font-size: 1.5em;
+          display: inline-block; }
+      #event-container #session-detail-container .session-list .btn-block {
+        display: block;
+        width: 100%;
+        text-align: center; }
+        #event-container #session-detail-container .session-list .btn-block p {
+          color: #fff114;
+          margin-bottom: 2em; }
+          #event-container #session-detail-container .session-list .btn-block p span {
+            font-weight: bold;
+            font-size: 1.4em; }
+      #event-container #session-detail-container .session-list .btn {
+        margin: .5em auto .5em;
+        display: inline-block;
+        min-width: 250px;
+        background: #fff114; }
+        #event-container #session-detail-container .session-list .btn:hover {
+          background: #078ac8; }
+      #event-container #session-detail-container .session-list a.speaker-btn {
+        display: block;
+        padding: .2em 0 .6em;
+        max-width: 250px;
+        text-align: center;
+        font-size: 1em;
+        font-weight: bold;
+        background: #2091c7;
+        box-sizing: border-box;
+        box-shadow: 0 6px 0 #1d75a4;
+        color: #fff;
+        text-align: center; }
+        @media screen and (min-width: 800px) {
+          #event-container #session-detail-container .session-list a.speaker-btn {
+            padding: 1em 0 .6em;
+            min-width: 350px;
+            max-width: 350px;
+            font-weight: 100; } }
+        #event-container #session-detail-container .session-list a.speaker-btn span {
+          display: inline-block;
+          width: 100%;
+          font-size: .7em;
+          font-family: Orbitron;
+          color: #fff114; }
+          @media screen and (min-width: 800px) {
+            #event-container #session-detail-container .session-list a.speaker-btn span {
+              font-size: 1em; } }
+          #event-container #session-detail-container .session-list a.speaker-btn span::after {
+            content: " ";
+            display: block;
+            background: url("./../../img/btn-line_light@x2.png") no-repeat;
+            min-width: 150px;
+            height: 15px;
+            background-size: 75%;
+            background-position: center; }
+        #event-container #session-detail-container .session-list a.speaker-btn:hover {
+          background: #1d75a4;
+          box-shadow: 0 3px 0 #1d75a4;
+          transform: translateY(2px); }
+    #event-container #session-detail-container .action-Block {
+      text-align: center; }
+      #event-container #session-detail-container .action-Block .btn {
+        margin: 2em auto 1em;
+        display: inline-block;
+        min-width: 250px; }
+      #event-container #session-detail-container .action-Block a.entry-btn {
+        display: block;
+        padding: .2em 0 .6em;
+        max-width: 250px;
+        text-align: center;
+        font-size: 1em;
+        font-weight: bold;
+        background: #fff114;
+        box-sizing: border-box;
+        box-shadow: 0 6px 0 #aeb430;
+        color: #2656a3;
+        text-align: center; }
+        @media screen and (min-width: 800px) {
+          #event-container #session-detail-container .action-Block a.entry-btn {
+            padding: 1em 0 .6em;
+            min-width: 350px;
+            max-width: 350px;
+            font-weight: 100; } }
+        #event-container #session-detail-container .action-Block a.entry-btn span {
+          display: inline-block;
+          width: 100%;
+          font-size: .7em;
+          font-family: Orbitron;
+          color: #2091c7; }
+          @media screen and (min-width: 800px) {
+            #event-container #session-detail-container .action-Block a.entry-btn span {
+              font-size: 1em; } }
+          #event-container #session-detail-container .action-Block a.entry-btn span::after {
+            content: " ";
+            display: block;
+            background: url("./../../img/btn-line_dark@x2.png") no-repeat;
+            min-width: 150px;
+            height: 15px;
+            background-size: 75%;
+            background-position: center; }
+        #event-container #session-detail-container .action-Block a.entry-btn:hover {
+          background: #aeb430;
+          box-shadow: 0 3px 0 #aeb430;
+          transform: translateY(2px); }
+      #event-container #session-detail-container .action-Block a.readmore-btn {
+        display: block;
+        padding: .2em 0 .6em;
+        max-width: 250px;
+        text-align: center;
+        font-size: 1em;
+        font-weight: bold;
+        background: #174f88;
+        box-sizing: border-box;
+        box-shadow: 0 6px 0 #1b376f;
+        color: #fff;
+        text-align: center; }
+        @media screen and (min-width: 800px) {
+          #event-container #session-detail-container .action-Block a.readmore-btn {
+            padding: 1em 0 .6em;
+            min-width: 350px;
+            max-width: 350px;
+            font-weight: 100; } }
+        #event-container #session-detail-container .action-Block a.readmore-btn span {
+          display: inline-block;
+          width: 100%;
+          font-size: .7em;
+          font-family: Orbitron;
+          color: #fff114; }
+          @media screen and (min-width: 800px) {
+            #event-container #session-detail-container .action-Block a.readmore-btn span {
+              font-size: 1em; } }
+          #event-container #session-detail-container .action-Block a.readmore-btn span::after {
+            content: " ";
+            display: block;
+            background: url("./../../img/btn-line_light@x2.png") no-repeat;
+            min-width: 150px;
+            height: 15px;
+            background-size: 75%;
+            background-position: center; }
+        #event-container #session-detail-container .action-Block a.readmore-btn:hover {
+          background: #1b376f;
+          box-shadow: 0 3px 0 #1b376f;
+          transform: translateY(2px); }
+    @media screen and (min-width: 800px) {
+      #event-container #session-detail-container {
+        padding: 4.5em 0 7em; }
+        #event-container #session-detail-container .discription {
+          margin: 0;
+          padding: 0;
+          background: transparent;
+          color: #fff; }
+          #event-container #session-detail-container .discription .container {
+            padding: .3em 1em 2em 2em;
+            max-width: 750px;
+            box-sizing: border-box; }
+          #event-container #session-detail-container .discription p {
+            line-height: 1.9em; }
+        #event-container #session-detail-container .action-Block a.readmore-btn {
+          margin-right: 1.5em; } }
 
 #sns-container {
+  margin-top: 2em;
   text-align: center; }
   #sns-container .btn {
     margin: .5em auto 2em;
@@ -1778,6 +2315,30 @@ p.pending {
   @media screen and (min-width: 800px) {
     #staff-container {
       padding: 2em 0 5em; } }
+
+#header-nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  background: #fff114;
+  margin-bottom: 100px; }
+  #header-nav a {
+    display: inline-block;
+    margin-right: .7em; }
+  #header-nav .logo-block {
+    display: inline-block; }
+  #header-nav .title {
+    position: absolute;
+    top: 2px;
+    padding-top: -20px;
+    display: inline-block;
+    font-size: .8em;
+    font-family: Orbitron;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 1.5em;
+    color: #2656a3; }
 
 /*!
  * animate.css -http://daneden.me/animate

@@ -1,0 +1,64 @@
+doctype html
+html(lang="ja")
+  include ./_header
+  body
+    section#header-nav
+      .container
+        .logo-block
+          a(href="./index.html")
+            img.logo-sp(src="./img/gfo_logo.png" width="40px" height="42px")
+          a(href="./index.html")
+            h1.title GRAND FRONTEND OSAKA 2016
+
+    #event-container
+      section#session-detail-container.wow.fadeIn
+        .container
+          h4.day-category
+            .subtitle
+              img(src="./img/day2@2x.png" width="60px" height="60px" ,alt="DAY2")
+              span セッション
+        .discription
+          .container
+            h4.event-title GRAND FRONTEND OSAKA
+            p 2日目の8/28は、フロントエンドエンジニアのためのセミナー企画を実施します！「フロントエンドの最先端」 をテーマに、たくさんの登壇者を招いて これからのフロントエンドのミライを語ります。
+            .action-Block
+              .btn
+                a.entry-btn(href="http://kfug.connpass.com/event/35228" target="_blank")
+                  span ENTRY
+                  | 参加申し込み
+
+        .session-list
+          .container
+            each speaker in ["","","","","","","","","",""]
+              .list-item
+                .list-container
+                  .time-area
+                    span.time 10:00
+                  h5.sesstion-title セッションのタイトルセッションのタイトルセッションのタイトルセッションのタイトルセッションのタイトル
+                  p.sesstion-description Grand Frontend Osaka 2016は、関西フロントエンドUGの主催するIT系のコミュニティのイベントです。技術的な流れの早いフロントエンドの現場で、「最先端」をテーマにした尖ったスタイルのイベントをコンセプトに置いています
+                  .prof-block
+                    .bg
+                    .img-prof-block
+                        .img-prof
+                    dl.prof-detail-block
+                      dt 登壇者名
+                      dd
+                        a(href="" target="_blank")
+                        | <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                      dd
+                        a(href="" target="_blank")
+                          | <i class="fa fa-facebook-square" aria-hidden="true"></i>
+
+
+        .container
+          .action-Block
+            .btn
+                a.entry-btn(href="http://kfug.connpass.com/event/35228" target="_blank")
+                    span ENTRY
+                    | 参加申し込み
+
+
+
+
+footer
+  include ./_footer
