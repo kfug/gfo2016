@@ -150,6 +150,154 @@
 
         }
     }//#hackathon-container
+    #hackathon-detail-container {
+        margin: 0 auto;
+        padding: 2em 0 3em;
+        background: $clr-day1;
+        .container {
+            transform: skew(0deg, -4deg);
+        }
+        h4.day-category {
+            margin: .5em 0;
+            border-bottom: 2px solid #3b526a;
+            .subtitle {
+                display: inline-block;
+                img {
+                    vertical-align: middle;
+                    margin-right: 1.5em;
+                }
+                span {
+                    font-size: 1.2em;
+                    color: #fff;
+                }
+            }
+
+        }
+        .discription {
+            transform: skew(0deg, -4deg);
+            margin-right: 1.5em;
+            padding: .3em 1em 2em 2em;
+            color:#fff;
+            h4.event-title {
+                margin: 0;
+                margin-top: 1.3em;
+                @include en-ttl(1.4em);
+            }
+            .container {
+                transform: skew(0deg, 0deg);
+            }
+        }
+        .booth-list {
+            width: 100%;
+            color: #fff;
+            .container {
+                background: url("./../../img/event-hackathon@x2.png") bottom right no-repeat;
+                background-size: contain;
+            }
+
+            h5 {
+                display: inline-block;
+                font-size: 1em;
+                margin-bottom: -10px;
+                vertical-align : text-bottom;
+                background: $clr-day1;
+            }
+            span.line {
+                margin-left: 1em;
+                position: relative;
+                display: inline-block;
+                width: 70%;
+                border-bottom: 1px solid #fff;
+                &::after {
+                    content: " ";
+                    width: 10px;
+                    height: 10px;
+                    position: absolute;
+                    top: -5px;
+                    right: -5px;
+                    background: #fff;
+                    border-radius: 40px;
+
+                }
+            }
+            ul {
+                padding: 1em;
+                li {
+                    margin-bottom: 1em;
+                    list-style: none;
+                    &::before {
+                        margin-right: .2em;
+                        content: "";
+                        display: inline-block;
+                        border: 7px solid transparent;
+                        border-left-color: $clr-maker;
+                    }
+                }
+            }
+        }
+        .action-Block {
+            text-align: center;
+            .btn {
+                margin: .5em auto 1em;
+                display: inline-block;
+                min-width: 250px;
+            }
+            a.entry-btn {
+                @include ac-btn($btn-02,$btn-02-s);
+                color: $clr-main;
+                text-align: center;
+                span {
+                    display: inline-block;
+                    width: 100%;
+                    @include ac-btn-en($btn-01);
+                    &::after {
+                        @include ac-btn-line(dark);
+                    }
+                }
+                &:hover {
+                    @include  ac-btn-hover($btn-02-s);
+                }
+
+            }
+            a.readmore-btn {
+                @include ac-btn($btn-03,$btn-03-s);
+                color: #fff;
+                text-align: center;
+                span {
+                    display: inline-block;
+                    width: 100%;
+                    @include ac-btn-en($clr-base);
+                    &::after {
+                        @include ac-btn-line();
+                    }
+                }
+                &:hover {
+                    @include  ac-btn-hover($btn-03-s);
+                }
+
+            }
+        }
+        @include media {
+            padding: 3em 0 7em;
+            .discription {
+                margin: 0;
+                padding: 0;
+                background: transparent;
+                .container {
+                    padding: .3em 1em 2em 2em;
+                    max-width: $container-pc;
+                    box-sizing: border-box;
+                }
+            }
+            .action-Block {
+                a.readmore-btn {
+                    margin-right: 1.5em;
+
+                }
+            }
+
+        }
+    }//#hackathon-detail-container
     #session-container {
             margin: 0 auto;
             padding: 2em 0 3em;

@@ -537,6 +537,174 @@ textarea {
             box-shadow: -600px 0 0 0 #fff114; }
         #event-container #hackathon-container .action-Block a.readmore-btn {
           margin-right: 1.5em; } }
+  #event-container #hackathon-detail-container {
+    margin: 0 auto;
+    padding: 2em 0 3em;
+    background: #00abca; }
+    #event-container #hackathon-detail-container .container {
+      transform: skew(0deg, -4deg); }
+    #event-container #hackathon-detail-container h4.day-category {
+      margin: .5em 0;
+      border-bottom: 2px solid #3b526a; }
+      #event-container #hackathon-detail-container h4.day-category .subtitle {
+        display: inline-block; }
+        #event-container #hackathon-detail-container h4.day-category .subtitle img {
+          vertical-align: middle;
+          margin-right: 1.5em; }
+        #event-container #hackathon-detail-container h4.day-category .subtitle span {
+          font-size: 1.2em;
+          color: #fff; }
+    #event-container #hackathon-detail-container .discription {
+      transform: skew(0deg, -4deg);
+      margin-right: 1.5em;
+      padding: .3em 1em 2em 2em;
+      color: #fff; }
+      #event-container #hackathon-detail-container .discription h4.event-title {
+        margin: 0;
+        margin-top: 1.3em;
+        font-size: 1.4em;
+        font-family: Orbitron;
+        font-weight: bold; }
+        @media screen and (min-width: 800px) {
+          #event-container #hackathon-detail-container .discription h4.event-title {
+            font-size: 1.5em; } }
+      #event-container #hackathon-detail-container .discription .container {
+        transform: skew(0deg, 0deg); }
+    #event-container #hackathon-detail-container .booth-list {
+      width: 100%;
+      color: #fff; }
+      #event-container #hackathon-detail-container .booth-list .container {
+        background: url("./../../img/event-hackathon@x2.png") bottom right no-repeat;
+        background-size: contain; }
+      #event-container #hackathon-detail-container .booth-list h5 {
+        display: inline-block;
+        font-size: 1em;
+        margin-bottom: -10px;
+        vertical-align: text-bottom;
+        background: #00abca; }
+      #event-container #hackathon-detail-container .booth-list span.line {
+        margin-left: 1em;
+        position: relative;
+        display: inline-block;
+        width: 70%;
+        border-bottom: 1px solid #fff; }
+        #event-container #hackathon-detail-container .booth-list span.line::after {
+          content: " ";
+          width: 10px;
+          height: 10px;
+          position: absolute;
+          top: -5px;
+          right: -5px;
+          background: #fff;
+          border-radius: 40px; }
+      #event-container #hackathon-detail-container .booth-list ul {
+        padding: 1em; }
+        #event-container #hackathon-detail-container .booth-list ul li {
+          margin-bottom: 1em;
+          list-style: none; }
+          #event-container #hackathon-detail-container .booth-list ul li::before {
+            margin-right: .2em;
+            content: "";
+            display: inline-block;
+            border: 7px solid transparent;
+            border-left-color: #83e1ff; }
+    #event-container #hackathon-detail-container .action-Block {
+      text-align: center; }
+      #event-container #hackathon-detail-container .action-Block .btn {
+        margin: .5em auto 1em;
+        display: inline-block;
+        min-width: 250px; }
+      #event-container #hackathon-detail-container .action-Block a.entry-btn {
+        display: block;
+        padding: .2em 0 .6em;
+        max-width: 250px;
+        text-align: center;
+        font-size: 1em;
+        font-weight: bold;
+        background: #fff114;
+        box-sizing: border-box;
+        box-shadow: 0 6px 0 #aeb430;
+        color: #2656a3;
+        text-align: center; }
+        @media screen and (min-width: 800px) {
+          #event-container #hackathon-detail-container .action-Block a.entry-btn {
+            padding: 1em 0 .6em;
+            min-width: 350px;
+            max-width: 350px;
+            font-weight: 100; } }
+        #event-container #hackathon-detail-container .action-Block a.entry-btn span {
+          display: inline-block;
+          width: 100%;
+          font-size: .7em;
+          font-family: Orbitron;
+          color: #2091c7; }
+          @media screen and (min-width: 800px) {
+            #event-container #hackathon-detail-container .action-Block a.entry-btn span {
+              font-size: 1em; } }
+          #event-container #hackathon-detail-container .action-Block a.entry-btn span::after {
+            content: " ";
+            display: block;
+            background: url("./../../img/btn-line_dark@x2.png") no-repeat;
+            min-width: 150px;
+            height: 15px;
+            background-size: 75%;
+            background-position: center; }
+        #event-container #hackathon-detail-container .action-Block a.entry-btn:hover {
+          background: #aeb430;
+          box-shadow: 0 3px 0 #aeb430;
+          transform: translateY(2px); }
+      #event-container #hackathon-detail-container .action-Block a.readmore-btn {
+        display: block;
+        padding: .2em 0 .6em;
+        max-width: 250px;
+        text-align: center;
+        font-size: 1em;
+        font-weight: bold;
+        background: #174f88;
+        box-sizing: border-box;
+        box-shadow: 0 6px 0 #1b376f;
+        color: #fff;
+        text-align: center; }
+        @media screen and (min-width: 800px) {
+          #event-container #hackathon-detail-container .action-Block a.readmore-btn {
+            padding: 1em 0 .6em;
+            min-width: 350px;
+            max-width: 350px;
+            font-weight: 100; } }
+        #event-container #hackathon-detail-container .action-Block a.readmore-btn span {
+          display: inline-block;
+          width: 100%;
+          font-size: .7em;
+          font-family: Orbitron;
+          color: #fff114; }
+          @media screen and (min-width: 800px) {
+            #event-container #hackathon-detail-container .action-Block a.readmore-btn span {
+              font-size: 1em; } }
+          #event-container #hackathon-detail-container .action-Block a.readmore-btn span::after {
+            content: " ";
+            display: block;
+            background: url("./../../img/btn-line_light@x2.png") no-repeat;
+            min-width: 150px;
+            height: 15px;
+            background-size: 75%;
+            background-position: center; }
+        #event-container #hackathon-detail-container .action-Block a.readmore-btn:hover {
+          background: #1b376f;
+          box-shadow: 0 3px 0 #1b376f;
+          transform: translateY(2px); }
+    @media screen and (min-width: 800px) {
+      #event-container #hackathon-detail-container {
+        padding: 3em 0 7em; }
+        #event-container #hackathon-detail-container .discription {
+          margin: 0;
+          padding: 0;
+          background: transparent; }
+          #event-container #hackathon-detail-container .discription .container {
+            padding: .3em 1em 2em 2em;
+            max-width: 750px;
+            box-sizing: border-box; }
+        #event-container #hackathon-detail-container .action-Block a.readmore-btn {
+          margin-right: 1.5em; } }
   #event-container #session-container {
     margin: 0 auto;
     padding: 2em 0 3em;
@@ -1206,6 +1374,174 @@ textarea {
             box-sizing: border-box;
             box-shadow: -600px 0 0 0 #fff114; }
         #event-container #hackathon-container .action-Block a.readmore-btn {
+          margin-right: 1.5em; } }
+  #event-container #hackathon-detail-container {
+    margin: 0 auto;
+    padding: 2em 0 3em;
+    background: #00abca; }
+    #event-container #hackathon-detail-container .container {
+      transform: skew(0deg, -4deg); }
+    #event-container #hackathon-detail-container h4.day-category {
+      margin: .5em 0;
+      border-bottom: 2px solid #3b526a; }
+      #event-container #hackathon-detail-container h4.day-category .subtitle {
+        display: inline-block; }
+        #event-container #hackathon-detail-container h4.day-category .subtitle img {
+          vertical-align: middle;
+          margin-right: 1.5em; }
+        #event-container #hackathon-detail-container h4.day-category .subtitle span {
+          font-size: 1.2em;
+          color: #fff; }
+    #event-container #hackathon-detail-container .discription {
+      transform: skew(0deg, -4deg);
+      margin-right: 1.5em;
+      padding: .3em 1em 2em 2em;
+      color: #fff; }
+      #event-container #hackathon-detail-container .discription h4.event-title {
+        margin: 0;
+        margin-top: 1.3em;
+        font-size: 1.4em;
+        font-family: Orbitron;
+        font-weight: bold; }
+        @media screen and (min-width: 800px) {
+          #event-container #hackathon-detail-container .discription h4.event-title {
+            font-size: 1.5em; } }
+      #event-container #hackathon-detail-container .discription .container {
+        transform: skew(0deg, 0deg); }
+    #event-container #hackathon-detail-container .booth-list {
+      width: 100%;
+      color: #fff; }
+      #event-container #hackathon-detail-container .booth-list .container {
+        background: url("./../../img/event-hackathon@x2.png") bottom right no-repeat;
+        background-size: contain; }
+      #event-container #hackathon-detail-container .booth-list h5 {
+        display: inline-block;
+        font-size: 1em;
+        margin-bottom: -10px;
+        vertical-align: text-bottom;
+        background: #00abca; }
+      #event-container #hackathon-detail-container .booth-list span.line {
+        margin-left: 1em;
+        position: relative;
+        display: inline-block;
+        width: 70%;
+        border-bottom: 1px solid #fff; }
+        #event-container #hackathon-detail-container .booth-list span.line::after {
+          content: " ";
+          width: 10px;
+          height: 10px;
+          position: absolute;
+          top: -5px;
+          right: -5px;
+          background: #fff;
+          border-radius: 40px; }
+      #event-container #hackathon-detail-container .booth-list ul {
+        padding: 1em; }
+        #event-container #hackathon-detail-container .booth-list ul li {
+          margin-bottom: 1em;
+          list-style: none; }
+          #event-container #hackathon-detail-container .booth-list ul li::before {
+            margin-right: .2em;
+            content: "";
+            display: inline-block;
+            border: 7px solid transparent;
+            border-left-color: #83e1ff; }
+    #event-container #hackathon-detail-container .action-Block {
+      text-align: center; }
+      #event-container #hackathon-detail-container .action-Block .btn {
+        margin: .5em auto 1em;
+        display: inline-block;
+        min-width: 250px; }
+      #event-container #hackathon-detail-container .action-Block a.entry-btn {
+        display: block;
+        padding: .2em 0 .6em;
+        max-width: 250px;
+        text-align: center;
+        font-size: 1em;
+        font-weight: bold;
+        background: #fff114;
+        box-sizing: border-box;
+        box-shadow: 0 6px 0 #aeb430;
+        color: #2656a3;
+        text-align: center; }
+        @media screen and (min-width: 800px) {
+          #event-container #hackathon-detail-container .action-Block a.entry-btn {
+            padding: 1em 0 .6em;
+            min-width: 350px;
+            max-width: 350px;
+            font-weight: 100; } }
+        #event-container #hackathon-detail-container .action-Block a.entry-btn span {
+          display: inline-block;
+          width: 100%;
+          font-size: .7em;
+          font-family: Orbitron;
+          color: #2091c7; }
+          @media screen and (min-width: 800px) {
+            #event-container #hackathon-detail-container .action-Block a.entry-btn span {
+              font-size: 1em; } }
+          #event-container #hackathon-detail-container .action-Block a.entry-btn span::after {
+            content: " ";
+            display: block;
+            background: url("./../../img/btn-line_dark@x2.png") no-repeat;
+            min-width: 150px;
+            height: 15px;
+            background-size: 75%;
+            background-position: center; }
+        #event-container #hackathon-detail-container .action-Block a.entry-btn:hover {
+          background: #aeb430;
+          box-shadow: 0 3px 0 #aeb430;
+          transform: translateY(2px); }
+      #event-container #hackathon-detail-container .action-Block a.readmore-btn {
+        display: block;
+        padding: .2em 0 .6em;
+        max-width: 250px;
+        text-align: center;
+        font-size: 1em;
+        font-weight: bold;
+        background: #174f88;
+        box-sizing: border-box;
+        box-shadow: 0 6px 0 #1b376f;
+        color: #fff;
+        text-align: center; }
+        @media screen and (min-width: 800px) {
+          #event-container #hackathon-detail-container .action-Block a.readmore-btn {
+            padding: 1em 0 .6em;
+            min-width: 350px;
+            max-width: 350px;
+            font-weight: 100; } }
+        #event-container #hackathon-detail-container .action-Block a.readmore-btn span {
+          display: inline-block;
+          width: 100%;
+          font-size: .7em;
+          font-family: Orbitron;
+          color: #fff114; }
+          @media screen and (min-width: 800px) {
+            #event-container #hackathon-detail-container .action-Block a.readmore-btn span {
+              font-size: 1em; } }
+          #event-container #hackathon-detail-container .action-Block a.readmore-btn span::after {
+            content: " ";
+            display: block;
+            background: url("./../../img/btn-line_light@x2.png") no-repeat;
+            min-width: 150px;
+            height: 15px;
+            background-size: 75%;
+            background-position: center; }
+        #event-container #hackathon-detail-container .action-Block a.readmore-btn:hover {
+          background: #1b376f;
+          box-shadow: 0 3px 0 #1b376f;
+          transform: translateY(2px); }
+    @media screen and (min-width: 800px) {
+      #event-container #hackathon-detail-container {
+        padding: 3em 0 7em; }
+        #event-container #hackathon-detail-container .discription {
+          margin: 0;
+          padding: 0;
+          background: transparent; }
+          #event-container #hackathon-detail-container .discription .container {
+            padding: .3em 1em 2em 2em;
+            max-width: 750px;
+            box-sizing: border-box; }
+        #event-container #hackathon-detail-container .action-Block a.readmore-btn {
           margin-right: 1.5em; } }
   #event-container #session-container {
     margin: 0 auto;
