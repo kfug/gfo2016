@@ -28,7 +28,7 @@ module.exports = [
     {
         code: "staff04",
         name: "Yasui Risa",
-        link: "http://chatbox-inc.com/page/member/shono/"
+        link: "http://chatbox-inc.com/page/member/yasui/"
     },
     {
         code: "staff08",
@@ -38,7 +38,7 @@ module.exports = [
     {
         code: "staff07",
         name: "後藤知宏",
-        link: "http://chatbox-inc.com/page/member/shono/"
+        link: "http://chatbox-inc.com/page/member/mikakane/"
     },
 ]
 
