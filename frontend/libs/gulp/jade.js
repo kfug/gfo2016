@@ -19,7 +19,8 @@ class Jade{
         options = Object.assign({},{
             locals:{
                 staffs: require("../../data/staff.js"),
-                booth: require("../../data/booth.js")
+                booth: require("../../data/booth.js"),
+                sponsors: require("../../data/sponsor.js")
             },
             pretty:true
         },options);

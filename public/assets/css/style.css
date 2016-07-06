@@ -1707,9 +1707,26 @@ p.pending {
   @media screen and (min-width: 800px) {
     #sponsor-container {
       padding: 3em 0 7em; } }
-  #sponsor-container .gold li {
-    display: inline-block; }
-    #sponsor-container .gold li a {
+  #sponsor-container .gold {
+    margin-top: 4em; }
+    #sponsor-container .gold li {
+      display: inline-block; }
+      #sponsor-container .gold li a {
+        display: table-cell;
+        margin: 10px;
+        padding: 10px;
+        width: 400px;
+        height: 150px;
+        background: #fff;
+        vertical-align: middle;
+        text-align: center; }
+        #sponsor-container .gold li a img {
+          max-width: 400px;
+          max-height: 150px; }
+  #sponsor-container .silver li {
+    display: inline-block;
+    margin: 10px; }
+    #sponsor-container .silver li a {
       display: table-cell;
       margin: 10px;
       padding: 10px;
@@ -1718,7 +1735,7 @@ p.pending {
       background: #fff;
       vertical-align: middle;
       text-align: center; }
-      #sponsor-container .gold li a img {
+      #sponsor-container .silver li a img {
         max-width: 250px;
         max-height: 100px; }
 
