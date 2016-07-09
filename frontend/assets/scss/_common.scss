@@ -20,7 +20,10 @@ html,body {
     a {
         text-decoration: none;
         color: $clr-main;
-
+    }
+    a.reset {
+        text-decoration: none;
+        color: inherit;
     }
     @include media {
         font-size: 18px;

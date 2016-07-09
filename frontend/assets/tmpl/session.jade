@@ -5,7 +5,7 @@ html(lang="ja")
     section#header-nav
       .container
         .logo-block
-          a(href="./index.html")
+          a(href="./")
             img.logo-sp(src="./img/gfo_logo.png" width="40px" height="42px")
           a(href="./index.html")
             h1.title GRAND FRONTEND OSAKA 2016
@@ -29,25 +29,27 @@ html(lang="ja")
 
         .session-list
           .container
-            each speaker in ["","","","","","","","","",""]
+            each speaker in sessions
               .list-item.wow.fadeIn
                 .list-container
                   .time-area
-                    span.time 10:00
-                  h5.sesstion-title セッションのタイトルセッションのタイトルセッションのタイトルセッションのタイトルセッションのタイトル
-                  p.sesstion-description Grand Frontend Osaka 2016は、関西フロントエンドUGの主催するIT系のコミュニティのイベントです。技術的な流れの早いフロントエンドの現場で、「最先端」をテーマにした尖ったスタイルのイベントをコンセプトに置いています
+                    //span.time 10:00
+                    span.time
+                  h5.sesstion-title=speaker.title
+                  p.sesstion-description=speaker.description
                   .prof-block
                     .bg
                     .img-prof-block
-                        .img-prof
+                        .img-prof(style="background-image:url('./assets/images/speakers/#{speaker.code}.png')")
                     dl.prof-detail-block
-                      dt 後藤 知宏
-                      dd
-                        a(href="https://www.google.co.jp/" target="_blank")
-                          | <i class="fa fa-twitter-square" aria-hidden="true"></i>
-                      dd
-                        a(href="https://www.google.co.jp/" target="_blank")
-                          | <i class="fa fa-facebook-square" aria-hidden="true"></i>
+                      dt=speaker.name
+                      dt: a(href=speaker.link,target="_blank"): =speaker.link
+                      //dd
+                      //  a(href="https://www.google.co.jp/" target="_blank")
+                      //    | <i class="fa fa-twitter-square" aria-hidden="true"></i>
+                      //dd
+                      //  a(href="https://www.google.co.jp/" target="_blank")
+                      //    | <i class="fa fa-facebook-square" aria-hidden="true"></i>
 
 
         .container
@@ -61,4 +63,5 @@ html(lang="ja")
 
 
 footer
+  - var url = "session.html"
   include ./_footer

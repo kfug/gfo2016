@@ -1,6 +1,16 @@
 section#sponsor-container.wow.fadeIn
     .container
         h4.title SPONSOR
+        ul.gold
+            each sponsor in sponsors.gold
+                li
+                    a(href=sponsor.link target="_blank")
+                        img(src='./assets/images/sponsor/#{sponsor.code}.png')
+        ul.silver
+            each sponsor in sponsors.silver
+                li
+                    a(href=sponsor.link target="_blank")
+                        img(src='./assets/images/sponsor/#{sponsor.code}.png')
         p
             span 現在スポンサーを募集中です！
             br
@@ -12,18 +22,6 @@ section#sponsor-container.wow.fadeIn
                 | スポンサー募集
         br
 
-        ul.gold
-            each sponsor in sponsors.gold
-                li
-                    a(href=sponsor.link target="_blank")
-                        img(src='./assets/images/sponsor/#{sponsor.code}.png')
-        ul.silver
-            each sponsor in sponsors.silver
-                li
-                    a(href=sponsor.link target="_blank")
-                        img(src='./assets/images/sponsor/#{sponsor.code}.png')
-
-
         h4.title SUPPORTED BY
-            div(style="margin:1em 2em")
-                <a href="https://2016.kansai.wordcamp.org/" target="_blank"><img style="width:100%" src="./img/wordcamp.png" alt="WordCamp Kansai 2016" /></a>
+                div(style="margin:1em 2em")
+                    <a href="https://2016.kansai.wordcamp.org/" target="_blank"><img style="width:100%" src="./img/wordcamp.png" alt="WordCamp Kansai 2016" /></a>

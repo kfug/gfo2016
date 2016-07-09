@@ -27,5 +27,10 @@ module.exports = [
         title: "kintone",
         description: "kintone（キントーン）はサイボウズ株式会社が運営するクラウド基盤「cybozu.com」上で提供されているデータベースサービスです。ドラッグ＆ドロップでデータベースを設計し、JavaScriptを使った画面開発やREST APIによるサービス連携で柔軟な拡張を備えています。高速開発基盤としてチームで働く人を支援します。",
         group: "サイボウズ株式会社"
+    },
+    {
+        code: "BOOTH06",
+        title: "vue.js 2.0 で、フロントコードそのままにSSR",
+        description: "この夏新リリースされるJSフレームワーク vue.js v2.0 を使って、フロントコードを用いたSSRに挑戦してみましょう！",
     }
 ]

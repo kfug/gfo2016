@@ -20,7 +20,8 @@ class Jade{
             locals:{
                 staffs: require("../../data/staff.js"),
                 booth: require("../../data/booth.js"),
-                sponsors: require("../../data/sponsor.js")
+                sponsors: require("../../data/sponsor.js"),
+                sessions: require("../../data/sessions.js")
             },
             pretty:true
         },options);
