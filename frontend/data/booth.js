@@ -30,7 +30,7 @@ module.exports = [
     },
     {
         code: "BOOTH06",
-        title: "vue.js 2.0 で、フロントコードそのままにSSR",
-        description: "この夏新リリースされるJSフレームワーク vue.js v2.0 を使って、フロントコードを用いたSSRに挑戦してみましょう！",
+        title: "vue.js 2.0 で体験 仮想DOMの魅力",
+        description: "この夏新リリースされるJSフレームワーク vue.js v2.0 を使って、仮想DOMを用いたフロント開発やSSRに挑戦してみましょう！",
     }
 ]

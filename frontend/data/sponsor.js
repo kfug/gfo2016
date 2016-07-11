@@ -16,7 +16,12 @@ module.exports = {
             code: "chatbox",
             name: "株式会社chatbox",
             link : "http://chatbox-inc.com/"
-        }
+        },
+        {
+            code: "tambourine",
+            name: "TAMBOURINE",
+            link : "https://www.wantedly.com/companies/tambourineinc/info"
+        },
     ]
 }
 
