@@ -15,35 +15,35 @@ html(lang="ja")
         .container
           h4.day-category
             .subtitle
-              img(src="./img/day2@2x.png" width="60px" height="60px" ,alt="DAY2")
-              span Frontend Sessions
+              img(src="./img/day1@2x.png" width="60px" height="60px" ,alt="DAY2")
+              span Try Tech Kansai
         .discription
           .container
             h4.event-title GRAND FRONTEND OSAKA
-            p 2日目の8/28は、フロントエンドエンジニアのためのセミナー企画を実施します！「フロントエンドの最先端」 をテーマに、たくさんの登壇者を招いて これからのフロントエンドのミライを語ります。
+            p 1日目の8/27は、フロントエンドエンジニアのためのもくもくハッカソン企画を開催！「あなたにとっての初めての技術体験」をテーマに、最新技術に挑戦します。最新技術への挑戦を支援するブースも多数出展で、あなたの新しいチャレンジを後押しします！
+            p 当日の詳しい流れや参加の概要はConnpassページをご確認下さい！
             .action-Block
               .btn
-                a.entry-btn(href="http://kfug.connpass.com/event/35228" target="_blank")
+                a.entry-btn(href="http://kfug.connpass.com/event/34970" target="_blank")
                   span ENTRY
                   | 参加申し込み
-
         .session-list
           .container
-            each speaker in sessions
+            each item in booth
               .list-item.wow.fadeIn
                 .list-container
                   .time-area
                     //span.time 10:00
                     span.time
-                  h5.sesstion-title=speaker.title
-                  p.sesstion-description=speaker.description
-                  .prof-block
-                    .bg
-                    .img-prof-block
-                        .img-prof(style="background-image:url('./assets/images/speakers/#{speaker.code}.png')")
-                    dl.prof-detail-block
-                      dt=speaker.name
-                      dt: a(href=speaker.link,target="_blank"): =speaker.link
+                  h5.sesstion-title=item.title
+                  p.sesstion-description=item.description
+                  //.prof-block
+                  //  .bg
+                  //  .img-prof-block
+                  //      .img-prof(style="background-image:url('./assets/images/speakers/#{speaker.code}.png')")
+                  //  dl.prof-detail-block
+                  //    dt=speaker.name
+                  //    dt: a(href=speaker.link,target="_blank"): =speaker.link
                       //dd
                       //  a(href="https://www.google.co.jp/" target="_blank")
                       //    | <i class="fa fa-twitter-square" aria-hidden="true"></i>
@@ -55,7 +55,7 @@ html(lang="ja")
         .container
           .action-Block
             .btn
-                a.entry-btn(href="http://kfug.connpass.com/event/35228" target="_blank")
+                a.entry-btn(href="http://kfug.connpass.com/event/34970" target="_blank")
                     span ENTRY
                     | 参加申し込み
 

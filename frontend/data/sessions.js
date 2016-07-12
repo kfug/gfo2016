@@ -31,10 +31,13 @@ module.exports = [
         title: "プログラミング言語Rust	",
         description: "ポストWebAssembly時代に備えて、Mozillaが開発したシステムプログラミング言語Rustを学びましょう。",
     },
-    //{
-    //    code: "SPEAKER06",
-    //    name : "牧 昂拡",
-    //},
+    {
+        code: "SPEAKER06",
+        name : "牧 昂拡",
+        title: "WebサイトやWebサービスの解析をしてみよう",
+        description: "そもそも解析って何をすれば良いの？というところから、エンジニアが使いやすい解析サービスの紹介や分析手法についてお話しします。",
+        link: "https://www.facebook.com/takahiro.maki"
+    },
     {
         code: "SPEAKER07",
         name : "@sairoutine",
@@ -54,5 +57,12 @@ module.exports = [
     //    name : "コソバマイ",
     //    title: "幸せなCSS設計（仮）",
     //},
+    {
+        code: "SPEAKER10",
+        title: "60fps を実現できるレンダリングパフォーマンス",
+        description: "WebブラウザでハイパフォーマンスなUIを提供するため、HTML、JavaScript、および CSS がブラウザでどのように処理されるかを説明して 60fps を実現できるベストプラクティスを(日本語で;)紹介させて頂きます。",
+        name: "ケノドン・ブノア",
+        link: "https://twitter.com/oldergod"
+    },
 ]
 
