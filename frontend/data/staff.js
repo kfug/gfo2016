@@ -17,8 +17,7 @@ module.exports = [
     {
         code: "staff06",
         name: "Kaie Okayama",
-        link: null,
-        image: "default",
+        link: null
     },
     {
         code: "staff02",
