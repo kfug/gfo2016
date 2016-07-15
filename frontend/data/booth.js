@@ -1,9 +1,10 @@
 module.exports = [
-    //{
-    //    code: "BOOTH01",
-    //    title : "p5.jsによるメディアアート on Web(仮)",
-    //    description: "p5.jsを通して、Processingの世界にどっぷりと浸れる内容を予定しております。今後参加予定のスタッフに応じて、Webとの連携や、ジェネラティブ方面などは決定していく予定となっております。",
-    //},
+    {
+        code: "BOOTH01",
+        title : "p5.jsで作るウェブアニメーション",
+        description: "教育から本格的なアート作品まで、様々な分野で使われている言語「Processing」のJavaScript版である「p5.js」を用いて、Webサイト上で動く様々なアニメーションを作ってみましょう。",
+        group: "Team-P(Processing)"
+    },
     {
         code: "BOOTH02",
         title: "Angular 2でSPAを作ろう",
@@ -20,7 +21,6 @@ module.exports = [
         code: "BOOTH04",
         title: "Node.js + WP-APIでつくるウェブアプリケーション",
         description: "Node.jsとWP-APIを利用して、SPA(シングルページアプリケーション)を作成するハンズオンです。",
-
     },
     {
         code: "BOOTH05",

@@ -45,18 +45,20 @@ module.exports = [
         title: "Mithril - 軽量・高速なMVCフレームワーク",
         description: "仮想DOMを採用したクライアントサイドMVCフレームワーク「Mithril」について概要と機能、そして今後の展望についてご紹介させていただきます。",
     },
-    //{
-    //    code: "SPEAKER08",
-    //    name : "花谷 拓磨",
-    //    link: "http://potato4d.me/",
-    //    title: "UXという視点からみたフロントエンドの技術選定(仮)",
-    //    description: "UXという視点からみたフロントエンドの技術選定",
-    //},
-    //{
-    //    code: "SPEAKER09",
-    //    name : "コソバマイ",
-    //    title: "幸せなCSS設計（仮）",
-    //},
+    {
+        code: "SPEAKER08",
+        name : "花谷 拓磨",
+        link: "http://potato4d.me/",
+        title: "今のWebに本当に必要な技術とは 〜技術者とユーザー、それぞれがウレシイ技術選定について〜",
+        description: "",
+    },
+    {
+        code: "SPEAKER09",
+        name : "コソバマイ",
+        link: "http://marcofabrika.com/",
+        title: "普遍的な設計思想とモダンなコーディング",
+        description: "―我々が目指すものは、黒●げ危機一髪でも、ジェ●ガでもない。\nいわばサグラダファミリアのような、ガウディの設計思想に近い部分なのである。\n（プロジェクトの運用・設計の思想から事例まで。建築家ガウディの思想や最近使われている手法などを交えながらお話しします。）",
+    },
     {
         code: "SPEAKER10",
         title: "60fps を実現できるレンダリングパフォーマンス",

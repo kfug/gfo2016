@@ -22,6 +22,11 @@ module.exports = {
             name: "TAMBOURINE",
             link : "https://www.wantedly.com/companies/tambourineinc/info"
         },
+        {
+            code: "dreamers",
+            name: "DREAMERS",
+            link : "http://www.dreamers-jp.com/"
+        },
     ]
 }
 
