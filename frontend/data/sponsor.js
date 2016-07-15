@@ -4,6 +4,11 @@ module.exports = {
             code: "cybozu",
             name: "サイボウズ株式会社",
             link : "http://cybozu.co.jp/"
+        },
+        {
+            code: "onsenui",
+            name: "オンセンUI",
+            link : "https://ja.onsen.io/"
         }
     ],
     silver:[
