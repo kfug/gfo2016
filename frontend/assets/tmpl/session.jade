@@ -43,7 +43,9 @@ html(lang="ja")
                         .img-prof(style="background-image:url('./assets/images/speakers/#{speaker.code}.png')")
                     dl.prof-detail-block
                       dt=speaker.name
-                      dt: a(href=speaker.link,target="_blank"): =speaker.link
+                      dt: a(href=speaker.link,target="_blank")
+                        i.fa.fa-external-link
+                        |  profile
                       //dd
                       //  a(href="https://www.google.co.jp/" target="_blank")
                       //    | <i class="fa fa-twitter-square" aria-hidden="true"></i>
