@@ -1014,15 +1014,11 @@ textarea {
         position: relative; }
         #event-container #session-detail-container .session-list .prof-block .bg {
           width: 100%;
-          height: 90px;
+          height: 130px;
           position: absolute;
           top: 30px;
           background: #fff114;
           opacity: .5; }
-        @media screen and (min-width: 800px) {
-          #event-container #session-detail-container .session-list .prof-block {
-            width: 130px;
-            height: 130px; } }
       #event-container #session-detail-container .session-list .img-prof-block {
         display: inline-block;
         position: relative;
@@ -1030,15 +1026,11 @@ textarea {
         margin: 0;
         margin-left: 1em;
         transform: rotate(45deg);
-        width: 90px;
-        height: 90px; }
-        @media screen and (min-width: 800px) {
-          #event-container #session-detail-container .session-list .img-prof-block {
-            width: 130px;
-            height: 130px; } }
+        width: 130px;
+        height: 130px; }
         #event-container #session-detail-container .session-list .img-prof-block .img-prof {
-          width: 100%;
-          height: 100%;
+          width: 130px;
+          height: 130px;
           position: absolute;
           transform: rotate(-45deg);
           background: url("./../../img/unknown@2x.png") center no-repeat;
@@ -1860,15 +1852,11 @@ textarea {
         position: relative; }
         #event-container #session-detail-container .session-list .prof-block .bg {
           width: 100%;
-          height: 90px;
+          height: 130px;
           position: absolute;
           top: 30px;
           background: #fff114;
           opacity: .5; }
-        @media screen and (min-width: 800px) {
-          #event-container #session-detail-container .session-list .prof-block {
-            width: 130px;
-            height: 130px; } }
       #event-container #session-detail-container .session-list .img-prof-block {
         display: inline-block;
         position: relative;
@@ -1876,15 +1864,11 @@ textarea {
         margin: 0;
         margin-left: 1em;
         transform: rotate(45deg);
-        width: 90px;
-        height: 90px; }
-        @media screen and (min-width: 800px) {
-          #event-container #session-detail-container .session-list .img-prof-block {
-            width: 130px;
-            height: 130px; } }
+        width: 130px;
+        height: 130px; }
         #event-container #session-detail-container .session-list .img-prof-block .img-prof {
-          width: 100%;
-          height: 100%;
+          width: 130px;
+          height: 130px;
           position: absolute;
           transform: rotate(-45deg);
           background: url("./../../img/unknown@2x.png") center no-repeat;
