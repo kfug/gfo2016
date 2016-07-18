@@ -574,16 +574,13 @@
                 position: relative;
                 .bg {
                     width: 100%;
-                    height: 90px;
+                    height: 130px;
                     position: absolute;
                     top: 30px;
                     background: $clr-base;
                     opacity: .5;
                 }
-                @include media(){
-                    width: 130px;
-                    height: 130px;
-                }
+
             }
             .img-prof-block {
                 display: inline-block;
@@ -592,15 +589,11 @@
                 margin: 0;
                 margin-left: 1em;
                 transform: rotate(45deg);
-                width: 90px;
-                height: 90px;
-                @include media(){
+                width: 130px;
+                height: 130px;
+                .img-prof {
                     width: 130px;
                     height: 130px;
-                }
-                .img-prof {
-                    width: 100%;
-                    height: 100%;
                     position: absolute;
                     transform: rotate(-45deg);
                     background: url("./../../img/unknown@2x.png") center no-repeat;

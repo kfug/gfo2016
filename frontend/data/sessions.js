@@ -19,11 +19,13 @@ module.exports = [
     //    name : "かみやん",
     //    link: "https://twitter.com/kamiyam",
     //},
-    //{
-    //    code: "SPEAKER04",
-    //    name : "奥野 賢太郎 armorik83",
-    //    link: "http://qiita.com/armorik83",
-    //},
+    {
+        code: "SPEAKER04",
+        name : "奥野 賢太郎 armorik83",
+        link: "http://qiita.com/armorik83",
+        title: "IndexedDB, Worker, Server-side Rendereing そしてフロントエンドの未来",
+        description: "最近のフロントエンド界隈では、次々と新しい技術用語が飛び出して混乱しますね。このセッションでは、ひとつひとつを深く掘り下げるわけではありませんが、今後あなたが調べていく上での取っ掛かりになるべく重要なトレンドを紹介していきます。",
+    },
     {
         code: "SPEAKER05",
         name : "おのうえ@_likr",
