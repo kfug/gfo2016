@@ -14,11 +14,13 @@ module.exports = [
         description: "多少複雑なデザインでも、画像や JavaScript には頼らず、CSS で実現させる。そこにはもはや手軽さなどは存在しない。あるのは男のロマン。",
 
     },
-    //{
-    //    code: "SPEAKER03",
-    //    name : "かみやん",
-    //    link: "https://twitter.com/kamiyam",
-    //},
+    {
+        code: "SPEAKER03",
+        name : "かみやん",
+        link: "http://nantokaworks.com/",
+        title: "Node.jsをさりげなく取り入れた最近のフロントエンド事情について",
+        description: "みなさんが書いているJavaScriptはもう古い?!フロントエンドであってもNode.jsとBabelを使ってカジュアルに実装をまとめたい。夏から使いこなしたい今どきのJavaScriptコーティングについてお話します。",
+    },
     {
         code: "SPEAKER04",
         name : "奥野 賢太郎 armorik83",
