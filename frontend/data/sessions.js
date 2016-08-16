@@ -14,16 +14,20 @@ module.exports = [
         description: "多少複雑なデザインでも、画像や JavaScript には頼らず、CSS で実現させる。そこにはもはや手軽さなどは存在しない。あるのは男のロマン。",
 
     },
-    //{
-    //    code: "SPEAKER03",
-    //    name : "かみやん",
-    //    link: "https://twitter.com/kamiyam",
-    //},
-    //{
-    //    code: "SPEAKER04",
-    //    name : "奥野 賢太郎 armorik83",
-    //    link: "http://qiita.com/armorik83",
-    //},
+    {
+        code: "SPEAKER03",
+        name : "かみやん",
+        link: "http://nantokaworks.com/",
+        title: "Node.jsをさりげなく取り入れた最近のフロントエンド事情について",
+        description: "みなさんが書いているJavaScriptはもう古い?!フロントエンドであってもNode.jsとBabelを使ってカジュアルに実装をまとめたい。夏から使いこなしたい今どきのJavaScriptコーティングについてお話します。",
+    },
+    {
+        code: "SPEAKER04",
+        name : "奥野 賢太郎 armorik83",
+        link: "http://qiita.com/armorik83",
+        title: "IndexedDB, Worker, Server-side Rendereing そしてフロントエンドの未来",
+        description: "最近のフロントエンド界隈では、次々と新しい技術用語が飛び出して混乱しますね。このセッションでは、ひとつひとつを深く掘り下げるわけではありませんが、今後あなたが調べていく上での取っ掛かりになるべく重要なトレンドを紹介していきます。",
+    },
     {
         code: "SPEAKER05",
         name : "おのうえ@_likr",
@@ -50,7 +54,7 @@ module.exports = [
         name : "花谷 拓磨",
         link: "http://potato4d.me/",
         title: "今のWebに本当に必要な技術とは 〜技術者とユーザー、それぞれがウレシイ技術選定について〜",
-        description: "",
+        description: "急速に成長・変化を遂げるフロントエンドの世界の中で、技術者として「うれしい」ものと、ユーザーにとって「うれしい」ものそれぞれにはどういった特徴があるか。\nまた、それらを両立させるために必要な技術選定とは？と言った問題について触れていきます。",
     },
     {
         code: "SPEAKER09",

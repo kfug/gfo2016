@@ -23,14 +23,19 @@ module.exports = [
         description: "Node.jsとWP-APIを利用して、SPA(シングルページアプリケーション)を作成するハンズオンです。",
     },
     {
+        code: "BOOTH06",
+        title: "vue.js 2.0 で体験 仮想DOMの魅力",
+        description: "この夏新リリースされるJSフレームワーク vue.js v2.0 を使って、仮想DOMを用いたフロント開発やSSRに挑戦してみましょう！",
+    },
+    {
         code: "BOOTH05",
         title: "kintone",
         description: "kintone（キントーン）はサイボウズ株式会社が運営するクラウド基盤「cybozu.com」上で提供されているデータベースサービスです。ドラッグ＆ドロップでデータベースを設計し、JavaScriptを使った画面開発やREST APIによるサービス連携で柔軟な拡張を備えています。高速開発基盤としてチームで働く人を支援します。",
         group: "サイボウズ株式会社"
     },
     {
-        code: "BOOTH06",
-        title: "vue.js 2.0 で体験 仮想DOMの魅力",
-        description: "この夏新リリースされるJSフレームワーク vue.js v2.0 を使って、仮想DOMを用いたフロント開発やSSRに挑戦してみましょう！",
+        code: "BOOTH07",
+        title: "Monaca / Onsen UIでモバイルアプリを作ってみよう",
+        description: "HTML5モバイルアプリ用のUIフレームワーク「Onsen UI」とクラウド開発環境「Monaca」を使ってWeb技術でモバイルアプリを作ってみましょう。Onsen UIはAngular 2などの最新JSフレームワークと組み合わせて使うことができますし、バックエンドにKintoneなどのPaaSやmBaaSも使うことも可能なのでこの機会に様々な技術と組み合わせて、モバイルアプリ開発にチャレンジしてみませんか？",
     }
 ]

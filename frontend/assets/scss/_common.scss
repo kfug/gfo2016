@@ -398,7 +398,9 @@ p.pending{
                 vertical-align: middle;
                 text-align: center;
                 img {
-                    max-width: 400px;
+                    max-width: 100%;
+
+                    //max-width: 400px;
                     max-height: 150px;
                 }
             }
