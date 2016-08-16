@@ -1020,7 +1020,7 @@ textarea {
           background: #fff114;
           opacity: .5; }
       #event-container #session-detail-container .session-list .img-prof-block {
-        display: inline-block;
+        display: block;
         position: relative;
         overflow: hidden;
         margin: 0;
@@ -1035,6 +1035,9 @@ textarea {
           transform: rotate(-45deg);
           background: url("./../../img/unknown@2x.png") center no-repeat;
           background-size: contain; }
+        @media screen and (min-width: 800px) {
+          #event-container #session-detail-container .session-list .img-prof-block {
+            display: inline-block; } }
       #event-container #session-detail-container .session-list .prof-detail-block {
         position: absolute;
         margin-left: 1em;
@@ -1858,7 +1861,7 @@ textarea {
           background: #fff114;
           opacity: .5; }
       #event-container #session-detail-container .session-list .img-prof-block {
-        display: inline-block;
+        display: block;
         position: relative;
         overflow: hidden;
         margin: 0;
@@ -1873,6 +1876,9 @@ textarea {
           transform: rotate(-45deg);
           background: url("./../../img/unknown@2x.png") center no-repeat;
           background-size: contain; }
+        @media screen and (min-width: 800px) {
+          #event-container #session-detail-container .session-list .img-prof-block {
+            display: inline-block; } }
       #event-container #session-detail-container .session-list .prof-detail-block {
         position: absolute;
         margin-left: 1em;
