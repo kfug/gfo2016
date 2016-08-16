@@ -583,7 +583,7 @@
 
             }
             .img-prof-block {
-                display: inline-block;
+                display: block;
                 position: relative;
                 overflow: hidden;
                 margin: 0;
@@ -598,6 +598,9 @@
                     transform: rotate(-45deg);
                     background: url("./../../img/unknown@2x.png") center no-repeat;
                     background-size: contain;
+                }
+                @include media {
+                    display: inline-block;
                 }
             }
 
