@@ -2603,7 +2603,7 @@ p.pending {
         vertical-align: middle;
         text-align: center; }
         #sponsor-container .gold li a img {
-          max-width: 400px;
+          max-width: 100%;
           max-height: 150px; }
   #sponsor-container .silver li {
     display: inline-block;
