@@ -2447,6 +2447,78 @@ p.pending {
     #news-container {
       padding: 3em 0 4em; } }
 
+#timetable-container {
+  transform: skew(0deg, 4deg);
+  padding: 2em 0 6em;
+  text-align: center;
+  background: #2656a3;
+  color: #fff; }
+  #timetable-container .container {
+    transform: skew(0deg, -4deg); }
+  #timetable-container .title {
+    font-size: 1.2em;
+    font-family: Orbitron;
+    font-weight: bold; }
+    @media screen and (min-width: 800px) {
+      #timetable-container .title {
+        font-size: 1.5em; } }
+  #timetable-container #timetable-block {
+    margin-bottom: .5em;
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px;
+    border: 10px solid #fff;
+    height: 0;
+    overflow: hidden; }
+    #timetable-container #timetable-block iframe, #timetable-container #timetable-block object, #timetable-container #timetable-block embed {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+  #timetable-container .acction-block {
+    text-align: left; }
+    #timetable-container .acction-block .btn-blank {
+      display: inline-block;
+      border: 1px solid #fff114; }
+      #timetable-container .acction-block .btn-blank a {
+        color: #fff114;
+        display: block;
+        padding: .3em .6em;
+        width: 100%; }
+        #timetable-container .acction-block .btn-blank a::before {
+          margin-right: .4em;
+          display: inline-block;
+          content: "\f24d";
+          font-family: FontAwesome; }
+    #timetable-container .acction-block dl.address dt {
+      margin-top: 1em;
+      font-weight: bold; }
+      #timetable-container .acction-block dl.address dt a {
+        font-size: .8em;
+        margin-left: .4em; }
+    #timetable-container .acction-block dl.address dd {
+      margin: 0;
+      margin-top: .8em;
+      padding: 0;
+      font-size: .8em; }
+      #timetable-container .acction-block dl.address dd span {
+        font-weight: bold; }
+    #timetable-container .acction-block dl.train {
+      margin-top: 2em; }
+      #timetable-container .acction-block dl.train dt {
+        margin-bottom: .5em;
+        font-size: 1em; }
+        #timetable-container .acction-block dl.train dt a {
+          margin-left: .4em; }
+      #timetable-container .acction-block dl.train dd {
+        margin: 0;
+        margin-left: 1em;
+        padding: .1em;
+        font-size: .8em; }
+        #timetable-container .acction-block dl.train dd span {
+          font-weight: bold; }
+
 #access-container {
   padding: 1em 0 2em;
   text-align: center; }
