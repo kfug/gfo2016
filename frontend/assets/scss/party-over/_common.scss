@@ -6,8 +6,8 @@ html,body {
     width: 100%;
     margin: 0;
     padding: 0;
-    background: $clr-main;
-    color: $clr-base;
+    background: $clr-base;
+    color: $clr-main;
     font-size: 16px;
     font-family: "Helvetica Neue", Helvetica,  'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', 'モトヤフォント', 'Noto Sans CJK','メイリオ',' Meiryo', 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
 
@@ -54,6 +54,7 @@ p.pending{
     padding-bottom: 5em;
     background: url("./../../img/party-over/hero@2x.png") bottom right no-repeat;
     background-size: 680px;
+    background-color: $clr-main;
 
     #logo-block {
         @include clearfix;
@@ -186,7 +187,7 @@ p.pending{
     transform: skew(0deg, 4deg);
     padding: 3em 0;
     text-align: center;
-    background: rgba(255,255,255,.6);
+    background: #c5d7f4;
     .container {
         transform: skew(0deg, -4deg);
         background: url("./../../img/info-bg@2x.png") center no-repeat;
@@ -309,7 +310,7 @@ p.pending{
         @include en-ttl(1.2em);
     }
     iframe {
-        margin: 0 .5em;
+        margin: 0 .3em;
     }
     @include media {
         padding: 3em 0 4em;
@@ -333,7 +334,7 @@ p.pending{
         @include en-ttl(1.2em);
     }
     iframe {
-        margin: 0 .5em;
+        margin: 0 .3em;
     }
     @include media {
         padding: 3em 0 4em;
@@ -531,7 +532,33 @@ p.pending{
         transform: skew(0deg, -4deg);
     }
     .title {
+        margin: 3em;
         @include en-ttl(1.2em);
+        color: $clr-base;
+    }
+    h5.title-sub {
+        font-family: orbitron;
+        font-size: 1.1em;
+    }
+    .booth-block,.speaker-block,.staff-block,.special-block,.sponsor-block,.support-block {
+        margin-bottom: 6em;
+    }
+    .lists {
+        margin: 2em 0 2em;
+        li {
+            display: inline-block;
+            margin: 0 1em;
+        }
+    }
+    table {
+        display: inline-block;
+        th {
+            text-align: right;
+            font-weight: normal;
+        }
+        td {
+            text-align: left;
+        }
     }
     p {
         color: $clr-base;
@@ -539,32 +566,6 @@ p.pending{
         span {
             font-size: 1.4em;
             font-weight: bold;
-        }
-    }
-    .btn {
-        margin: .5em auto .5em;
-        padding: 2px 2px 8px;
-        display: inline-block;
-        min-width: 250px;
-        background: $clr-base;
-        &:hover {
-            background: $clr-main;
-        }
-    }
-    a.sponsor-btn {
-        @include ac-btn($btn-01,$btn-01-s);
-        color: #fff;
-        text-align: center;
-        span {
-            display: inline-block;
-            width: 100%;
-            @include ac-btn-en($clr-base);
-            &::after {
-                @include ac-btn-line();
-            }
-        }
-        &:hover {
-            @include  ac-btn-hover($btn-01-s);
         }
     }
     @include media {
@@ -614,79 +615,155 @@ p.pending{
     }
 
 }//#sponsor-container
-#staff-container {
-    padding: 2em 0 4em;
+#sns-container {
+
+    margin-top: 2em;
     text-align: center;
     .title {
         @include en-ttl(1.2em);
         line-height: 2em;
         color: $clr-main;
-
     }
-    ul {
-        padding: 0;
-        li {
-            margin: .5em 1em;
-            display: inline-block;
-            list-style: none;
+    .btn {
+        margin: .5em auto 2em;
+        display: inline-block;
+        min-width: 150px;
+        cursor: pointer;
+    }
+    .sns-tw-btn {
+        margin-right: 1em;
+        @include sns-btn($btn-tw,$btn-tw-s);
+        a {
+            display: block;
+            color: #fff;
+            padding: .7em 0 .7em;
+            &::before {
+                margin-right: .3em;
+                display: inline-block;
+                content: "\f099";
+                font-size: 1.4em;
+                font-family: FontAwesome;
+                vertical-align: bottom;
+            }
 
-            .staff {
-                .img-prof-block {
-                    position: relative;
-                    overflow: hidden;
-                    margin: 0;
-                    transform: rotate(45deg);
-                    width: 70px;
-                    height: 70px;
-                    .img-prof {
-                        width: 70px;
-                        height: 70px;
-                        position: absolute;
-                        transform: rotate(-45deg);
-                        background: url("./../../img/unknown@2x.png") center no-repeat;
-                        background-size: contain;
-                    }
-                }
-                span.name {
-                    display: inline-block;
-                    margin-top: .3em;
-                    font-size: .8em;
+        }
+        &:hover {
+            @include  ac-btn-hover($btn-tw-s);
+        }
+    }
+    .sns-fb-btn {
+        @include sns-btn($btn-fb,$btn-fb-s);
+        a {
+            display: block;
+            color: #fff;
+            padding: .7em 0 .7em;
+            &::before {
+                margin-right: .3em;
+                display: inline-block;
+                content: "\f09a";
+                font-size: 1.4em;
+                font-family: FontAwesome;
+                vertical-align: bottom;
+            }
+        }
+        &:hover {
+            @include  ac-btn-hover($btn-fb-s);
+        }
+    }
+    @include media {
+        padding: 0  0 2em;
+        .btn {
+            min-width: 230px;
+        }
+        a.sns-tw-btn {
+            margin-right: 1em;
+            &::before {
+                margin-right: 1em;
+            }
+        }
+        a.sns-fb-btn {
+            &::before {
+                margin-right: 1em;
+            }
+        }
+    }
 
-                }
+}
+
+#pagetop-block {
+    padding: .6em;
+    text-align: center;
+    background: $clr-main;
+    a {
+        @include en-ttl(1em);
+        color: #fff;
+        span {
+            margin: 0 .5em;
+            color: $clr-base;
+            font-size: 1.2em;
+        }
+        &:hover {
+            color: $clr-base;
+            span {
+                color: $clr-maker;
+            }
+
+        }
+    }
+    @include media {
+        a {
+            font-size: 1em;
+            span {
+                margin: 0 .5em;
+                color: $clr-base;
+                font-size: .8em;
+            }
+        }
+    }
+}//#pagetop-block
+
+#footer-container {
+    padding: 2em 0 3em;
+    background: $clr-footer;
+    #kfug-logo-block {
+        text-align: center;
+    }
+    #contact-block {
+        color: #888;
+        a {
+            color: $clr-maker;
+            &:hover {
+                color: $clr-main;
             }
         }
     }
     @include media {
-        padding: 2em 0 5em;
-    }
-}//#staff-container
+        @include clearfix;
+        #kfug-logo-block {
+            float: left;
+            width: 30%;
+        }
 
-//下層ページ
-#header-nav {
-    width: 100%;
-    position: fixed;
-    top: 0;
-    z-index: 1000;
-    a {
-        display: inline-block;
-        margin-right: .7em;
     }
-    .logo-block {
-        display: inline-block;
-    }
-    .title {
-        position: absolute;
-        top: 2px;
-        padding-top: -20px;
-        display: inline-block;
-        font-size:.8em;
-        font-family: Orbitron;
-        font-weight: bold;
-        letter-spacing: 1px;
-        line-height: 1.5em;
-        color: $clr-main;
-    }
-    background: $clr-base;
-    margin-bottom: 100px;
+}//#footer-container
 
+#credit-container {
+    background: #11274a;
+    .container {
+        text-align: center;
+
+        p {
+            color: $clr-main;
+            font-size: .9em;
+            display: inline-block;
+            a {
+                color: $btn-01;
+                margin-left: .8em;
+                &:hover {
+                    color: $btn-01-s;
+                }
+            }
+        }
+
+    }
 }
