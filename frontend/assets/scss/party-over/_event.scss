@@ -172,7 +172,84 @@
                 }
             }
             .session-list {
+                .sesstion{
+                    margin: 1em;
+                    display: inline-block;
+                    max-width: 320px;
 
+                    .thumb  {
+                        width: 320px;
+                        height: 170px;
+                        color: #fff;
+                        background-image: url("./../../img/party-over/session_01.jpg");
+                        background-position: center;
+                        background-size: cover;
+                        position: relative;
+                        &::before {
+                            content: "";
+                            display: inline-block;
+                            position: absolute;
+                            top:0;
+                            left: 0;
+                            border-style: solid;
+                            border-width: 60px 60px 0 0;
+                            border-color: $clr-base transparent transparent transparent;
+                        }
+                        &::after {
+                            margin: .3em;
+                            content: "#01";
+                            color: $clr-main;
+                            display: inline-block;
+                            position: absolute;
+                            top:0;
+                            left: 0;
+                        }
+
+                    }
+                    .speaker {
+                        width: 100%;
+                        background: rgba(38,86,163,.8);
+                        position: absolute;
+                        bottom: 0;
+                        span,p  {
+                            display: inline-block;
+                        }
+                        span {
+                            font-family: orbitron;
+                            margin: 0 1em;
+                        }
+                        p {
+                            margin: .5em 0;
+                        }
+
+                    }
+                    .detail {
+                        padding: 1em;
+                        background: rgba(255,255,255,.8);
+                        h5 {
+                            margin: 0;
+                            color: $clr-main;
+                            font-size: 1em;
+                        }
+                        .session_doc {
+                            li {
+                                display: inline-block;
+                                width: 47%;
+                                a {
+                                    color: $clr-main;
+                                    background: $clr-base;
+                                    font-size: .7em;
+                                    padding: .4em;
+                                    display: block;
+                                }
+                                i {
+                                    display: inline-block;
+                                    margin-left: .5em;
+                                }
+                            }
+                        }
+                    }
+                }
             }
             .action-Block {
                 text-align: center;

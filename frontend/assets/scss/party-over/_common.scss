@@ -295,6 +295,51 @@ p.pending{
         }
     }
 }//#photo-container
+
+#lt-container {
+    transform: skew(0deg, 4deg);
+    padding: 1em 0 2em;
+    background: $clr-main;
+    text-align: center;
+    color: $clr-base;
+    .container {
+        transform: skew(0deg, -4deg);
+    }
+    .title {
+        @include en-ttl(1.2em);
+    }
+    iframe {
+        margin: 0 .5em;
+    }
+    @include media {
+        padding: 3em 0 4em;
+    }
+}//#lt-container
+
+#blog-container {
+    transform: skew(0deg, 4deg);
+    padding: 1em 0 2em;
+    background: $clr-base;
+    text-align: center;
+    color: $clr-main;
+    .container {
+        transform: skew(0deg, -4deg);
+    }
+    .staff-blog {
+        margin-top: 4em;
+    }
+
+    .title {
+        @include en-ttl(1.2em);
+    }
+    iframe {
+        margin: 0 .5em;
+    }
+    @include media {
+        padding: 3em 0 4em;
+    }
+}//#blog-container
+
 #timetable-container {
     transform: skew(0deg, 4deg);
     padding: 2em 0 6em;

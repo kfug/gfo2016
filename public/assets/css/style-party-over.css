@@ -557,6 +557,66 @@ textarea {
             font-size: 1.5em; } }
       #event-container #session-container .discription .container {
         transform: skew(0deg, 0deg); }
+    #event-container #session-container .session-list .sesstion {
+      margin: 1em;
+      display: inline-block;
+      max-width: 320px; }
+      #event-container #session-container .session-list .sesstion .thumb {
+        width: 320px;
+        height: 170px;
+        color: #fff;
+        background-image: url("./../../img/party-over/session_01.jpg");
+        background-position: center;
+        background-size: cover;
+        position: relative; }
+        #event-container #session-container .session-list .sesstion .thumb::before {
+          content: "";
+          display: inline-block;
+          position: absolute;
+          top: 0;
+          left: 0;
+          border-style: solid;
+          border-width: 60px 60px 0 0;
+          border-color: #fff114 transparent transparent transparent; }
+        #event-container #session-container .session-list .sesstion .thumb::after {
+          margin: .3em;
+          content: "#01";
+          color: #2656a3;
+          display: inline-block;
+          position: absolute;
+          top: 0;
+          left: 0; }
+      #event-container #session-container .session-list .sesstion .speaker {
+        width: 100%;
+        background: rgba(38, 86, 163, 0.8);
+        position: absolute;
+        bottom: 0; }
+        #event-container #session-container .session-list .sesstion .speaker span, #event-container #session-container .session-list .sesstion .speaker p {
+          display: inline-block; }
+        #event-container #session-container .session-list .sesstion .speaker span {
+          font-family: orbitron;
+          margin: 0 1em; }
+        #event-container #session-container .session-list .sesstion .speaker p {
+          margin: .5em 0; }
+      #event-container #session-container .session-list .sesstion .detail {
+        padding: 1em;
+        background: rgba(255, 255, 255, 0.8); }
+        #event-container #session-container .session-list .sesstion .detail h5 {
+          margin: 0;
+          color: #2656a3;
+          font-size: 1em; }
+        #event-container #session-container .session-list .sesstion .detail .session_doc li {
+          display: inline-block;
+          width: 47%; }
+          #event-container #session-container .session-list .sesstion .detail .session_doc li a {
+            color: #2656a3;
+            background: #fff114;
+            font-size: .7em;
+            padding: .4em;
+            display: block; }
+          #event-container #session-container .session-list .sesstion .detail .session_doc li i {
+            display: inline-block;
+            margin-left: .5em; }
     #event-container #session-container .action-Block {
       text-align: center; }
       #event-container #session-container .action-Block .btn {
@@ -1017,6 +1077,50 @@ p.pending {
       padding: 3em 0 4em; }
       #photo-container .action-Block a.readmore-btn {
         margin-right: 1.5em; } }
+
+#lt-container {
+  transform: skew(0deg, 4deg);
+  padding: 1em 0 2em;
+  background: #2656a3;
+  text-align: center;
+  color: #fff114; }
+  #lt-container .container {
+    transform: skew(0deg, -4deg); }
+  #lt-container .title {
+    font-size: 1.2em;
+    font-family: Orbitron;
+    font-weight: bold; }
+    @media screen and (min-width: 800px) {
+      #lt-container .title {
+        font-size: 1.5em; } }
+  #lt-container iframe {
+    margin: 0 .5em; }
+  @media screen and (min-width: 800px) {
+    #lt-container {
+      padding: 3em 0 4em; } }
+
+#blog-container {
+  transform: skew(0deg, 4deg);
+  padding: 1em 0 2em;
+  background: #fff114;
+  text-align: center;
+  color: #2656a3; }
+  #blog-container .container {
+    transform: skew(0deg, -4deg); }
+  #blog-container .staff-blog {
+    margin-top: 4em; }
+  #blog-container .title {
+    font-size: 1.2em;
+    font-family: Orbitron;
+    font-weight: bold; }
+    @media screen and (min-width: 800px) {
+      #blog-container .title {
+        font-size: 1.5em; } }
+  #blog-container iframe {
+    margin: 0 .5em; }
+  @media screen and (min-width: 800px) {
+    #blog-container {
+      padding: 3em 0 4em; } }
 
 #timetable-container {
   transform: skew(0deg, 4deg);
