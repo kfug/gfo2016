@@ -1,0 +1,66 @@
+doctype html
+html(lang="ja")
+  head
+    meta(charset="utf-8")
+    style(src="css/style.css")
+    title Grand Frontend Osaka 2016｜関西フロントエンドUG
+    meta(name="description", content="2016年、夏に開催されたGrand Frontend Osaka 2016のイベントレポートサイト！")
+    link(rel="canonical", href="http://kfug.jp/gfo2016/")
+    link(rel="icon", type="image/png",href="./img/favicon.ico")
+    meta(name="viewport", content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no")
+    link(href='https://fonts.googleapis.com/css?family=Orbitron:400', rel='stylesheet', type='text/css')
+    link(rel="stylesheet", href="./assets/css/style-party-over.css")
+    link(rel="stylesheet", href="./lib/css/font-awesome.min.css")
+    meta(property="og:title", content="Grand Frontend Osaka 2016｜関西フロントエンドUG")
+    meta(property="og:image", content="http://kfug.jp/gfo2016/img/ogp.png")
+    meta(property="og:description", content="2016年、夏に開催されたGrand Frontend Osaka 2016のイベントレポートサイト！")
+    meta(property="og:url", content="http://kfug.jp/gfo2016/")
+    meta(property="fb:app_id", content="1601600146818094")
+    meta(name="twitter:card", content="summary_large_image")
+    meta(name="twitter:site", content="@frontkansai")
+    meta(name="twitter:creator", content="@frontkansai")
+    meta(name="twitter:title", content="Grand Frontend Osaka 2016｜関西フロントエンドUG")
+    meta(name="twitter:description", content="2016年、夏に開催されたGrand Frontend Osaka 2016のイベントレポートサイト！")
+    meta(name="twitter:image", content="http://kfug.jp/gfo2016/img/ogp.png")
+    script(src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js")
+    script(src="./lib/wow.min.js")
+    script(type="text/javascript", src="./assets/js/common.bundle.js")
+
+  body
+    section#hero-container
+      .container
+        #logo-block
+          img.logo-sp(src="./img/gfo_logo.png" width="80px" height="84px")
+          img.logo-pc(src="./img/gfo_logo.png" width="140px" height="144px")
+        h1.title
+          | GRAND FRONTEND OSAKA
+          br
+          | 2016
+
+    section#info-container
+      .container
+        p.title
+          | EVENT REPORT
+    section#description-container
+      .container
+        h2.title GRAND FRONTEND OSAKA
+          br
+          | 2016
+        p.description
+          | 「フロントエンドの最先端」をテーマに2DAYS開催される Grand Frontend Osaka 2016。技術的な流れの早いフロントエンドの現場に、「最先端」をテーマにした攻めのスタイルで、この夏一番の熱さを提供します!!
+          br
+          | 1日目のハッカソン企画 「Try Tech Kansai」 と 2日目のセミナーイベントとで、これからのフロントエンドの世界を「作り」「知る」事が出来るココにしか無いスタイルのイベントとなっています！
+
+    include ./party-over/_photo
+
+    #event-container
+      include ./party-over/_hackathon
+      include ./party-over/_session
+    include ./party-over/_lt
+    include ./party-over/_blog
+
+    include ./party-over/_end-roll
+
+footer
+  - var url = ""
+  include ./_footer

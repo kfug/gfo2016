@@ -1,0 +1,240 @@
+#event-container {
+    transform: skew(0deg, 4deg);
+    #hackathon-container {
+        margin: 0 auto;
+        padding: 2em 0 3em;
+        background: $clr-day1;
+        .container {
+            transform: skew(0deg, -4deg);
+        }
+        h4.day-category {
+            margin: .5em 0;
+            border-bottom: 2px solid #3b526a;
+            .subtitle {
+                display: inline-block;
+                img {
+                    vertical-align: middle;
+                    margin-right: 1.5em;
+                }
+                span {
+                    font-size: 1.2em;
+                    color: #fff;
+                }
+            }
+
+        }
+        .discription {
+            color: $clr-main;
+            transform: skew(0deg, -4deg);
+            margin-right: 1.5em;
+            padding: .3em 1em 2em 2em;
+            background: $clr-base;
+            h4.event-title {
+                margin: 0;
+                margin-top: 1.3em;
+                @include en-ttl(1.4em);
+            }
+            .container {
+                transform: skew(0deg, 0deg);
+            }
+        }
+        .hackathon_memory {
+            text-align: center;
+        }
+        .hackathon_img {
+            margin-top: 2em;
+        }
+        .hackathon_detail {
+
+            color: white;
+            display: inline-block;
+            padding: 1em 4em;
+            position: relative;
+            margin-top: -4em;
+            background: $clr-main;
+            text-align: left;
+            background-image: url("./../../img/party-over/contest_bg-img.png");
+            background-repeat: no-repeat;
+            background-position-x: 95%;
+            background-position-y: 85%;
+            h5 {
+                font-size: 1.2em;
+                margin: 1em 0;
+            }
+            p {
+                margin: 2em 0;
+            }
+            li {
+                margin-bottom: .7em;
+            }
+        }
+        .action-Block {
+            text-align: center;
+            .btn {
+                margin: .5em auto 1em;
+                display: inline-block;
+                min-width: 250px;
+            }
+            a.entry-btn {
+                @include ac-btn($btn-02,$btn-02-s);
+                color: $clr-main;
+                text-align: center;
+                span {
+                    display: inline-block;
+                    width: 100%;
+                    @include ac-btn-en($btn-01);
+                    &::after {
+                        @include ac-btn-line(dark);
+                    }
+                }
+                &:hover {
+                    @include  ac-btn-hover($btn-02-s);
+                }
+
+            }
+            a.readmore-btn {
+                @include ac-btn($btn-03,$btn-03-s);
+                color: #fff;
+                text-align: center;
+                span {
+                    display: inline-block;
+                    width: 100%;
+                    @include ac-btn-en($clr-base);
+                    &::after {
+                        @include ac-btn-line();
+                    }
+                }
+                &:hover {
+                    @include  ac-btn-hover($btn-03-s);
+                }
+
+            }
+        }
+        @include media {
+            padding: 3em 0 7em;
+            .discription {
+                margin: 0;
+                padding: 0;
+                background: transparent;
+                .container {
+                    padding: .3em 1em 2em 2em;
+                    max-width: $container-pc;
+                    background: $clr-base;
+                    box-sizing: border-box;
+                    box-shadow: -600px 0 0 0 $clr-base;
+                }
+            }
+            .action-Block {
+                a.readmore-btn {
+                    margin-right: 1.5em;
+
+                }
+            }
+
+        }
+    }//#hackathon-container
+    #session-container {
+            margin: 0 auto;
+            padding: 2em 0 3em;
+            background: $clr-day2;
+            .container {
+                transform: skew(0deg, -4deg);
+            }
+            h4.day-category {
+                margin: .5em 0;
+                border-bottom: 2px solid #3b526a;
+                .subtitle {
+                    display: inline-block;
+                    img {
+                        vertical-align: middle;
+                        margin-right: 1.5em;
+                    }
+                    span {
+                        font-size: 1.2em;
+                        color: #fff;
+                    }
+                }
+
+            }
+            .discription {
+                color: $clr-main;
+                transform: skew(0deg, -4deg);
+                margin-right: 1.5em;
+                padding: .3em 1em 2em 2em;
+                background: $clr-base;
+                h4.event-title {
+                    margin: 0;
+                    margin-top: 1.3em;
+                    @include en-ttl(1.4em);
+                }
+                .container {
+                    transform: skew(0deg, 0deg);
+                }
+            }
+            .session-list {
+
+            }
+            .action-Block {
+                text-align: center;
+                .btn {
+                    margin: .5em auto 1em;
+                    display: inline-block;
+                    min-width: 250px;
+                }
+                a.entry-btn {
+                    @include ac-btn($btn-02,$btn-02-s);
+                    color: $clr-main;
+                    text-align: center;
+                    span {
+                        display: inline-block;
+                        width: 100%;
+                        @include ac-btn-en($btn-01);
+                        &::after {
+                            @include ac-btn-line(dark);
+                        }
+                    }
+                    &:hover {
+                        @include  ac-btn-hover($btn-02-s);
+                    }
+
+                }
+                a.readmore-btn {
+                    @include ac-btn($btn-03,$btn-03-s);
+                    color: #fff;
+                    text-align: center;
+                    span {
+                        display: inline-block;
+                        width: 100%;
+                        @include ac-btn-en($clr-base);
+                        &::after {
+                            @include ac-btn-line();
+                        }
+                    }
+                    &:hover {
+                        @include  ac-btn-hover($btn-03-s);
+                    }
+                }
+            }
+        @include media {
+            padding: 3em 0 7em;
+            .discription {
+                margin: 0;
+                padding: 0;
+                background: transparent;
+                .container {
+                    padding: .3em 1em 2em 2em;
+                    max-width: $container-pc;
+                    background: $clr-base;
+                    box-sizing: border-box;
+                    box-shadow: -600px 0 0 0 $clr-base;
+                }
+            }
+            .action-Block {
+                a.readmore-btn {
+                    margin-right: 1.5em;
+
+                }
+            }
+        }
+        }//#session-container
+}//#event-container
