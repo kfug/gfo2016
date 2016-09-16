@@ -2050,6 +2050,15 @@ textarea {
 #sns-container {
   margin-top: 2em;
   text-align: center; }
+  #sns-container .title {
+    font-size: 1.2em;
+    font-family: Orbitron;
+    font-weight: bold;
+    line-height: 2em;
+    color: #2656a3; }
+    @media screen and (min-width: 800px) {
+      #sns-container .title {
+        font-size: 1.5em; } }
   #sns-container .btn {
     margin: .5em auto 2em;
     display: inline-block;
