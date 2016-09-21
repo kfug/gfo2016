@@ -408,14 +408,14 @@ textarea {
     #event-container #hackathon-container .hackathon_detail {
       color: white;
       display: inline-block;
-      padding: 1em 4em;
+      padding: 1em 2em;
       position: relative;
-      margin-top: -4em;
+      margin-top: 0;
       background: #2656a3;
       text-align: left;
       background-image: url("./../../img/party-over/contest_bg-img.png");
       background-repeat: no-repeat;
-      background-position-x: 95%;
+      background-position-x: 75%;
       background-position-y: 85%; }
       #event-container #hackathon-container .hackathon_detail h5 {
         font-size: 1.2em;
@@ -522,7 +522,12 @@ textarea {
             box-sizing: border-box;
             box-shadow: -600px 0 0 0 #fff114; }
         #event-container #hackathon-container .action-Block a.readmore-btn {
-          margin-right: 1.5em; } }
+          margin-right: 1.5em; }
+        #event-container #hackathon-container .hackathon_detail {
+          padding: 1em 4em;
+          margin-top: -4em;
+          background-position-x: 95%;
+          background-position-y: 85%; } }
   #event-container #session-container {
     margin: 0 auto;
     padding: 2em 0 3em;
@@ -558,7 +563,7 @@ textarea {
       #event-container #session-container .discription .container {
         transform: skew(0deg, 0deg); }
     #event-container #session-container .session-list .sesstion {
-      margin: 1em;
+      margin: 1em 0;
       display: inline-block;
       max-width: 320px; }
       #event-container #session-container .session-list .sesstion .thumb {
@@ -704,6 +709,8 @@ textarea {
     @media screen and (min-width: 800px) {
       #event-container #session-container {
         padding: 3em 0 7em; }
+        #event-container #session-container .session-list .sesstion {
+          margin: 1em .7em; }
         #event-container #session-container .discription {
           margin: 0;
           padding: 0;
@@ -771,6 +778,7 @@ p.pending {
   #hero-container #logo-block .logo-pc {
     display: none; }
   #hero-container .title {
+    color: #fff;
     font-size: 1.8em;
     font-family: Orbitron;
     font-weight: bold;
@@ -1289,7 +1297,7 @@ p.pending {
   #sponsor-container .booth-block, #sponsor-container .speaker-block, #sponsor-container .staff-block, #sponsor-container .special-block, #sponsor-container .sponsor-block, #sponsor-container .support-block {
     margin-bottom: 6em; }
   #sponsor-container .lists {
-    margin: 2em 0 2em; }
+    margin: .3em 0 .5em; }
     #sponsor-container .lists li {
       display: inline-block;
       margin: 0 1em; }
@@ -1298,8 +1306,13 @@ p.pending {
     #sponsor-container table th {
       text-align: right;
       font-weight: normal; }
+    #sponsor-container table td.first, #sponsor-container table th {
+      text-align: right;
+      width: 180px; }
     #sponsor-container table td {
-      text-align: left; }
+      margin: 0 1em;
+      text-align: left;
+      width: 180px; }
   #sponsor-container p {
     color: #fff114;
     margin: 2em 0; }
@@ -1308,7 +1321,19 @@ p.pending {
       font-weight: bold; }
   @media screen and (min-width: 800px) {
     #sponsor-container {
-      padding: 3em 0 7em; } }
+      padding: 3em 0 7em; }
+      #sponsor-container .lists-block {
+        width: 100%;
+        text-align: center; }
+        #sponsor-container .lists-block tbody {
+          display: inline-block; }
+      #sponsor-container table td.first {
+        text-align: right;
+        width: 230px; }
+      #sponsor-container table td {
+        margin: 0 1em;
+        text-align: left;
+        width: 230px; } }
   #sponsor-container .gold {
     margin-top: 4em; }
     #sponsor-container .gold li {
