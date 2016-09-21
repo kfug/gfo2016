@@ -11,18 +11,17 @@ section#session-container.wow.fadeIn
     .session-list
         .container
             ul
-                - for (var i = 0; i < 10; i++) {
-                li.sesstion
-                    .thumb
-                        .speaker
-                            span SPEAKER
-                            p 花谷 拓磨
-                    .detail
-                        h5 今のWebに本当に必要な技術とは 〜技術者とユーザー、それぞれがウレシイ技術選定について〜
-                        ul.session_doc
-                            li: a(href="")
-                                span 登壇資料
-                                i.fa.fa-share-square-o(aria-hidden="true")
-                            li: a(href="") ツイートまとめ
-                                span: i.fa.fa-share-square-o(aria-hidden="true")
-                - };
+                - each session in sessionDoc
+                    li.sesstion
+                        .thumb
+                            .speaker
+                                span SPEAKER
+                                p #{session.name}
+                        .detail
+                            h5 #{session.title}
+                            ul.session_doc
+                                li: a(href=session.slideLink target="_blank")
+                                    span 登壇資料
+                                    i.fa.fa-share-square-o(aria-hidden="true")
+                                li: a(href=session.tweetLink target="_blank") ツイートまとめ
+                                    span: i.fa.fa-share-square-o(aria-hidden="true")

@@ -2,13 +2,12 @@ article#photo-container.wow.fadeIn
     .container
         h4.title PHOTO
         ul.photo-lists
-            - for (var i = 0; i < 9; i++) {
-                li.photo
-            - };
+            - each photo in photos
+                li.photo(style="background-image:url(#{photo.link})")
 
     .container
         .action-Block
             .btn
-                a.entry-btn(href="#" target="_blank")
+                a.entry-btn(href="https://www.facebook.com/grandfrontendosaka2016/photos/?tab=albums" target="_blank")
                     span READ MORE
-                    | 更に読み込む
+                    | アルバムを見る

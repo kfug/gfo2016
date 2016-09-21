@@ -583,14 +583,6 @@ textarea {
           border-style: solid;
           border-width: 60px 60px 0 0;
           border-color: #fff114 transparent transparent transparent; }
-        #event-container #session-container .session-list .sesstion .thumb::after {
-          margin: .3em;
-          content: "#01";
-          color: #2656a3;
-          display: inline-block;
-          position: absolute;
-          top: 0;
-          left: 0; }
       #event-container #session-container .session-list .sesstion .speaker {
         width: 100%;
         background: rgba(38, 86, 163, 0.8);
@@ -600,7 +592,8 @@ textarea {
           display: inline-block; }
         #event-container #session-container .session-list .sesstion .speaker span {
           font-family: orbitron;
-          margin: 0 1em; }
+          margin: 0 1em;
+          font-size: .9em; }
         #event-container #session-container .session-list .sesstion .speaker p {
           margin: .5em 0; }
       #event-container #session-container .session-list .sesstion .detail {
@@ -609,7 +602,8 @@ textarea {
         #event-container #session-container .session-list .sesstion .detail h5 {
           margin: 0;
           color: #2656a3;
-          font-size: 1em; }
+          font-size: 1em;
+          min-height: 90px; }
         #event-container #session-container .session-list .sesstion .detail .session_doc li {
           display: inline-block;
           width: 47%; }
@@ -622,6 +616,116 @@ textarea {
           #event-container #session-container .session-list .sesstion .detail .session_doc li i {
             display: inline-block;
             margin-left: .5em; }
+    #event-container #session-container .session-list .sesstion:nth-child(0) .thumb {
+      background-image: url("./../../img/party-over/session_0.jpg"); }
+      #event-container #session-container .session-list .sesstion:nth-child(0) .thumb::after {
+        margin: .3em;
+        content: "#0";
+        color: #2656a3;
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0; }
+    #event-container #session-container .session-list .sesstion:nth-child(1) .thumb {
+      background-image: url("./../../img/party-over/session_1.jpg"); }
+      #event-container #session-container .session-list .sesstion:nth-child(1) .thumb::after {
+        margin: .3em;
+        content: "#1";
+        color: #2656a3;
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0; }
+    #event-container #session-container .session-list .sesstion:nth-child(2) .thumb {
+      background-image: url("./../../img/party-over/session_2.jpg"); }
+      #event-container #session-container .session-list .sesstion:nth-child(2) .thumb::after {
+        margin: .3em;
+        content: "#2";
+        color: #2656a3;
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0; }
+    #event-container #session-container .session-list .sesstion:nth-child(3) .thumb {
+      background-image: url("./../../img/party-over/session_3.jpg"); }
+      #event-container #session-container .session-list .sesstion:nth-child(3) .thumb::after {
+        margin: .3em;
+        content: "#3";
+        color: #2656a3;
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0; }
+    #event-container #session-container .session-list .sesstion:nth-child(4) .thumb {
+      background-image: url("./../../img/party-over/session_4.jpg"); }
+      #event-container #session-container .session-list .sesstion:nth-child(4) .thumb::after {
+        margin: .3em;
+        content: "#4";
+        color: #2656a3;
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0; }
+    #event-container #session-container .session-list .sesstion:nth-child(5) .thumb {
+      background-image: url("./../../img/party-over/session_5.jpg"); }
+      #event-container #session-container .session-list .sesstion:nth-child(5) .thumb::after {
+        margin: .3em;
+        content: "#5";
+        color: #2656a3;
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0; }
+    #event-container #session-container .session-list .sesstion:nth-child(6) .thumb {
+      background-image: url("./../../img/party-over/session_6.jpg"); }
+      #event-container #session-container .session-list .sesstion:nth-child(6) .thumb::after {
+        margin: .3em;
+        content: "#6";
+        color: #2656a3;
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0; }
+    #event-container #session-container .session-list .sesstion:nth-child(7) .thumb {
+      background-image: url("./../../img/party-over/session_7.jpg"); }
+      #event-container #session-container .session-list .sesstion:nth-child(7) .thumb::after {
+        margin: .3em;
+        content: "#7";
+        color: #2656a3;
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0; }
+    #event-container #session-container .session-list .sesstion:nth-child(8) .thumb {
+      background-image: url("./../../img/party-over/session_8.jpg"); }
+      #event-container #session-container .session-list .sesstion:nth-child(8) .thumb::after {
+        margin: .3em;
+        content: "#8";
+        color: #2656a3;
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0; }
+    #event-container #session-container .session-list .sesstion:nth-child(9) .thumb {
+      background-image: url("./../../img/party-over/session_9.jpg"); }
+      #event-container #session-container .session-list .sesstion:nth-child(9) .thumb::after {
+        margin: .3em;
+        content: "#9";
+        color: #2656a3;
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0; }
+    #event-container #session-container .session-list .sesstion:nth-child(10) .thumb {
+      background-image: url("./../../img/party-over/session_10.jpg"); }
+      #event-container #session-container .session-list .sesstion:nth-child(10) .thumb::after {
+        margin: .3em;
+        content: "#10";
+        color: #2656a3;
+        display: inline-block;
+        position: absolute;
+        top: 0;
+        left: 0; }
     #event-container #session-container .action-Block {
       text-align: center; }
       #event-container #session-container .action-Block .btn {

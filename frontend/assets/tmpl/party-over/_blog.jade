@@ -1,11 +1,9 @@
 article#blog-container.wow.fadeIn
     .container
         h4.title BLOG
-        - for (var i = 0; i < 6; i++) {
-        <iframe style="width:100%;height:155px;max-width:320px;display:inline-block;" src="http://hatenablog.com/embed?url=http://www.slideshare.net/yamasy1549s/are-you-a-designer-or-an-engineer" frameborder="0" scrolling="no"></iframe>
-        - };
+        - each blog in blogs
+            <iframe style="width:100%;height:155px;max-width:320px;display:inline-block;" src="http://hatenablog.com/embed?url=#{blog.link}" frameborder="0" scrolling="no"></iframe>
         .staff-blog
             h4.title STAFF BLOG
-            - for (var i = 0; i < 6; i++) {
-            <iframe style="width:100%;height:155px;max-width:320px;display:inline-block;" src="http://hatenablog.com/embed?url=http://www.slideshare.net/yamasy1549s/are-you-a-designer-or-an-engineer" frameborder="0" scrolling="no"></iframe>
-            - };
+            - each staffBlog in staffBlogs
+                <iframe style="width:100%;height:155px;max-width:320px;display:inline-block;" src="http://hatenablog.com/embed?url=#{staffBlog.link}" frameborder="0" scrolling="no"></iframe>

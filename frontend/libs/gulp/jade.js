@@ -21,7 +21,12 @@ class Jade{
                 staffs: require("../../data/staff.js"),
                 booth: require("../../data/booth.js"),
                 sponsors: require("../../data/sponsor.js"),
-                sessions: require("../../data/sessions.js")
+                sessions: require("../../data/sessions.js"),
+                ltList: require("../../data/lt.js"),
+                photos: require("../../data/photo.js"),
+                blogs: require("../../data/blog.js"),
+                staffBlogs: require("../../data/staffBlog.js"),
+                sessionDoc: require("../../data/sessionsDoc.js")
             },
             pretty:true
         },options);

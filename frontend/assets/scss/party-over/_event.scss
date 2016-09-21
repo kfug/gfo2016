@@ -199,17 +199,9 @@
                             border-width: 60px 60px 0 0;
                             border-color: $clr-base transparent transparent transparent;
                         }
-                        &::after {
-                            margin: .3em;
-                            content: "#01";
-                            color: $clr-main;
-                            display: inline-block;
-                            position: absolute;
-                            top:0;
-                            left: 0;
-                        }
-
                     }
+
+
                     .speaker {
                         width: 100%;
                         background: rgba(38,86,163,.8);
@@ -221,6 +213,7 @@
                         span {
                             font-family: orbitron;
                             margin: 0 1em;
+                            font-size: .9em;
                         }
                         p {
                             margin: .5em 0;
@@ -234,6 +227,7 @@
                             margin: 0;
                             color: $clr-main;
                             font-size: 1em;
+                            min-height: 90px;
                         }
                         .session_doc {
                             li {
@@ -250,6 +244,22 @@
                                     display: inline-block;
                                     margin-left: .5em;
                                 }
+                            }
+                        }
+                    }
+                }
+                @for $i from 0 through 10 {
+                    .sesstion:nth-child(#{$i}) {
+                        .thumb{
+                            background-image: url("./../../img/party-over/session_#{$i}.jpg");
+                            &::after {
+                                margin: .3em;
+                                content: "##{$i}";
+                                color: $clr-main;
+                                display: inline-block;
+                                position: absolute;
+                                top:0;
+                                left: 0;
                             }
                         }
                     }
