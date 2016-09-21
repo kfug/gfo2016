@@ -45,17 +45,16 @@
             margin-top: 2em;
         }
         .hackathon_detail {
-
             color: white;
             display: inline-block;
-            padding: 1em 4em;
+            padding: 1em 2em;
             position: relative;
-            margin-top: -4em;
+            margin-top: 0;
             background: $clr-main;
             text-align: left;
             background-image: url("./../../img/party-over/contest_bg-img.png");
             background-repeat: no-repeat;
-            background-position-x: 95%;
+            background-position-x: 75%;
             background-position-y: 85%;
             h5 {
                 font-size: 1.2em;
@@ -130,7 +129,12 @@
 
                 }
             }
-
+            .hackathon_detail {
+                padding: 1em 4em;
+                margin-top: -4em;
+                background-position-x: 95%;
+                background-position-y: 85%;
+            }
         }
     }//#hackathon-container
     #session-container {
@@ -173,7 +177,7 @@
             }
             .session-list {
                 .sesstion{
-                    margin: 1em;
+                    margin: 1em 0;
                     display: inline-block;
                     max-width: 320px;
 
@@ -294,6 +298,11 @@
             }
         @include media {
             padding: 3em 0 7em;
+            .session-list {
+                .sesstion {
+                    margin: 1em .7em;
+                }
+            }
             .discription {
                 margin: 0;
                 padding: 0;

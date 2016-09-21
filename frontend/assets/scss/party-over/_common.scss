@@ -67,6 +67,7 @@ p.pending{
         }
     }
     .title {
+        color: #fff;
         @include en-ttl(1.8em);
         line-height: 1.3em;
     }
@@ -544,20 +545,28 @@ p.pending{
         margin-bottom: 6em;
     }
     .lists {
-        margin: 2em 0 2em;
+        margin: .3em 0 .5em;
         li {
             display: inline-block;
             margin: 0 1em;
         }
     }
+
     table {
         display: inline-block;
+
         th {
             text-align: right;
             font-weight: normal;
         }
+        td.first,th {
+            text-align: right;
+            width: 180px;
+        }
         td {
+            margin: 0 1em;
             text-align: left;
+            width: 180px;
         }
     }
     p {
@@ -570,6 +579,24 @@ p.pending{
     }
     @include media {
         padding: 3em 0 7em;
+        .lists-block {
+            width: 100%;
+            text-align: center;
+            tbody {
+                display: inline-block;
+            }
+        }
+        table {
+            td.first {
+                text-align: right;
+                width: 230px;
+            }
+            td {
+                margin: 0 1em;
+                text-align: left;
+                width: 230px;
+            }
+        }
     }
     .gold {
         margin-top: 4em;
