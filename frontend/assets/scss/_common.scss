@@ -48,6 +48,43 @@ p.pending{
     text-align: center;
     margin: 2em 0;
 }
+#link-container{
+    background: $clr-main;
+    text-align: center;
+    font-size: .7em;
+    a {
+        color: #fff;
+        padding: 1.6em 0 1.5em;
+        width: 100%;
+        display: inline-block;
+    }
+    .ttl {
+        @include en-ttl;
+        display: inline-block;
+        margin: .3em 0;
+        color: $clr-base;
+        letter-spacing: .1em;
+    }
+    .sub-ttl {
+        display: inline-block;
+        margin-bottom: 1em;
+        padding: 1.1em 1.4em  .9em;
+        vertical-align: bottom;
+        color: $clr-main;
+        background: rgba(255,255,255,.8);
+        font-size: 1.2em;
+        box-shadow: 0px 3px 3px -3px rgba(0,0,0,0.6);
+    }
+    @include media {
+        font-size: 1em;
+        .ttl {
+            font-size: 1.5em;
+        }
+    }
+    .sub-ttl {
+        font-size: 1.1em;
+    }
+}
 
 
 #hero-container {

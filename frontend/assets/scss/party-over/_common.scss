@@ -49,7 +49,27 @@ p.pending{
     margin: 2em 0;
 }
 
-
+#link-container{
+    text-align: center;
+    a {
+        padding: 1em 0;
+        width: 100%;
+        display: inline-block;
+        font-size: .8em;
+    }
+    .ttl {
+        @include en-ttl;
+        font-size: 1.2em;
+        display: inline-block;
+        margin: .3em 0;
+        letter-spacing: .1em;
+    }
+    @include media {
+        .ttl {
+            font-size: 1.5em;
+        }
+    }
+}
 #hero-container {
     padding-bottom: 5em;
     background: url("./../../img/party-over/hero@2x.png") bottom right no-repeat;

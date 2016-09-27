@@ -865,6 +865,28 @@ p.pending {
   text-align: center;
   margin: 2em 0; }
 
+#link-container {
+  text-align: center; }
+  #link-container a {
+    padding: 1em 0;
+    width: 100%;
+    display: inline-block;
+    font-size: .8em; }
+  #link-container .ttl {
+    font-size: 2em;
+    font-family: Orbitron;
+    font-weight: bold;
+    font-size: 1.2em;
+    display: inline-block;
+    margin: .3em 0;
+    letter-spacing: .1em; }
+    @media screen and (min-width: 800px) {
+      #link-container .ttl {
+        font-size: 1.5em; } }
+  @media screen and (min-width: 800px) {
+    #link-container .ttl {
+      font-size: 1.5em; } }
+
 #hero-container {
   padding-bottom: 5em;
   background: url("./../../img/party-over/hero@2x.png") bottom right no-repeat;
