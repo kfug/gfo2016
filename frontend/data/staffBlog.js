@@ -6,6 +6,9 @@ module.exports = [
         link: "http://44-consol.hateblo.jp/entry/2016/09/22/151128"
     },
     {
+        link: "http://tec-kansai.tech/community/kfug-2495.php"
+    },
+    {
         link: "http://tec-kansai.tech/community/kfug-2481.php"
     }
 ];
