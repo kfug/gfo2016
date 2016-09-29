@@ -3,7 +3,9 @@ article#photo-container.wow.fadeIn
         h4.title PHOTO
         ul.photo-lists
             - each photo in photos
-                li.photo(style="background-image:url(#{photo.link})")
+                li.photo_wrap
+                    .photo(style="background-image:url(#{photo.link})")
+                        .photo_frame
 
     .container
         .action-Block

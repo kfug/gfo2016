@@ -240,26 +240,28 @@ p.pending{
         text-align: center;
 
     }
-    .photo{
+    .photo_wrap {
+        display: inline-block;
+        overflow: hidden;
+    }
+    .photo {
         display: inline-block;
         width: 180px;
         height: 180px;
         background-image:  url("http://urx.red/up2U");
         background-size: cover;
         position: relative;
-        overflow: hidden;
         border: solid 12px $clr-main;
-        &:before{
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            left: 50%;
-            top: 50%;
-            transform: translate(-50%, -50%) rotate(45deg);
-            background: transparent;
-            border: solid 80px #2656a3;
-            content: "";
-        }
+    }
+    .photo_frame{
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+        background: transparent;
+        border: solid 80px #2656a3;
     }
     .title {
         @include en-ttl(1.2em);
