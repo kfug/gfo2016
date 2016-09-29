@@ -176,12 +176,16 @@
                 }
             }
             .session-list {
+                .container {
+                    text-align: center;
+                }
                 .sesstion{
-                    margin: 1em 0;
+                    margin: .7em .5em;
                     display: inline-block;
                     max-width: 320px;
 
                     .thumb  {
+                        text-align: left;
                         width: 320px;
                         height: 170px;
                         color: #fff;
@@ -221,6 +225,7 @@
 
                     }
                     .detail {
+                        text-align: left;
                         padding: 1em;
                         background: rgba(255,255,255,.8);
                         h5 {

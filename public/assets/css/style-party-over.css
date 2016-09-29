@@ -562,11 +562,14 @@ textarea {
             font-size: 1.5em; } }
       #event-container #session-container .discription .container {
         transform: skew(0deg, 0deg); }
+    #event-container #session-container .session-list .container {
+      text-align: center; }
     #event-container #session-container .session-list .sesstion {
-      margin: 1em 0;
+      margin: .7em .5em;
       display: inline-block;
       max-width: 320px; }
       #event-container #session-container .session-list .sesstion .thumb {
+        text-align: left;
         width: 320px;
         height: 170px;
         color: #fff;
@@ -597,6 +600,7 @@ textarea {
         #event-container #session-container .session-list .sesstion .speaker p {
           margin: .5em 0; }
       #event-container #session-container .session-list .sesstion .detail {
+        text-align: left;
         padding: 1em;
         background: rgba(255, 255, 255, 0.8); }
         #event-container #session-container .session-list .sesstion .detail h5 {
